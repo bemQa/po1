@@ -401,7 +401,7 @@ footer {
 }
 
 .footer-links {
-	max-width: 600px;
+	max-width: 450px;
 	margin: 0 auto 35px;
 	display: flex;
 	justify-content: space-between;
@@ -663,7 +663,7 @@ footer {
 
 	.footer-links {
 		flex-direction: column;
-		height: 94px;
+		height: 64px;
 		margin: 0 auto 50px;
 	}
 
