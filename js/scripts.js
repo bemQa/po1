@@ -15,6 +15,18 @@ $(document).ready(function () {
         });
     });
 
+    $('.anchor[href^="#"]').click(function () {
+        if($(window).innerWidth() <= 1000) {
+           $('.menu').removeClass('active'); 
+           $('.burger').removeClass('active');
+           $('header, .banner, .content, footer').removeClass('active-menu'); 
+        }
+        elementClick = $(this).attr("href");
+        destination = $(elementClick).offset().top-50;
+        $('html, body').animate( { scrollTop: destination }, 500, 'swing' );
+        return false;
+    });
+
     function OpenPopup(popupId) {
         $('body').removeClass('no-scrolling');
         $('.popup').removeClass('js-popup-show');
