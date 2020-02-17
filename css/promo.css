@@ -1,0 +1,691 @@
+html {
+    line-height: 1.15;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+main {
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+b,
+strong {
+    font-weight: bold;
+    /*font-family: 'Rex', sans-serif;*/
+}
+
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    border-style: none;
+}
+
+img[width="0"][height="0"] {
+    display: none;
+}
+
+a {
+    color: inherit;
+    cursor: pointer;
+    background-color: transparent;
+    text-decoration: none;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+input,
+select,
+textarea,
+button {
+    border: none;
+    outline: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+textarea {
+    overflow: auto;
+}
+
+textarea::-webkit-scrollbar {
+    width: 0;
+}
+
+::-ms-clear {
+    display: none;
+}
+
+input {
+    overflow: visible;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+label {
+    margin: 0;
+}
+
+input,
+button,
+select {
+    border: none;
+    outline: none;
+}
+
+input {
+    border-radius: 0;
+}
+
+.mobile-visible {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .mobile-visible {
+        display: block;
+    }
+
+    .desktop-visible {
+        display: none;
+    }
+}
+
+.no-scrolling {
+	overflow: hidden;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    color: #272727;
+    font: normal 16px/19px 'DIN Pro', sans-serif;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+    background: url(../img/stadium.png) center no-repeat;
+    background-size: cover;
+}
+
+.container {
+	max-width: 93.75rem;
+	margin: auto;
+}
+
+.container-promo {
+	display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.125rem;
+}
+
+footer {
+    flex: 0 0 auto;
+    min-height: 220px;
+    background: #fff;
+    text-align: center;
+    padding: 25px 48px 30px;
+}
+
+.left-block,
+.right-block {
+	margin-top: 5rem;
+}
+
+.logos-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 39.25rem;
+    min-width: 39.25rem;
+	width: 100%;
+    margin-bottom: 3.75rem;
+}
+
+.ag-logo {
+	width: 5.6875rem;
+}
+
+.oreo-logo {
+    width: 6.5625rem;
+}
+
+.halls-logo {
+	width: 7.25rem;
+}
+
+.tuc-logo {
+	width: 7.375rem;
+}
+
+.dirol-logo {
+	width: 5.25rem;
+}
+
+.action-start {
+	width: 29.8125rem;
+	height: 3.25rem;
+	background: url(../img/action-start.svg) center no-repeat;
+	background-size: cover;
+	color: #fff;
+	font-family: "Rex";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2rem;
+    line-height: 3.25rem;
+	text-align: center;
+	margin: 0 auto 3.125rem;
+}
+
+.kv {
+	width: 37.875rem;
+	height: 15.8125rem;
+	background: url(../img/kv.svg) center no-repeat;
+	background-size: cover;
+	margin: 0 auto 3.125rem;
+}
+
+.email-text {
+	font-family: "Rex";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.75rem;
+	line-height: 2.3125rem;
+	text-align: center;
+	color: #303030;
+	max-width: 28.75rem;
+	margin: 0 auto 0.9375rem;
+}
+
+.input-field {
+	max-width: 29.1875rem;
+	width: 100%;
+	margin: auto;
+	position: relative;
+}
+
+.input-field input {
+	width: 100%;
+	height: 4.1875rem;
+	font-family: "Rex";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.3125rem;
+	line-height: 1;
+	padding: 0 10.875rem 0 1.5rem;
+	background: #fff;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+	border-radius: 5px;
+}
+
+.input-field button {
+	position: absolute;
+	width: 10rem;
+	height: 2.9375rem;
+	top: 0;
+	right: 0.625rem;
+	bottom: 0;
+	margin: auto;
+	background: linear-gradient(97.72deg, #E30613 0%, #D00000 100%);
+	border-radius: 5px;
+	font-family: "Rex";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.3125rem;
+	line-height: 2.9375rem;
+	text-align: center;
+	color: #fff;
+	transition: all .3s linear;
+}
+
+.input-field button:hover {
+	background: linear-gradient(97.72deg, #c10611 0%, #D00000 100%);
+}
+
+.footballs-wrapper {
+	max-width: 48.1875rem;
+}
+
+.promo-announcement {
+	font-family: "Rex";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.1875rem;
+	line-height: 1.3125rem;
+	text-align: center;
+	color: #000;
+	max-width: 82rem;
+    margin: 0 auto 2.8125rem;
+}
+
+.footer-links {
+	max-width: 450px;
+	margin: 0 auto 35px;
+	display: flex;
+	justify-content: space-between;
+	font-family: "DIN Pro";
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+}
+
+.footer-links a:hover {
+	text-decoration: underline;
+}
+
+.mndlz {
+	margin: 0 auto 30px;
+}
+
+.copyright {
+	font-family: "DIN Pro";
+	font-size: 11px;
+	line-height: 14px;
+	text-align: center;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    padding-top: 10%;
+    pointer-events: none;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.js-popup-show {
+    z-index: 999;
+    opacity: 1;
+    pointer-events: visible;
+}
+
+.popup__wrap {
+    background: #fff;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 38px 0;
+}
+
+.popup__wrap::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: -200px;
+	width: 420px;
+	height: 329px;
+	background: url(../img/dzubinho.png) center no-repeat;
+	background-size: cover;
+}
+
+.popup__inner {
+    max-width: 200px;
+    margin: 0 36px 0 auto;
+    width: 100%;
+    font-family: "Rex";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 24px;
+	text-align: center;
+}
+
+.popup__title {
+    margin: 0 auto 32px;
+}
+
+.popup__desc {
+	margin: 0 auto 22px;
+}
+
+.popup .btn {
+	display: block;
+	width: 160px;
+	height: 47px;
+	margin: auto;
+	font-family: "Rex";
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 47px;
+	text-align: center;
+	color: #fff;
+	background: linear-gradient(97.72deg, #E30613 0%, #D00000 100%);
+	border-radius: 5px;
+	transition: all .3s linear;
+}
+
+.popup .btn:hover {
+	background: linear-gradient(97.72deg, #c10611 0%, #D00000 100%);
+}
+
+@media (min-width: 1930px) and (min-height: 1000px) {
+    html {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1000px) and (max-height: 840px) {
+	html {
+		font-size: 15px;
+	}
+}
+
+@media (min-width: 1000px) and (max-height: 820px) {
+	html {
+		font-size: 14px;
+	}
+}
+
+@media (min-width: 1000px) and (max-height: 770px) {
+	html {
+		font-size: 13px;
+	}
+}
+
+@media (min-width: 1000px) and (max-height: 730px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 1000px) {
+	html {
+		font-size: 16px;
+	}
+
+	.container-promo {
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+
+	.left-block, .right-block {
+	    margin-top: 10px;
+	}
+
+	.logos-block {
+		max-width: 330px;
+		min-width: 310px;
+		margin: 0 auto 22px;
+	}
+
+	.ag-logo {
+		width: 48px;
+	}
+
+	.oreo-logo {
+		width: 55px;
+	}
+
+	.halls-logo {
+		width: 61px;
+	}
+
+	.tuc-logo {
+		width: 62px;
+	}
+
+	.dirol-logo {
+		width: 44px;
+	}
+
+	.action-start {
+		width: 280px;
+		height: 34px;
+	    background-size: contain;
+		font-size: 18px;
+		line-height: 34px;
+	    margin: 0 auto 32px;
+	}
+
+	.kv {
+		width: 299px;
+		height: 125px;
+		background-size: cover;
+		margin: 0 auto 32px;
+	}
+
+	.email-text {
+		font-size: 18px;
+		line-height: 23px;
+		max-width: 262px;
+		margin: 0 auto 18px;
+	}
+
+	.input-field {
+		max-width: 307px;
+		margin: 0 auto 32px;
+	}
+
+	.input-field input {
+		height: 59px;
+		font-size: 21px;
+	    padding: 0 56px 0 16px;
+	}
+
+	.input-field button {
+		width: 51px;
+		height: 51px;
+		right: 4px;
+		font-size: 0;
+		line-height: 51px;
+	}
+	
+	.input-field button::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		width: 24px;
+		height: 24px;
+		background: url(../img/send-icon.svg) center no-repeat;
+		background-size: contain;
+	}
+
+	.footballs-wrapper {
+	    max-width: 280px;
+	    margin: 0 auto 32px;
+	}
+
+	.promo-announcement {
+		font-size: 19px;
+		line-height: 21px;
+		max-width: 308px;
+		margin: 0 auto 40px;
+	}
+
+	.footer-links {
+		flex-direction: column;
+		height: 64px;
+		margin: 0 auto 50px;
+	}
+
+	.popup {
+		padding-top: 200px;
+	}
+
+	.popup__wrap {
+		max-width: 270px;
+		padding: 38px;
+	}
+
+	.popup__wrap::after {
+	    top: -180px;
+	    left: -20px;
+	    bottom: auto;
+	    width: 270px;
+	    height: 211px;
+	    z-index: -1;
+	}
+
+	.popup__inner {
+		margin: auto;
+	}
+}

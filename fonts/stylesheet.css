@@ -1,32 +1,35 @@
 @font-face {
-    font-family: 'Rex';
+    font-family: 'Rex',sans-serif;
     src: url('Rex-Light.eot');
     src: url('Rex-Light.eot?#iefix') format('embedded-opentype'),
         url('Rex-Light.woff2') format('woff2'),
         url('Rex-Light.woff') format('woff'),
-        url('Rex-Light.ttf') format('truetype');
+        url('Rex-Light.ttf') format('truetype'),
+        url('Rex-Light.otf') format('opentype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Rex';
+    font-family: 'Rex',sans-serif;
     src: url('Rex-BoldInline.eot');
     src: url('Rex-BoldInline.eot?#iefix') format('embedded-opentype'),
         url('Rex-BoldInline.woff2') format('woff2'),
         url('Rex-BoldInline.woff') format('woff'),
-        url('Rex-BoldInline.ttf') format('truetype');
+        url('Rex-BoldInline.ttf') format('truetype'),
+        url('Rex-BoldInline.otf') format('opentype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Rex';
+    font-family: 'Rex',sans-serif;
     src: url('Rex-Bold.eot');
     src: url('Rex-Bold.eot?#iefix') format('embedded-opentype'),
         url('Rex-Bold.woff2') format('woff2'),
         url('Rex-Bold.woff') format('woff'),
-        url('Rex-Bold.ttf') format('truetype');
+        url('Rex-Bold.ttf') format('truetype'),
+        url('Rex-Bold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
@@ -61,5 +64,12 @@
         url('DINPro-Bold.ttf') format('truetype'),
         url('DINPro-Bold.svg#DINPro-Bold') format('svg');
     font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dited';
+    src: url('Dited.otf') format('opentype');
+    font-weight: normal;
     font-style: normal;
 }
