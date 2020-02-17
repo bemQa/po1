@@ -186,6 +186,12 @@ $(document).ready(function () {
             autoplay: true,
             autoplaySpeed: 5000
         });
+        $('.products-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+            $('.register-code-title').removeClass('black-title');
+            if($('.slick-active').hasClass('ag-slide') || $('.slick-active').hasClass('tuc-slide')) {
+                $('.register-code-title').addClass('black-title');
+            }
+        });
     }
 
     if($('.tm-slider').length) {
