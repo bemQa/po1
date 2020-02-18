@@ -455,7 +455,7 @@ body {
 body {
     margin: 0;
     color: #272727;
-    font: normal 16px/19px 'DIN Pro', sans-serif;
+    font: normal 16px/19px 'DINPro', sans-serif;
 }
 
 .wrapper {
@@ -497,7 +497,7 @@ footer {
 	margin: 0 auto 35px;
 	display: flex;
 	justify-content: space-between;
-	font-family: "DIN Pro";
+	font-family: "DINPro";
 	font-style: normal;
 	font-weight: 500;
 	font-size: 14px;
@@ -514,7 +514,7 @@ footer {
 }
 
 .copyright {
-	font-family: "DIN Pro";
+	font-family: "DINPro";
 	font-size: 11px;
 	line-height: 14px;
 	text-align: center;
@@ -1177,6 +1177,7 @@ span.error {
 
 .main-products .slick-dots li.slick-active {
 	transform: scale(1.1);
+	border-radius: 10px !important;
 	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.1);
 	z-index: 1;
 }
@@ -1225,6 +1226,7 @@ span.error {
 }
 
 .register-code-field {
+	position: relative;
 	max-width: 306px;
 	width: 100%;
 }
@@ -1455,11 +1457,13 @@ span.error {
 }
 
 .step-info {
+	min-height: 303px;
 	text-align: center;
 	margin-top: 40px;
 }
 
 .step-img {
+	height: 130px;
 	margin-bottom: 20px;
 }
 
@@ -1516,7 +1520,7 @@ span.error {
 }
 
 .step:nth-child(even) .step-num {
-	background: #E30613;
+	background: #B7151A;
 }
 
 .step:nth-child(1)::before {
@@ -1627,10 +1631,13 @@ span.error {
 }
 
 .main-prizes-line:first-child {
+	position: relative;
 	margin-bottom: 76px;
 }
 
 .main-prizes-title {
+	position: absolute;
+	left: 5%;
 	font-family: Rex;
 	font-weight: bold;
 	font-size: 211px;
@@ -1638,8 +1645,7 @@ span.error {
 	text-align: center;
 	letter-spacing: 0.05em;
 	color: #FCD45E;
-	min-width: 862px;
-    margin-right: 56px;
+    margin: auto;
 }
 
 .main-prize {
@@ -1656,6 +1662,15 @@ span.error {
 	justify-content: center;
 	margin-right: 56px;
 	transition: all .3s linear;
+}
+
+.main-prize.fake {
+	position: relative;
+	max-width: 400px;
+	width: 100%;
+	height: 370px;
+	background: none !important;
+	box-shadow: none !important;
 }
 
 .main-prize:last-child {
@@ -1687,6 +1702,7 @@ span.error {
 }
 
 .main-prize-img {
+	height: 146px;
 	margin-bottom: 20px;
 }
 
@@ -2099,12 +2115,1042 @@ span.error {
 	width: 100%;
 }
 
+@media (max-width: 1600px) {
+	.main-products .slick-dots {
+		left: 40px;
+	}
+
+	.register-code {
+	    flex-direction: column;
+	    bottom: 40px;
+	}
+
+	.register-code-title {
+	    text-align: center;
+    	margin-bottom: 20px;
+	}
+
+	.kv-block {
+		max-width: 500px;
+	}
+
+	.shops {
+		max-width: 1000px;
+	}
+
+	.ball-mini2 {
+		top: 5px;
+		left: 10px;
+	}
+
+	.ball-mini3 {
+		right: 0;
+	}
+
+	.ball-mini4 {
+		left: -30px;
+	}
+
+	.ball-mini5 {
+		right: -50px;
+	}
+
+	.ball-mini6 {
+		top: 5px;
+		left: 0;
+	}
+
+	.main-prizes-title {
+		left: 3%;
+	}
+
+	.main-prize-info {
+		padding: 0 20px;
+	}
+
+	.main-prize-title {
+	    max-width: 150px;
+	    width: 100%;
+	    min-height: 56px;
+	    margin: 0 auto 20px;
+	}
+
+	.main-prize-desc {
+		min-height: 72px;
+	}
+
+	.scoreboard-section::before {
+		right: 80%;
+		margin: 0;
+	}
+
+	.scoreboard-section::after {
+		left: 80%;
+		margin: 0;
+	}
+}
+
+@media (max-width: 1440px) {
+	.full-container {
+		padding: 0 40px;
+	}
+
+	.main-products,
+	.products-slider-wrapper,
+	.kv-block {
+	    height: 650px;
+	}
+
+	.product-slide .product-slide-img {
+		max-width: 90%;
+    	margin: 40px 0 10px auto;
+	}
+
+	.main-prizes-title {
+	    font-size: 180px;
+	}
+
+	.scoreboard-title {
+		max-width: 900px;
+	}
+
+	.scoreboard {
+		left: 100px;
+	    right: 0;
+	    margin: auto;
+		max-width: 1133px;
+		height: 645px;
+	}
+
+	.scoreboard-field {
+		max-width: 962px;
+	}
+
+	.scoreboard-field textarea {
+	    height: 210px;
+        margin: 60px 0 30px;
+	}
+}
+
+@media (max-width: 1280px) {
+	header,
+	.menu-links a {
+		height: 60px;
+	}
+
+	.menu-links a {
+		font-size: 16px;
+		padding: 22px 12px;
+	}
+
+	.menu-links .lk-link {
+	    padding: 22px 18px;
+	}
+
+	.main-action {
+	    top: -6px;
+	    left: 20px;
+	    width: 119px;
+	    height: 72px;
+	    background: url(../img/main-action-mob.svg);
+    	background-size: contain;
+	}
+
+	.main-ball {
+		width: 160px;
+	    height: 100px;
+	    background-size: contain;
+	    top: -25px;
+	    left: 70px;
+	}
+
+	.special-action {
+		flex-direction: column;
+	}
+
+	.special-action-title {
+		margin-bottom: 30px;
+	}
+
+	.shops {
+		max-width: 100%;
+	}
+
+	.shop {
+		text-align: center;
+	}
+
+	.steps-section {
+		min-height: 700px;
+	}
+
+	.step {
+		height: 400px;
+	    margin-right: 36px;
+	}
+
+	.step:nth-child(1)::before {
+		right: -170px;
+		width: 301px;
+    	height: 22px;
+	}
+
+	.step:nth-child(2)::before {
+		right: -170px;
+		width: 301px;
+    	height: 21px;
+	}
+
+	.step:nth-child(3)::before {
+		right: -170px;
+		width: 301px;
+    	height: 22px;
+	}
+
+	.step-num {
+		top: -20px;
+	    width: 100px;
+    	height: 64px;
+    	font-size: 46px;
+    	line-height: 64px;
+	}
+
+	.step-info {
+		margin-top: 30px;
+	}
+
+	.step-img {
+	    max-width: 100px;
+	    width: 100%;
+	    height: 110px;
+	    margin: 0 auto 20px;
+	}
+
+	.ball-mini1 {
+	    width: 80px;
+	    height: 80px;
+	    right: -15px;
+	}
+
+	.ball-mini2 {
+		width: 60px;
+	    height: 60px;
+	    top: 10px;
+	    left: -5px;
+	}
+
+	.ball-mini3 {
+		width: 70px;
+    	right: -10px;
+	}
+
+	.ball-mini4 {
+		width: 100px;
+    	height: 60px;
+	}
+
+	.ball-mini5 {
+	    width: 120px;
+	    height: 70px;
+	    right: -45px;
+	    top: 5px;
+	}
+
+	.ball-mini6 {
+		width: 65px;
+	    height: 65px;
+	    top: 10px;
+	}
+
+	.main-prizes-title {
+		font-size: 160px;
+	}
+
+	.main-prize {
+		margin-right: 36px;
+	}
+
+	.main-prize-info {
+	    padding: 0px 15px;
+	}
+
+	.main-prize-img {
+		max-width: 150px;
+	    width: 100%;
+        height: 137px;
+	    margin: 0 auto 20px;
+	}
+
+	.main-prize-desc {
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	.scoreboard-section {
+		min-height: 940px;
+	    padding: 100px 0 40px;
+	}
+
+	.scoreboard-title {
+		max-width: 600px;
+	}
+
+	.scoreboard-section::before {
+		left: -6%;
+		width: 276px;
+    	height: 756px;
+	}
+
+	.scoreboard-section::after {
+		width: 300px;
+    	height: 808px;
+	}
+
+	.scoreboard {
+	    left: 66px;
+	    max-width: 890px;
+	    height: 460px;
+	}
+
+	.scoreboard-field {
+	    max-width: 756px;
+        margin-bottom: 0;
+	}
+
+	.scoreboard-field textarea {
+	    height: 160px;
+    	margin: 30px 0;
+    	font-size: 30px;
+	}
+
+	.scoreboard-buttons {
+		left: -66px;
+	}
+
+	.scoreboard-messages {
+		bottom: 40px;
+	}
+
+	.slick-prev {
+		left: -60px;
+	}
+
+	.slick-next {
+	    right: -60px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.ball-mini1 {
+        width: 70px;
+	    height: 70px;
+	    top: 5px;
+	    right: -20px;
+	}
+
+	.ball-mini2 {
+		width: 50px;
+	    height: 50px;
+	    top: 20px;
+	    left: -10px;
+	}
+
+	.ball-mini3 {
+	    width: 60px;
+    	right: -15px;
+	}
+
+	.ball-mini4 {
+	    width: 90px;
+	    height: 50px;
+	    top: -40px;
+	}
+
+	.ball-mini5 {
+	    width: 110px;
+	}
+
+	.ball-mini6 {
+		width: 60px;
+	    height: 60px;
+	    top: 15px;
+	    left: -5px;
+	}
+}
+
 @media (max-width: 1000px) {
+	.full-container {
+		padding: 0 15px;
+	}
+
+	header {
+	    position: absolute;
+    	width: calc(100% - 30px);
+		margin: 24px auto 0;
+	}
+
+	header::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #D01319;
+		border-radius: 10px;
+		z-index: 0;
+	}
+
+	.burger {
+    	position: absolute;
+	    display: block;
+	    top: 0;
+	    right: 15px;
+	    bottom: 0;
+	    margin: auto;
+	    width: 40px;
+	    height: 40px;
+	    background: url(../img/burger.svg);
+	    transition: all .2s linear;
+	}
+
+	.burger.active {
+        width: 26px;
+        height: 26px;
+        background: url(../img/close-menu.svg);
+        transform: rotate(90deg);
+    }
+
+	.menu-links {
+		display: none;
+		flex-direction: column;
+	    position: absolute;
+	    top: 45px;
+	    left: 0;
+	    right: 0;
+	    width: 100%;
+	    min-height: 350px;
+	    margin: auto;
+	    padding: 40px 15px 20px;
+    	text-align: center;
+	    background: #B7151A;
+    	border-radius: 10px;
+	}
+
+	.menu-links.active {
+		display: flex;
+		z-index: -1;
+	}
+
+	.menu-links a {
+	    font-size: 21px;
+	    padding: 12px;
+	    height: auto;
+	}
+
+	.menu-links a.active {
+		color: #FEBD2C;
+    	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
+
+	.menu-links .lk-link {
+	    position: relative;
+	    margin-left: 0;
+	    margin-top: 24px;
+	    padding: 12px;
+	}
+
+	.menu-links .lk-link::before {
+		content: '';
+		position: absolute;
+		top: -12px;
+		left: 0;
+		right: 0;
+		max-width: 208px;
+	    width: 100%;
+	    height: 1px;
+	    margin: auto;
+		background: rgba(255, 255, 255, .3);
+	}
+
+	.products-slider-wrapper {
+		height: 625px;
+		border-radius: 0;
+	}
+
+	.main-products {
+		height: auto;
+		flex-direction: column;
+		width: calc(100% + 30px);
+    	left: -15px;
+    	margin-bottom: 40px;
+	}
+
+	.main-products .slick-dots {
+		max-width: 300px;
+		width: 100%;
+	    top: 130px;
+	    left: 0;
+	    right: 0;
+	    margin: auto;
+    	flex-direction: row;
+	}
+
+	.main-products .slick-dots li {
+		width: 60px;
+		height: 60px;
+	}
+
+	.main-products .slick-dots li:first-child {
+		border-top-left-radius: 10px;
+   		border-bottom-left-radius: 10px;
+   		border-top-right-radius: 0;
+   		border-bottom-right-radius: 0;
+	}
+
+	.main-products .slick-dots li:last-child {
+		border-top-left-radius: 0;
+   		border-bottom-left-radius: 0;
+	    border-top-right-radius: 10px;
+	    border-bottom-right-radius: 10px;
+	}
+
+	.main-products .slick-dots li:nth-child(1) {
+		background: url(../img/ag.png) center no-repeat, linear-gradient(0deg, rgba(243, 213, 78, 0.8), rgba(243, 213, 78, 0.8)), #FFFFFF;
+	    background-size: 46px;
+	}
+
+	.main-products .slick-dots li:nth-child(2) {
+		background: url(../img/oreo.png) center no-repeat, #2D4291;
+		background-size: 48px;
+	}
+
+	.main-products .slick-dots li:nth-child(3) {
+		background: url(../img/halls.png) center no-repeat, #00AFEF;
+		background-size: 54px;
+	}
+
+	.main-products .slick-dots li:nth-child(4) {
+		background: url(../img/tuc.png) center no-repeat, #FFEF13;
+		background-size: 58px;
+	}
+
+	.main-products .slick-dots li:nth-child(5) {
+		background: url(../img/dirol.png) center no-repeat, #003BAC;
+		background-size: 42px;
+	}
+
+	.product-slide .product-slide-img {
+		max-width: 380px;
+	    margin: 210px auto 0;
+	}
+
+	.register-code {
+		left: 0;
+	}
+
+	.kv-block {
+		max-width: 100%;
+		height: 486px;
+	}
+
+	.main-kv {
+	    max-width: 260px;
+	}
+
+	.main-players {
+		left: -75px;
+    	right: -25px;
+    	max-width: 540px;
+	}
+
+	.shops {
+	    flex-wrap: wrap;
+	}
+
+	.shop {
+		max-width: 50%;
+		margin-bottom: 40px;
+	}
+
+	.steps-section {
+		padding: 0 0 50px;
+	}
+
+	.steps {
+		flex-direction: column;
+	    margin: 0;
+	}
+
+	.step {
+		height: 370px;
+		margin: 0 auto 20px;
+	}
+
+	.step:last-child {
+		margin: 0 auto;
+	}
+
+	.step::before {
+		display: none;
+	}
+
+	.step-num {
+	    top: 15px;
+	    left: 15px;
+	    right: auto;
+	    width: 28px;
+	    height: 32px;
+	    font-size: 32px;
+	    line-height: 1;
+	    background: none !important;
+	    box-shadow: none;
+	}
+
+	.step:nth-child(odd) .step-num {
+		color: #E30613;
+	}
+
+	.step:nth-child(even) .step-num {
+		color: #B7151A;
+	}
+
+	.step-img {
+	    max-width: 110px;
+	    width: 100%;
+	    height: 120px;
+	}
+
+	.step-btn-wrap {
+		position: relative;
+		z-index: 1;
+	}
+
+	.ball1 {
+	    top: 300px;
+	    left: -15px;
+	    width: 87px;
+	    height: 140px;
+	    background: url(../img/ball1-bg-mob.svg) center no-repeat;
+	    background-size: cover;
+	}
+
+	.ball2 {
+	    top: 200px;
+	    left: auto;
+	    right: -15px;
+	    bottom: 0;
+	    width: 72px;
+	    height: 98px;
+	    background: url(../img/ball2-bg-mob.svg) center no-repeat;
+	    background-size: cover;
+	    transform: none;
+	    z-index: 1;
+	}
+
+	.ball3 {
+        top: auto;
+	    bottom: 200px;
+	    left: -15px;
+	    width: 91px;
+	    height: 140px;
+	    background: url(../img/ball3-bg-mob.svg) center no-repeat;
+	    background-size: cover;
+	    transform: none;
+	    z-index: 1;
+	}
+
+	.ball-mini1 {
+	    width: 120px;
+	    height: 120px;
+	    top: -20px;
+	    right: -55px;
+	}
+
+	.ball-mini2 {
+	    width: 80px;
+	    height: 80px;
+	    top: 100px;
+	    left: auto;
+	    right: -50px;
+	}
+
+	.ball-mini3 {
+	    width: 140px;
+	    height: 140px;
+	    top: auto;
+	    left: -90px;
+	    right: auto;
+	    bottom: -60px;
+	    z-index: 0;
+	}
+
+	.ball-mini4 {
+	    width: 60px;
+	    height: 60px;
+	    top: 200px;
+	    left: -25px;
+	}
+
+	.ball-mini5 {
+		display: none;
+	}
+
+	.ball-mini6 {
+		width: 160px;
+	    height: 160px;
+	    top: auto;
+	    left: auto;
+	    right: -80px;
+	    bottom: -80px;
+	}
+
+	.main-prizes {
+		padding: 48px 0;
+	}
+
+	.main-prizes-line {
+		flex-direction: column;
+	}
+
+	.main-prizes-line:first-child {
+		margin-bottom: 0;
+	}
+
+	.main-prizes-title {
+	    position: relative;
+    	font-size: 60px;
+	}
+
+	.main-prize.fake {
+		display: none;
+	}
+
+	.main-prize {
+		max-width: 300px;
+		margin: 32px auto;
+		height: auto;
+	    background: none;
+	    box-shadow: none !important;
+	}
+
+	.main-prize:last-child {
+		margin: 32px auto;
+	}
+
+	.main-prize-info {
+		padding: 0;
+	}
+
+	.main-prize-img {
+		height: auto;
+    	max-width: 100%;
+	    margin: 0 auto;
+	}
+
+	.main-prize-title {
+	    max-width: 100%;
+	    min-height: auto;
+	}
+
+	.main-prize-desc {
+		font-size: 16px;
+		line-height: 24px;
+		min-height: auto;
+	}
+
+	.main-prizes-link {
+		max-width: 225px;
+	}
+
+	.main-prizes-link a {
+		font-size: 32px;
+	    line-height: 38px;
+	    text-align: center;
+	}
+
+	.main-prizes-link a br {
+		display: none;
+	}
+
+	.cup1 {
+		width: 110px;
+		height: 165px;
+		top: 70px;
+		left: auto;
+    	right: 0;
+	    background: url(../img/cup1-mob.svg) center no-repeat;
+    	background-size: cover;
+	}
+
+	.cup2,
+	.cup5 {
+		display: none;
+	}
+
+	.cup3 {
+		width: 192px;
+		height: 379px;
+		top: 300px;
+		left: 0;
+    	right: auto;
+    	bottom: auto;
+	    background: url(../img/cup3-mob.svg) center no-repeat;
+    	background-size: cover;
+	}
+
+	.cup4 {
+		width: 101px;
+		height: 161px;
+		top: 0;
+	    left: auto;
+	    right: 0;
+	    bottom: 200px;
+	    background: url(../img/cup4-mob.svg) center no-repeat;
+    	background-size: cover;
+	}
+
+	.cup6 {
+		width: 221px;
+		height: 327px;
+		bottom: 400px;
+	    left: 0;
+	    right: auto;
+	    background: url(../img/cup6-mob.svg) center no-repeat;
+    	background-size: cover;
+	}
+
+	.cup7 {
+		width: 221px;
+		height: 327px;
+		top: auto;
+	    left: auto;
+	    right: 0;
+	    bottom: 0;
+	    background: url(../img/cup7-mob.svg) center no-repeat;
+    	background-size: cover;
+	}
+
+	.scoreboard-section {
+		padding: 50px 0 0;
+	}
+
+	.scoreboard-section::before {
+		top: -50px;
+		left: 0;
+		right: auto;
+		width: 78px;
+		height: 941px;
+		margin: auto;
+		background: url(../img/lightning-left-mob.svg) center no-repeat;
+		background-size: cover;
+	}
+
+	.scoreboard-section::after {
+		top: -20px;
+		left: auto;
+		right: 0;
+		width: 115px;
+		height: 918px;
+		margin: auto;
+		background: url(../img/lightning-right-mob.svg) center no-repeat;
+		background-size: cover;
+	}
+
+	.scoreboard-title {
+		max-width: 295px;
+		margin: 0 auto 30px;
+	}
+
+	.scoreboard-text {
+		max-width: 300px;
+    	width: 100%;
+	    font-size: 24px;
+	    line-height: 26px;
+	    letter-spacing: normal;
+	    margin: 0 auto 30px;
+	}
+
+	.scoreboard-text br {
+		display: none;
+	}
+
+	.scoreboard {
+		position: relative;
+	    left: 0;
+	    max-width: 360px;
+	    height: auto;
+	    background: url(../img/scoreboard-mob.png) center 0 no-repeat;
+	    background-size: contain;
+	}
+
+	.scoreboard::after {
+		content: '';
+		position: absolute;
+	    bottom: -211px;
+    	left: -3px;
+		width: 577px;
+		height: 256px;
+		background: url(../img/scoreboard-shadow-mob.png) center no-repeat;
+		background-size: contain;
+	}
+
+	.scoreboard-field {
+	    max-width: 360px;
+	    margin-bottom: 40px;
+	}
+
+	.scoreboard-field textarea {
+	    height: 275px;
+	    font-size: 32px;
+	}
+
+	.scoreboard-buttons {
+	    left: auto;
+	    flex-direction: column;
+	    max-width: 295px;
+	    z-index: 1;
+	}
+
+	.scoreboard-random-btn-wrap,
+	.scoreboard-btn-wrap {
+		max-width: 295px;
+	}
+
+	.scoreboard-random-btn-wrap {
+		margin-bottom: 20px;
+	}
+
+	.generate-random::after {
+		left: 45px;
+	}
+
+	.scoreboard-btn-wrap button::after {
+		left: 105px;
+	}
+
+	.scoreboard-container {
+		margin-bottom: 30px;
+		position: relative;
+    	z-index: 1;
+	}
+
+	.scoreboard-messages {
+		position: relative;
+		bottom: auto;
+	    height: auto;
+	    padding: 20px 0 40px;
+	}
+
+	#scroller {
+		flex-direction: column;
+    	margin: auto;
+	}
+
+	.scoreboard-message {
+		max-width: 340px;
+		width: 100%;
+		padding: 0 15px;
+	    margin: 32px auto;
+	}
+
+	.scoreboard-message::after {
+	    content: '';
+	    position: absolute;
+	    top: auto;
+	    bottom: -32px;
+	    left: 0;
+	    right: 0;
+	    width: 100%;
+	    height: 1px;
+	    margin: auto;
+	    background: rgba(255, 255, 255, .3);
+	}
+
+	.load-more {
+		position: relative;
+		font-family: Rex;
+		font-weight: bold;
+		font-size: 21px;
+		line-height: 1;
+		color: #FEBD2C;
+		width: 155px;
+		padding-left: 30px;
+    	margin: auto;
+	}
+
+	.load-more::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		width: 22px;
+		height: 22px;
+		background: url(../img/loader-icon.svg);
+	}
+
+	.main-tm {
+		height: auto;
+		padding: 50px 0;
+	}
+
+	.main-tm-title {
+	    max-width: 280px;
+		font-size: 30px;
+    	line-height: 36px;
+	    margin: 0 auto 30px;
+	}
+
+	.tm-slide {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.tm-slide-img {
+		max-width: 200px;
+		margin-bottom: 30px;
+	}
+
+	.tm-slide-desc {
+		max-width: 280px;
+		margin: 0 auto 30px;
+	}
+
+	.tm-btn-wrap {
+		max-width: 240px;
+	}
+
+	.tm-btn {
+	    height: 50px;
+	    padding: 14px 0;
+	}
+
+	.slick-prev {
+		left: 0;
+	}
+
+	.slick-next {
+		right: 0;
+	}
+
 	.footer-links {
 		flex-direction: column;
 		height: 98px;
 		margin: 0 auto 50px;
 	}
-	
+}
 
+@media (max-width: 375px) {
+	.scoreboard {
+		max-width: 290px;
+	}
+
+	.scoreboard::after {
+        bottom: -129px;
+	    width: 468px;
+	    height: 210px;
+	}
+
+	.scoreboard-field textarea {
+		height: 225px;
+	}
 }

@@ -4,13 +4,11 @@ $(document).ready(function () {
         (this.classList.contains("active") === true) ? this.classList.remove("active") : this.classList.add("active");
 
         $('.menu-links').toggleClass('active');
-        $('body').toggleClass('no-scrolling');
         $('body').on('click', function (e) {
             var div = $('.menu-links, .burger');
 
             if (!div.is(e.target) && div.has(e.target).length === 0) {
                 div.removeClass('active');
-                $('body').removeClass('no-scrolling');
             }
         });
     });
@@ -175,7 +173,7 @@ $(document).ready(function () {
     if($('.products-slider').length) {
         $('.products-slider').slick({
             dots: true,
-            arrow: false,
+            arrows: false,
             infinite: false,
             speed: 300,
             fade: true,
@@ -184,7 +182,15 @@ $(document).ready(function () {
             slidesToScroll: 1,
             verticalSwiping: true,
             autoplay: true,
-            autoplaySpeed: 5000
+            autoplaySpeed: 5000,
+            responsive: [
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        verticalSwiping: false
+                    }
+                }
+            ]
         });
         $('.products-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
             $('.register-code-title').removeClass('black-title');
@@ -197,7 +203,7 @@ $(document).ready(function () {
     if($('.tm-slider').length) {
         $('.tm-slider').slick({
             dots: false,
-            arrow: true,
+            arrows: true,
             infinite: false,
             speed: 300,
             fade: true,
@@ -207,7 +213,7 @@ $(document).ready(function () {
         });
     }
 
-    if($('.scoreboard-messages').length) {
+    if($('.scoreboard-messages').length && window.innerWidth > 1000) {
         $jScroller.add(".scoreboard-messages","#scroller","left",10, true);
 
         $jScroller.start();
