@@ -121,13 +121,16 @@ $(document).ready(function () {
 
         accordion.on('click', function () {
           var $this = $(this);
+          var $parent = $(this).parent();
           var content = $this.next();
 
           if (content.is(':visible')) {
             $this.removeClass('active');
+            $parent.removeClass('active');
             content.slideUp('fast');
           } else {
             $this.addClass('active');
+            $parent.addClass('active');
             content.slideDown('fast');
           }
 
