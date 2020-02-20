@@ -283,9 +283,9 @@ body .scroll-element.scroll-x .scroll-element_track {
 
 body .scroll-element.scroll-y {
     height: 100%;
-    right: 2px;
+    right: 10px;
     top: 0;
-    width: 8px;
+    width: 6px;
 }
 
 body .scroll-element .scroll-element_outer {
@@ -299,26 +299,26 @@ body .scroll-element .scroll-bar {
 }
 
 body .scroll-element .scroll-element_track {
-    background: #ebe7dd;
+    background: #D01319;
     left: 0;
-    width: 2px;
+    width: 6px;
 }
 
 body .scroll-element .scroll-bar {
-    height: 13px !important;
-    width: 13px;
-    background-color: #006A04;
-    box-shadow: 2px 2px 4px rgba(114, 117, 7, 0.3);
-    left: -6px;
+    height: 29px !important;
+    width: 29px;
+    background: url(../img/ball-scroll.svg);
+    box-shadow: none;
+    left: -11px;
     position: relative;
 }
 
 body .scroll-element:hover .scroll-bar {
-    background-color: #ed1e25;
+    
 }
 
 body .scroll-element.scroll-draggable .scroll-bar {
-    background-color: #ed1e25;
+    
 }
 
 body .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_track {
@@ -2172,7 +2172,6 @@ span.error {
 	margin-bottom: 80px;
 }
 
-/**/
 .faq-container {
     display: flex;
     justify-content: space-between;
@@ -2398,7 +2397,6 @@ span.error {
     background: #dedede;
     color: #272727;
 }
-/**/
 
 .feedback-form .input-field textarea {
 	height: 100px;
@@ -2406,6 +2404,171 @@ span.error {
 
 .feedback-form .btn-wrap {
 	margin-top: 30px;
+}
+
+.football-bg {
+	background: url(../img/football-bg.png) center 0 no-repeat, linear-gradient(360deg, #EBF7FF 0%, #E2F1FF 100%);
+	background-size: 1920px;
+}
+
+.winners-content {
+	margin-bottom: 120px;
+}
+
+.winners-container {
+    max-width: 888px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.date-filter {
+    position: relative;
+    max-width: 130px;
+    width: 100%;
+    padding-left: 35px;
+}
+
+.datepicker-here {
+	font-family: Rex;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    color: #0878CA;
+    width: 100%;
+    background: transparent;
+    border-bottom: 2px #0878CA dashed;
+}
+
+.date-filter::before {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 0;
+	bottom: 0;
+	width: 24px;
+	height: 24px;
+	background: url(../img/calendar-icon.svg);
+}
+
+.datepicker {
+	font-family: Rex;
+	font-weight: bold;
+	width: 200px;
+}
+
+.datepicker--day-name {
+	color: #D01319;
+}
+
+.datepicker--cell.-current- {
+	color: #0878CA;
+}
+
+.phone-filter {
+    max-width: 270px;
+    margin: 0;
+}
+
+.phone-filter input {
+    height: 50px;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.search {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    bottom: 0;
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    background: url(../img/search-icon.svg) center no-repeat;
+    background-size: cover;
+}
+
+input.error + .search {
+	right: 45px;
+}
+
+.winners {
+	max-width: 888px;
+    width: 100%;
+    margin: auto;
+    padding: 40px 40px 50px;
+    background: #FBFBFB;
+	box-shadow: 10px 10px 17px rgba(0, 14, 62, 0.11);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.table-wrapper {
+    max-width: 888px;
+    width: 100%;
+    max-height: 360px;
+    margin: auto;
+}
+
+.table-wrapper.scroll-content {
+    padding-right: 18px;
+}
+
+.winners-table {
+    margin-bottom: 50px;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+table tbody {
+	font-family: Montserrat;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 1.15;
+	color: #0878CA;
+    text-align: left;
+}
+
+table td {
+    padding: 16px 20px 16px 0;
+    min-width: 190px;
+}
+
+.prize-td {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+    font-weight: 600;
+}
+
+.winners-prize {
+    width: 42px;
+    height: 42px;
+    margin-right: 16px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.prize-td span {
+	max-width: 245px;
+	width: 100%;
+}
+
+.winners-btn-wrap {
+	max-width: 260px;
+	width: 100%;
+	margin: auto;
 }
 
 @media (max-width: 1600px) {
@@ -3515,6 +3678,82 @@ span.error {
 	.feedback-form {
 		max-width: 290px;
 	}
+
+	.winners-content {
+		margin-bottom: 70px;
+	}
+
+	.filters {
+		flex-direction: column;
+	}
+
+	.date-filter {
+		margin-bottom: 40px;
+	}
+
+	.phone-filter {
+		max-width: 300px;
+	}
+
+	.winners {
+		padding: 0 0 35px;
+	}
+
+	table tbody,
+	table tr {
+		display: flex;
+    	flex-direction: column;
+    	-ms-align-items: center;
+    	align-items: center;
+    	text-align: center;
+	}
+
+	table tr {
+		width: 100%;
+		padding: 25px 20px 30px;
+	}
+
+	table tr:nth-child(odd) {
+		background: #E7F4FF;
+	}
+
+	table td {
+	    padding: 0;
+	    min-width: 240px;
+	}
+
+	table td:nth-child(1) {
+		margin-bottom: 8px;
+	}
+
+	table td:nth-child(2) {
+    	margin-bottom: 15px;
+	}
+
+	table td:nth-child(2),
+	table td:nth-child(3) {
+		font-size: 14px;
+	}
+
+	.winners-prize {
+		width: 32px;
+		height: 32px;
+		margin-right: 10px;
+	}
+
+	.table-wrapper.scroll-content {
+		padding-right: 0;
+	}
+
+	.prize-td {
+	    justify-content: center;
+	}
+
+	.prize-td span {
+		max-width: 201px;
+    	width: auto;
+    	text-align: left;
+	}
 }
 
 @media (max-width: 375px) {
@@ -3536,5 +3775,9 @@ span.error {
 @media (max-width: 370px) {
 	.feedback-form {
 		max-width: 260px;
+	}
+
+	.logos {
+		max-width: 220px;
 	}
 }
