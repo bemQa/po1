@@ -118,8 +118,8 @@ $(document).ready(function () {
     checkValidate();
 
     function openAccordion() {
-        var wrap = $('.faq-wrap');
-        var accordion = wrap.find('.faq-title');
+        var wrap = $('.accordion-wrap');
+        var accordion = wrap.find('.accordion-title');
 
         accordion.on('click', function () {
           var $this = $(this);
