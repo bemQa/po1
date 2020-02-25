@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" href="css/jquery.scrollbar.css">
 	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/dropify.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<!--[if lte IE 9]>
     <script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
@@ -547,7 +548,7 @@
                     <form>
 						<div class="input-field">
                     		<div class="select">
-								<select name="theme" data-placeholder="Выбрать" required>
+								<select name="prize" data-placeholder="Выбрать" required>
 									<option value=""></option>
 									<option value="1">Приз 1</option>
 									<option value="2">Приз 2</option>
@@ -562,6 +563,164 @@
                 </div>
             </div>
 		</div>
+		<div id="get-prize-address" class="popup">
+			<div class="popup__wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11 1L1 11" stroke="#D20102" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M1 1L11 11" stroke="#D20102" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</a>
+                <div class="popup__inner">
+                	<div class="popup__title">получение приза</div>
+                	<div class="popup__desc">Заполните форму для получения <br>приза Почтой России</div>
+                    <form>
+                    	<div class="input-field">
+                    		<div class="pseudo-label">ФИО получателя</div>
+                    		<div class="pseudo-input">Корягин Николай Павлович</div>
+                    	</div>
+                    	<div class="input-field">
+                    		<div class="pseudo-label">Телефон получателя</div>
+                    		<div class="pseudo-input">+7 (999) 000-00-00</div>
+                    	</div>
+                    	<div class="input-field">
+                    		<div class="select">
+								<select name="region" class="select-search" data-placeholder="Регион" required>
+									<option value=""></option>
+									<option value="1">Приз 1</option>
+									<option value="2">Приз 2</option>
+									<option value="3">приз 3</option>
+								</select>
+							</div>
+                    	</div>
+                    	<div class="input-field">
+                    		<div class="select">
+								<select name="city" class="select-search" data-placeholder="Населенный пункт" required>
+									<option value=""></option>
+									<option value="1">Приз 1</option>
+									<option value="2">Приз 2</option>
+									<option value="3">приз 3</option>
+								</select>
+							</div>
+                    	</div>
+						<div class="input-field">
+                    		<div class="select">
+								<select name="street" class="select-search" data-placeholder="Улица" required>
+									<option value=""></option>
+									<option value="1">Приз 1</option>
+									<option value="2">Приз 2</option>
+									<option value="3">приз 3</option>
+								</select>
+							</div>
+                    	</div>
+                    	<div class="input-field-double">
+                    		<div class="input-field">
+	                    		<div class="select">
+									<select name="house" class="select-search" data-placeholder="Дом" required>
+										<option value=""></option>
+										<option value="1">Приз 1</option>
+										<option value="2">Приз 2</option>
+										<option value="3">приз 3</option>
+									</select>
+								</div>
+	                    	</div>
+	                    	<div class="input-field">
+	                    		<input type="text" name="flat" placeholder="Квартира" required>
+	                    	</div>
+                    	</div>
+                    	<div class="btn-wrap">
+	                		<button class="btn">подтвердить</button>
+	                	</div>
+					</form>
+                </div>
+            </div>
+		</div>
+		<div id="get-prize-address-confirm" class="popup">
+			<div class="popup__wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11 1L1 11" stroke="#D20102" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M1 1L11 11" stroke="#D20102" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</a>
+                <div class="popup__inner">
+                	<div class="popup__title">Спасибо!</div>
+                	<div class="popup__desc">Ваш приз будет доставлен <br>по адресу:</div>
+                    <div class="prize-address">000000, Москва, г. Москва, ул. Московская, д. 24/4, кв. 25</div>
+                    <div class="prize-status">Следить за статусом доставки можно в <a href="lk.html" class="link">Личном кабинете.</a></div>
+                    <div class="btn-wrap">
+                		<a href="#!" class="btn pop-op" data-popup="get-prize-pd">подтвердить</a>
+                	</div>
+                </div>
+            </div>
+		</div>
+		<div id="get-prize-pd" class="popup">
+			<div class="popup__wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11 1L1 11" stroke="#D20102" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M1 1L11 11" stroke="#D20102" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</a>
+                <div class="popup__inner">
+                	<div class="popup__title">твои данные</div>
+                	<div class="popup__desc">По законодательству для получения выигрыша требуются паспортные данные и ИНН. Внимательно заполни форму:</div>
+                    <form>
+                    	<div class="input-field">
+                    		<div class="pseudo-label">ФИО</div>
+                    		<div class="pseudo-input">Корягин Николай Павлович</div>
+                    	</div>
+                    	<div class="input-field">
+                    		<input type="text" name="birthday" placeholder="дата рождения (дд.мм.гггг)" required>
+                    	</div>
+                    	<div class="pd-title">Данные паспорта</div>
+                    	<div class="input-field-double">
+                    		<div class="input-field">
+	                    		<input type="text" name="p-series" placeholder="серия" required>
+	                    	</div>
+	                    	<div class="input-field">
+	                    		<input type="text" name="p-number" placeholder="номер" required>
+	                    	</div>
+                    	</div>
+                    	<div class="input-field">
+                    		<input type="text" name="p-date" placeholder="дата выдачи (дд.мм.гггг)" required>
+                    	</div>
+						<div class="input-field">
+                    		<input type="text" name="p-issued" placeholder="кем выдан" required>
+                    	</div>
+                    	<div class="input-field">
+                    		<input type="text" name="p-registration" placeholder="прописка (как в паспорте)" required>
+                    	</div>
+                    	<div class="pd-title">ИНН</div>
+                    	<div class="input-field">
+                    		<input type="text" name="inn" placeholder="инн (12 цифр)" required>
+                    	</div>
+                    	<div class="pd-title">Фотографии или сканы</div>
+                    	<div class="upload-wrap">
+			                <div class="upload">
+			                    <input type="file" name="p-photo1" class="dropify" data-dpf="1" data-height="64" />
+			                </div>
+			                <div class="upload-text">Паспорт, разворот с фотографией</div>
+			            </div>
+			            <div class="upload-wrap">
+			                <div class="upload">
+			                    <input type="file" name="p-photo2" class="dropify" data-dpf="1" data-height="64" />
+			                </div>
+			                <div class="upload-text">Паспорт, разворот с пропиской</div>
+			            </div>
+			            <div class="upload-wrap">
+			                <div class="upload">
+			                    <input type="file" name="inn-photo" class="dropify" data-dpf="1" data-height="64" />
+			                </div>
+			                <div class="upload-text">ИНН</div>
+			            </div>
+                    	<div class="btn-wrap">
+	                		<button class="btn">отправить</button>
+	                	</div>
+					</form>
+                </div>
+            </div>
+		</div>
 		<div id="rejected-check" class="popup">
 			<div class="popup__wrap">
 				<a href="#!" class="close-popup js-close-popup">
@@ -571,9 +730,10 @@
 					</svg>
 				</a>
                 <div class="popup__inner">
-                    <div class="popup__desc">Чек недействителен</div>
+                	<div class="popup__title">Чек отклонен</div>
+                    <div class="popup__desc-big">Этот чек уже был загружен ранее. Один чек можно загружать один раз.</div>
                     <div class="btn-wrap">
-                		<a href="#!" class="btn js-close-popup">закрыть</a>
+                		<a href="#!" class="btn js-close-popup">понятно</a>
                 	</div>
                 </div>
             </div>
@@ -586,6 +746,7 @@
 	<script src="js/jquery.countdown.min.js"></script>
 	<script src="js/select2.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/dropify.min.js"></script>
 	<script src="js/jscroller-0.4.js"></script>
 	<!-- fix outdated libs jquery -->
 	<script type="text/javascript">

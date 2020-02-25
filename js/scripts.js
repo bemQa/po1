@@ -140,10 +140,25 @@ $(document).ready(function () {
     }
     openAccordion();
 
-    $('select').select2({
-        minimumResultsForSearch: Infinity,
-        dropdownParent: $('.select')
-    });
+    if($('.select').length > 1) {
+        var parent = $('select').not('.select-search').parents('.select');
+        $('select').not('.select-search').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownParent: parent
+        });
+        $('.select-search').each(function() {
+            let $this = $(this);
+            let parent = $(this).parents('.select');
+            $this.select2({
+                dropdownParent: parent
+            });
+        });
+    } else {
+        $('select').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownParent: $('.select')
+        });
+    }
 
     function formatDate(date) {
         var dd = date.getDate();
@@ -250,5 +265,27 @@ $(document).ready(function () {
         $(this).addClass('active');
         $('.tab-item').removeClass('active');
         $('.tab-item.' + tab).addClass('active');
+    });
+
+    if($('.dropify').length) {
+        $('.dropify').dropify({
+            tpl: {
+                clearButton: '<button type="button" class="dropify-clear"><img src="img/delete.svg"></button>'
+            }
+        });
+    }
+
+    $('#get-prize button').click(function(e) {
+        e.preventDefault();
+        if($('#get-prize form').valid()) {
+            OpenPopup('get-prize-address');
+        }
+    });
+
+    $('#get-prize-address button').click(function(e) {
+        e.preventDefault();
+        if($('#get-prize-address form').valid()) {
+            OpenPopup('get-prize-address-confirm');
+        }
     });
 });

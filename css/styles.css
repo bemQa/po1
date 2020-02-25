@@ -753,6 +753,15 @@ header {
     margin: 0 auto 30px;
 }
 
+.popup__desc-big {
+	font-family: Montserrat;
+	font-size: 24px;
+	line-height: 29px;
+	text-align: center;
+	color: #272727;
+    margin: 0 auto 30px;
+}
+
 .popup__title + .popup__desc {
 	margin: 30px auto;
 }
@@ -2328,12 +2337,21 @@ span.error {
     /*margin: 10px auto;*/
 }
 
+.select::focus {
+	position: relative;
+	z-index: 3;
+}
+
 .select select {
     width: 100%;
 }
 
 .select2 {
     z-index: 2;
+}
+
+.select2.select2-container--open {
+	z-index: 4;
 }
 
 .select2-container span {
@@ -2406,7 +2424,7 @@ span.error {
 .select2-container--open .select2-dropdown--below {
     padding-top: 30px;
     top: -30px;
-    z-index: 1;
+    z-index: 3;
 }
 
 .select2-results__options {
@@ -2587,11 +2605,20 @@ table td {
 }
 
 .winners-prize {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
     width: 42px;
     height: 42px;
     margin-right: 16px;
     border-radius: 10px;
     overflow: hidden;
+    background: #FEBD2C;
+}
+
+.winners-prize img {
+	max-width: 32px;
 }
 
 .prize-td span {
@@ -3442,6 +3469,157 @@ table td {
 	font-family: Montserrat;
 	font-weight: 600;
 	color: #D01319;
+}
+
+.select2-container--default .select2-search--dropdown .select2-search__field {
+	height: 40px;
+}
+
+.input-field-double {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto 15px;
+}
+
+.input-field-double .input-field {
+	width: 48%;
+	margin: 0;
+}
+
+.prize-address {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	text-transform: uppercase;
+	color: #0280DB;
+	margin-bottom: 40px;
+}
+
+.prize-status {
+	font-family: Montserrat;
+	font-weight: normal;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.prize-status a {
+	color: #0280DB;
+}
+
+.pseudo-label {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	color: #0280DB;
+	opacity: 0.5;
+	text-align: left;
+}
+
+.pseudo-input {
+	font-family: Montserrat;
+	font-weight: normal;
+	font-size: 21px;
+	line-height: 26px;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+.pd-title {
+	font-family: Montserrat;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	opacity: 0.5;
+	margin: 30px auto 15px;
+}
+
+.upload-wrap {
+	display: flex;
+    align-items: center;
+    margin: 0 auto 15px;
+    position: relative;
+}
+
+.upload {
+	width: 64px;
+	margin-right: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.upload-text {
+	width: 120px;
+	font-family: Rex;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 21px;
+	color: #0878CA;
+	text-align: left;
+}
+
+.upload .dropify-wrapper,
+.upload .dropify-wrapper .dropify-preview {
+	padding: 0;
+	border: 0;
+	width: 64px;
+}
+
+.upload .dropify-wrapper.touch-fallback {
+	height: 64px !important;
+}
+
+.upload .dropify-wrapper .dropify-preview .dropify-infos {
+	display: none;
+}
+
+.upload .dropify-clear {
+	top: 0;
+    left: auto;
+    right: 0;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    border: 0;
+}
+
+.upload .dropify-wrapper.touch-fallback .dropify-clear {
+	bottom: inherit;
+}
+
+.upload .dropify-wrapper:hover .dropify-clear {
+	background: #D01319;
+	border-radius: 4px;
+}
+
+.upload .dropify-wrapper .dropify-message p {
+	display: none;
+}
+
+.upload .dropify-wrapper .dropify-message span.file-icon::before {
+	content: '';
+	background: url(../img/camera.svg) center no-repeat #fff;
+	background-size: 31px;
+    width: 64px;
+    height: 64px;
+    display: block;
+    margin: 0;
+}
+
+.upload .dropify-wrapper.touch-fallback .dropify-message {
+	padding: 0;
+    top: 0;
+    transform: none;
+}
+
+.upload .dropify-wrapper.touch-fallback .dropify-preview .dropify-render {
+	display: initial;
+}
+
+.upload .dropify-wrapper.touch-fallback .dropify-preview .dropify-render img {
+	-webkit-transform: translate(0,-50%);
+    transform: translate(0,-50%);
 }
 
 @media (max-width: 1600px) {
