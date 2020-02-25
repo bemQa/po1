@@ -4945,6 +4945,10 @@ table td {
 		margin-right: 10px;
 	}
 
+	.winners-prize img {
+		max-width: 24px;
+	}
+
 	.table-wrapper.scroll-content {
 		padding-right: 0;
 	}
