@@ -243,4 +243,12 @@ $(document).ready(function () {
 
         $jScroller.start();
     }
+
+    $('.tab-trigger').click(function(){
+        var tab = $(this).data('tab');
+        $('.tab').removeClass('active');
+        $(this).addClass('active');
+        $('.tab-item').removeClass('active');
+        $('.tab-item.' + tab).addClass('active');
+    });
 });
