@@ -3167,6 +3167,7 @@ table td {
 
 .lk-cards {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .lk-card {
@@ -3437,6 +3438,12 @@ table td {
 	margin-bottom: 30px;
 }
 
+.rejected-check {
+	font-family: Montserrat;
+	font-weight: 600;
+	color: #D01319;
+}
+
 @media (max-width: 1600px) {
 	.main-products .slick-dots {
 		left: 40px;
@@ -3510,6 +3517,11 @@ table td {
 		left: 80%;
 		margin: 0;
 	}
+
+	.lk-card,
+	.lk-code.big-btn {
+	    max-width: 425px;
+	}
 }
 
 @media (max-width: 1440px) {
@@ -3551,6 +3563,15 @@ table td {
 	.scoreboard-field textarea {
 	    height: 210px;
         margin: 60px 0 30px;
+	}
+
+	.lk-container {
+		max-width: 1200px;
+	}
+
+	.lk-card,
+	.lk-code.big-btn {
+        max-width: 384px;
 	}
 }
 
@@ -3807,14 +3828,16 @@ table td {
 	}
 
 	.lk-cards {
-		flex-wrap: wrap;
 		justify-content: center;
+		max-width: 750px;
+		margin: auto;
 	}
 
 	.lk-card {
 		max-width: 340px;
 		padding: 24px;
 		height: 170px;
+		margin: 0 auto 24px;
 	}
 
 	.lk-card-fields:nth-child(1) {
@@ -3845,6 +3868,11 @@ table td {
 		font-size: 24px;
 		height: 170px;
 		padding: 73px 0;
+		margin: 0 auto 24px;
+	}
+
+	.lk-card:nth-child(3n) {
+		margin-right: auto;
 	}
 
 	.lk-card-field,
@@ -5008,10 +5036,6 @@ table td {
 		flex-direction: column;
     	-ms-align-items: center;
     	align-items: center;
-	}
-
-	.lk-card {
-		margin-right: 0;
 	}
 }
 
