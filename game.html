@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PO1</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/jquery.scrollbar.css">
+	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/dropify.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<!--[if lte IE 9]>
+    <script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div class="wrapper map-bg">
+		<div class="content">
+			<a href="lk.html" class="close-game"><img src="img/close-game.svg" alt=""></a>
+			<div class="coins-count game-count">3</div>
+			<div class="container">
+				<div class="map">
+					<div class="road road1"></div>
+					<div class="road road2"></div>
+					<div class="road road3"></div>
+					<div class="stadium-wrapper stadium1-wrapper">
+						<div class="stadium-num">01</div>
+						<a href="#!" class="stadium stadium1 pop-op" data-popup="stadium1">
+							<div class="progress-bar-wrapper">
+								<span>2/3</span>
+								<div class="progress-bar" style="width: 80%"></div>
+							</div>
+						</a>
+					</div>
+					<div class="stadium-wrapper stadium2-wrapper">
+						<div class="stadium-num">02</div>
+						<a href="#!" class="stadium stadium2 disabled pop-op" data-popup="stadium2">
+							<div class="progress-bar-wrapper">
+								<span>2/5</span>
+								<div class="progress-bar" style="width: 30%"></div>
+							</div>
+						</a>
+					</div>
+					<div class="stadium-wrapper stadium3-wrapper">
+						<div class="stadium-num">03</div>
+						<a href="#!" class="stadium stadium3 disabled pop-op" data-popup="stadium3">
+							<div class="progress-bar-wrapper">
+								<span>2/10</span>
+								<div class="progress-bar" style="width: 20%"></div>
+							</div>
+						</a>
+					</div>
+					<div class="stadium-wrapper stadium4-wrapper">
+						<div class="stadium-num">04</div>
+						<a href="#!" class="stadium stadium4 disabled pop-op" data-popup="stadium4">
+							<div class="progress-bar-wrapper">
+								<span>2/15</span>
+								<div class="progress-bar" style="width: 10%"></div>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="game">
+					<div class="ingame-stadium">
+						<div class="ingame-stadium-name">стадион 1 уровня</div>
+						<div class="ingame-text">Выбери одно из направлений <br>удара чтобы забить гол</div>
+					</div>
+					<div class="goal">
+						<div class="goalkeeper"></div>
+						<a href="#!" class="target target1" data-target="1"></a>
+						<a href="#!" class="target target2" data-target="2"></a>
+						<a href="#!" class="target target3" data-target="3"></a>
+						<a href="#!" class="target target4" data-target="4"></a>
+						<a href="#!" class="target target5" data-target="5"></a>
+					</div>
+					<div class="ingame-ball">
+						<img src="img/game/ball.png" alt="">
+					</div>
+					<div class="ellipse">
+						<img src="img/game/ellipse.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="overlay-attr"></div>
+			<img src="img/game/arrs.svg" class="hidden-line hidden-line1" alt="">
+			<div class="hidden-title hidden-title1">Это твои доступные<br><b>Фут-коины</b></div>
+			<img src="img/game/arrs.svg" class="hidden-line hidden-line2" alt="">
+			<div class="hidden-title hidden-title2"><b>Открывай стадионы,</b><br>чтобы выигрывать призы</div>
+		</div>
+	</div>
+	<div class="popups">
+		<div id="stadium1" class="popup preload-popup">
+			<div class="popup__wrap">
+                <div class="popup__inner">
+                	<div class="popup__title">Стадион 1 уровня</div>
+                	<div class="stadium-prizes-wrapper">
+                		<div class="stadium-prizes-text">Возможные призы</div>
+                		<div class="stadium-prizes stadium-prizes2"><!-- stadium-prizes3, stadium-prizes4, stadium-prizes5, stadium-prizes6, stadium-prizes7, stadium-prizes8, stadium-prizes9 -->
+                			<div class="stadium-prize">
+                				<img src="img/prizes/25.png" alt="">
+                			</div>
+                			<div class="stadium-prize">
+                				<img src="img/prizes/litres.png" alt="">
+                			</div>
+                		</div>
+                	</div>
+                	<div class="prize-cost">Стоимость игры</div>
+                	<div class="popup-coin-text"><span class="coin-count">3</span></div>
+                    <div class="prize-status">Ты точно хочешь <br>потратить Фут-коины <br>чтобы войти <br>на стадион?</div>
+                    <div class="btn-wrap popup-prize-btn-wrap">
+                		<a href="#!" class="btn pop-op popup-prize-btn ingame-btn" data-stadium="стадион 1 уровня123">играть</a>
+                	</div>
+                	<a href="#!" class="back-game-link js-close-popup">Вернуться на карту</a>
+                </div>
+            </div>
+		</div>
+		<div id="stadium2" class="popup preload-popup">
+			<div class="popup__wrap">
+                <div class="popup__inner">
+                	<div class="popup__title">Стадион 2 уровня</div>
+                	<div class="stadium-prizes-wrapper">
+                		<div class="stadium-prizes-text">Возможные призы</div>
+                		<div class="stadium-prizes stadium-prizes2"><!-- stadium-prizes3, stadium-prizes4, stadium-prizes5, stadium-prizes6, stadium-prizes7, stadium-prizes8, stadium-prizes9 -->
+                			<div class="stadium-prize">
+                				<img src="img/prizes/25.png" alt="">
+                			</div>
+                			<div class="stadium-prize">
+                				<img src="img/prizes/litres.png" alt="">
+                			</div>
+                		</div>
+                	</div>
+                	<div class="prize-cost">Стоимость игры</div>
+                	<div class="popup-coin-text"><span class="coin-count">3</span></div>
+                    <div class="prize-status">Ты точно хочешь <br>потратить Фут-коины <br>чтобы войти <br>на стадион?</div>
+                    <div class="btn-wrap popup-prize-btn-wrap">
+                		<a href="#!" class="btn pop-op popup-prize-btn ingame-btn" data-stadium="стадион 2 уровня">играть</a>
+                	</div>
+                	<a href="#!" class="back-game-link js-close-popup">Вернуться на карту</a>
+                </div>
+            </div>
+		</div>
+		<div id="stadium3" class="popup preload-popup">
+			<div class="popup__wrap">
+                <div class="popup__inner">
+                	<div class="popup__title">Стадион 3 уровня</div>
+                	<div class="stadium-prizes-wrapper">
+                		<div class="stadium-prizes-text">Возможные призы</div>
+                		<div class="stadium-prizes stadium-prizes2"><!-- stadium-prizes3, stadium-prizes4, stadium-prizes5, stadium-prizes6, stadium-prizes7, stadium-prizes8, stadium-prizes9 -->
+                			<div class="stadium-prize">
+                				<img src="img/prizes/25.png" alt="">
+                			</div>
+                			<div class="stadium-prize">
+                				<img src="img/prizes/litres.png" alt="">
+                			</div>
+                		</div>
+                	</div>
+                	<div class="prize-cost">Стоимость игры</div>
+                	<div class="popup-coin-text"><span class="coin-count">3</span></div>
+                    <div class="prize-status">Ты точно хочешь <br>потратить Фут-коины <br>чтобы войти <br>на стадион?</div>
+                    <div class="btn-wrap popup-prize-btn-wrap">
+                		<a href="#!" class="btn pop-op popup-prize-btn ingame-btn" data-stadium="стадион 3 уровня">играть</a>
+                	</div>
+                	<a href="#!" class="back-game-link js-close-popup">Вернуться на карту</a>
+                </div>
+            </div>
+		</div>
+		<div id="stadium4" class="popup preload-popup">
+			<div class="popup__wrap">
+                <div class="popup__inner">
+                	<div class="popup__title">Стадион 4 уровня</div>
+                	<div class="stadium-prizes-wrapper">
+                		<div class="stadium-prizes-text">Возможные призы</div>
+                		<div class="stadium-prizes stadium-prizes2"><!-- stadium-prizes3, stadium-prizes4, stadium-prizes5, stadium-prizes6, stadium-prizes7, stadium-prizes8, stadium-prizes9 -->
+                			<div class="stadium-prize">
+                				<img src="img/prizes/25.png" alt="">
+                			</div>
+                			<div class="stadium-prize">
+                				<img src="img/prizes/litres.png" alt="">
+                			</div>
+                		</div>
+                	</div>
+                	<div class="prize-cost">Стоимость игры</div>
+                	<div class="popup-coin-text"><span class="coin-count">3</span></div>
+                    <div class="prize-status">Ты точно хочешь <br>потратить Фут-коины <br>чтобы войти <br>на стадион?</div>
+                    <div class="btn-wrap popup-prize-btn-wrap">
+                		<a href="#!" class="btn pop-op popup-prize-btn ingame-btn" data-stadium="стадион 4 уровня">играть</a>
+                	</div>
+                	<a href="#!" class="back-game-link js-close-popup">Вернуться на карту</a>
+                </div>
+            </div>
+		</div>
+		<div id="goal" class="popup goal-popup">
+			<div class="popup__wrap">
+				<img src="img/game/g.svg" class="g-o-a-l g" alt="">
+				<img src="img/game/o-red.svg" class="g-o-a-l o-red" alt="">
+				<img src="img/game/o-blue.svg" class="g-o-a-l o-blue" alt="">
+				<img src="img/game/o-red.svg" class="g-o-a-l o-red" alt="">
+				<img src="img/game/o-blue.svg" class="g-o-a-l o-blue" alt="">
+				<img src="img/game/o-red.svg" class="g-o-a-l o-red" alt="">
+				<img src="img/game/l.svg" class="g-o-a-l l" alt="">
+				<img src="img/game/!-red.svg" class="g-o-a-l i-red" alt="">
+				<img src="img/game/!-blue.svg" class="g-o-a-l i-blue" alt="">
+				<img src="img/game/!-red.svg" class="g-o-a-l i-red" alt="">
+
+				<img src="img/game/ef1.png" class="ef ef1" alt="">
+				<img src="img/game/ef2.png" class="ef ef2" alt="">
+				<img src="img/game/ef3.png" class="ef ef3" alt="">
+				<img src="img/game/ef4.png" class="ef ef4" alt="">
+				<img src="img/game/ef5.png" class="ef ef5" alt="">
+				<img src="img/game/ef6.png" class="ef ef6" alt="">
+				<img src="img/game/ef7.png" class="ef ef7" alt="">
+				<img src="img/game/ef8.png" class="ef ef8" alt="">
+				<img src="img/game/ef9.png" class="ef ef9" alt="">
+				<img src="img/game/ef10.png" class="ef ef10" alt="">
+			</div>
+		</div>
+		<div id="prize" class="popup">
+			<div class="popup__wrap">
+				<a href="#!" class="close-popup js-close-popup">
+					<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11 1L1 11" stroke="#D20102" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						<path d="M1 1L11 11" stroke="#D20102" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+				</a>
+                <div class="popup__inner">
+                	<div class="popup-ingame-prize">
+                		<img src="img/prizes/gift.png" alt="">
+                	</div>
+                	<div class="popup-ingame-title">Поздравляем!</div>
+                    <div class="popup__desc-big">
+                    	Ты выиграл приз! <br><br>
+						Ты можешь выбрать его<br>
+						в Личном кабинете
+                    </div>
+                    <div class="btn-wrap">
+                		<a href="lk.html" class="btn">забрать приз</a>
+                	</div>
+                </div>
+            </div>
+		</div>
+	</div>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery.scrollbar.min.js"></script>
+	<script src="js/jquery.inputmask.bundle.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.countdown.min.js"></script>
+	<script src="js/select2.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/dropify.min.js"></script>
+	<script src="js/jscroller-0.4.js"></script>
+	<!-- fix outdated libs jquery -->
+	<script type="text/javascript">
+	    jQuery.browser = {};
+	    (function () {
+	        jQuery.browser.msie = false;
+	        jQuery.browser.version = 0;
+	        if (navigator.userAgent.match(/MSIE ([0-9]+)\./)) {
+	            jQuery.browser.msie = true;
+	            jQuery.browser.version = RegExp.$1;
+	        }
+	    })();
+	</script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

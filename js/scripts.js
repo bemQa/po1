@@ -48,6 +48,12 @@ $(document).ready(function () {
     }
     closePopup();
 
+    function clickClosePopup(popupId) {
+        popupId = '#' + popupId;
+        $(popupId).removeClass('js-popup-show');
+        $('body').removeClass('no-scrolling');
+    }
+
     $('.email-form .js-submit').click(function(e){
         e.preventDefault();
         OpenPopup("email-confirm");
@@ -287,5 +293,42 @@ $(document).ready(function () {
         if($('#get-prize-address form').valid()) {
             OpenPopup('get-prize-address-confirm');
         }
+    });
+
+    if($('.map').length) {
+        $('.overlay-attr, .hidden-title, .hidden-line, .road, .stadium').addClass('overlay');
+
+        $('body').on('click', function (e) {
+            var div = $('.hidden-btn, .game-about');
+
+            if (!div.is(e.target) && div.has(e.target).length === 0) {
+                $('.overlay-attr, .hidden-title, .hidden-line, .road, .stadium').removeClass('overlay');
+            }
+        });
+    }
+
+    $('.ingame-btn').click(function(e) {
+        e.preventDefault();
+        var stadium_text = $(this).data('stadium');
+        $('.ingame-stadium-name').text(stadium_text);
+        $('.map-bg, .map, .game').addClass('ingame');
+    });
+
+    $('.target').click(function(e){
+        var target = $(this).data('target');
+        $(this).addClass('active');
+        $('.target').addClass('disabled');
+        $('.ingame-ball').addClass('active target'+target);
+        setTimeout(function(){
+            $('.ingame-ball').removeClass('active');
+        },700);
+        $('.goalkeeper').addClass('active target'+target);
+        setTimeout(function(){
+            OpenPopup('goal');
+        },1500);
+        setTimeout(function(){
+            clickClosePopup('goal');
+            OpenPopup('prize');
+        },4000);
     });
 });
