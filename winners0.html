@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" href="css/jquery.scrollbar.css">
 	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/datepicker.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<!--[if lte IE 9]>
     <script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
@@ -18,7 +19,7 @@
     <![endif]-->
 </head>
 <body>
-	<div class="wrapper stadium-bg">
+	<div class="wrapper football-bg">
 		<div class="content">
 			<div class="full-container">
 				<header>
@@ -46,109 +47,19 @@
 							<a href="prizes.html">Призы</a>
 							<a href="how-to-win.html">Как выиграть?</a>
 							<a href="products.html">Продукты</a>
-							<a href="winners.html">Победители</a>
-							<a href="faq.html" class="active">Вопрос-ответ</a>
+							<a href="winners.html" class="active">Победители</a>
+							<a href="faq.html">Вопрос-ответ</a>
 							<a href="lk.html" class="lk-link pop-op" data-popup="auth">Личный кабинет</a>
 						</nav>
 					</div>
 				</header>
-				<div class="page-title">
+				<div class="page-title winners0">
 					<div class="page-title-img">
-						<img src="img/faq-icon.svg" alt="">
+						<img src="img/winners-icon.svg" alt="">
 					</div>
-					<div class="page-title-text">вопрос-ответ</div>
+					<div class="page-title-text">победители</div>
+					<div class="winners0-text">Первые победители будут <br>опубликованы 2 марта.</div>
 				</div>
-				<section class="inner-content faq-content">
-					<div class="faq-container">
-						<div class="faq-wrap accordion-wrap">
-							<div class="faq-item">
-								<div class="faq-title accordion-title">Какие сроки проведения акции?</div>
-								<div class="faq-text">Срок проведения акции с 00:00:00 часов «01» февраля 2020 года по 23:59:59 часов «30» апреля 2020 года (включительно). <br>Срок приобретения продукта и регистрации карт лояльности: с 00:00:00 часов «01» февраля 2020 года по 23:59:59 часов «31» марта 2020 года (включительно).</div>
-							</div>
-							<div class="faq-item">
-								<div class="faq-title accordion-title">Что необходимо сделать, чтобы принять участие в акции?</div>
-								<div class="faq-text">Купить 2 упаковки «Юбилейное» или 1 упаковку «Юбилейное Злаковое» в любом магазине сети «Пятерочка» на территории РФ и зарегистрировать Номер карты лояльности на интернет-сайте пятёрочка.юбилейное.рф</div>
-							</div>
-							<div class="faq-item">
-								<div class="faq-title accordion-title">Какая продукция участвует в акции?</div>
-								<div class="faq-text">В акции участвует вся продукция под товарным знаком «Юбилейное». Подробную информацию смотрите в полных Правилах Акции.</div>
-							</div>
-							<div class="faq-item">
-								<div class="faq-title accordion-title">В каких магазинах можно купить товар?</div>
-								<div class="faq-text">Во всех магазинах сетей «Пятерочка» на территории РФ.</div>
-							</div>
-							<div class="faq-item">
-								<div class="faq-title accordion-title">Кто может принимать участие в акции?</div>
-								<div class="faq-text">К участию допускаются совершеннолетние дееспособные лица, являющиеся гражданами Российской Федерации, постоянно проживающие на территории Российской Федерации.</div>
-							</div>
-							<div class="faq-item">
-								<div class="faq-title accordion-title">Какие призы можно выиграть?</div>
-								<div class="faq-text">Пакет 100 000 баллов на карту лояльности сети «Пятёрочка».</div>
-							</div>
-							<div class="faq-item">
-								<div class="faq-title accordion-title">Как узнать, что вы выиграли приз?</div>
-								<div class="faq-text">Информация о выигранных призах отображается в личном кабинете, а так же придет письмо на электронную почту, указанную при регистрации, с информацией о выигрыше.</div>
-							</div>
-							<div class="faq-item">
-								<div class="faq-title accordion-title">Сколько призов можно получить за акцию?</div>
-								<div class="faq-text">Максимальное количество Призов, которое может выиграть один Участник - не более 1 Пакета Баллов</div>
-							</div>
-							<div class="faq-item">
-								<div class="faq-title accordion-title">Нужно ли платить налоги?</div>
-								<div class="faq-text">Нет. Само по себе получение Победителями Баллов настоящей Акции не влечет за собой обязанности по уплате НДФЛ</div>
-							</div>
-							<div class="faq-item">
-								<div class="faq-title accordion-title">Как происходит вручение приза?</div>
-								<div class="faq-text">Пакет баллов передаются путем пополнения баланса «Выручай-Карты» торговой сети Пятерочка по номеру карты, который Участник Акции указал при регистрации. Баллы перечисляются в течении до 15 календарных дней, с момента определения Победителей.</div>
-							</div>
-							<div class="faq-item">
-								<div class="faq-title accordion-title">Когда будет проходить розыгрыш призов?</div>
-								<div class="faq-text">
-									-	«14» февраля за период с 00:00:00  01 февраля 2020 года по 23:59:59  09 февраля 2020 года<br>
-									-	«21» февраля за период с 00:00:00  10 февраля 2020 года по 23:59:59  16 февраля 2020 года<br>
-									-	«28» февраля за период с 00:00:00  17 февраля 2020 года по 23:59:59  23 февраля 2020 года<br> 
-									-	«06» марта за период с 00:00:00  24 февраля 2020 года по 23:59:59  01 марта 2020 года<br>
-									-	«13» марта за период с 00:00:00  02 марта 2020 года по 23:59:59  08 марта 2020 года<br>
-									-	«20» марта за период с 00:00:00  09 марта 2020 года по 23:59:59  15 марта 2020 года<br>
-									-	«27» марта за период с 00:00:00  16 марта 2020 года по 23:59:59  22 марта 2020 года<br>
-									-	«07 апреля за период с 00:00:00  23 марта 2020 года по 23:59:59  31 марта 2020 года
-								</div>
-							</div>
-							<div class="faq-item">
-								<div class="faq-title accordion-title">Что делать, если не получается зарегистрировать карту лояльности на сайте?</div>
-								<div class="faq-text">По все вопросам, связанным с внесением карт лояльности, а также другим вопросам, ты можешь обратиться к Оператору акции по почте 5ka@jubileynoe.ru. Важно, чтобы карты лояльности сетей были активированы.</div>
-							</div>
-						</div>
-						<div class="feedback-wrap">
-							<div class="feedback-title">Не нашли ответ <br>на свой вопрос?</div>
-							<div class="feedback-desc">Задайте его нам <br>и мы обязательно ответим </div>
-							<form class="feedback-form">
-								<div class="input-field">
-		                    		<input type="text" name="name" placeholder="Имя" required>
-		                    	</div>
-		                    	<div class="input-field">
-		                    		<input type="text" name="email" placeholder="E-mail" required>
-		                    	</div>
-		                    	<div class="input-field">
-		                    		<div class="select">
-										<select name="theme" data-placeholder="Тема сообщения" required>
-											<option value=""></option>
-											<option value="1">Тема 1</option>
-											<option value="2">Тема 2</option>
-											<option value="3">Тема 3</option>
-										</select>
-									</div>
-		                    	</div>
-		                    	<div class="input-field">
-		                    		<textarea name="message" placeholder="Сообщение" required></textarea>
-		                    	</div>
-		                    	<div class="btn-wrap">
-		                    		<button class="btn">Отправить</button>
-		                    	</div>
-							</form>
-						</div>
-					</div>
-				</section>
 			</div>
 		</div>
 		<footer>
@@ -383,6 +294,7 @@
 	        }
 	    })();
 	</script>
+	<script src="js/datepicker.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>

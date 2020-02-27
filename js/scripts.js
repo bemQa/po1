@@ -271,6 +271,11 @@ $(document).ready(function () {
         $(this).addClass('active');
         $('.tab-item').removeClass('active');
         $('.tab-item.' + tab).addClass('active');
+        if($('.tab-item.tab-check').hasClass('active')) {
+            $('.lk-info').addClass('active');
+        } else {
+            $('.lk-info').removeClass('active');
+        }
     });
 
     if($('.dropify').length) {
@@ -331,4 +336,8 @@ $(document).ready(function () {
             OpenPopup('prize');
         },4000);
     });
+
+    if($('[data-countchar]').length) {
+        $('[data-countchar]').countChar();
+    }
 });

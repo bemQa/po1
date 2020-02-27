@@ -142,8 +142,8 @@
 									<img src="img/step3.svg" alt="">
 								</div>
 								<div class="step-title">собирай</div>
-								<div class="step-desc">фут-коины и открывай <br>стадионы</div>
-								<a href="#!" class="step-link link">Как собрать фут-коины?</a>
+								<div class="step-desc">фан-коины и открывай <br>стадионы</div>
+								<a href="#!" class="step-link link">Как собрать фан-коины?</a>
 							</div>
 							<div class="ball-mini ball-mini5"></div>
 						</div>
@@ -179,7 +179,7 @@
 									<div class="main-prize-img">
 										<img src="img/main-prize1.svg" alt="">
 									</div>
-									<div class="main-prize-title">Стикерпак Vk и фут-коин</div>
+									<div class="main-prize-title">Стикерпак Vk и фан-коин</div>
 									<div class="main-prize-desc">Гарантированный приз <br>после регистрации кода</div>
 								</div>
 							</div>
@@ -239,7 +239,8 @@
 					<div class="scoreboard-text">Напиши свои слова поддержки и лови свое обращение <br>на большом экране в москве!</div>
 					<form class="scoreboard">
 						<div class="scoreboard-field">
-							<textarea id="scoreboard-message" name="scoreboard-message" placeholder="Напиши свое сообщение"></textarea>
+							<textarea id="scoreboard-message" name="scoreboard-message" placeholder="Напиши свое сообщение" required data-countchar="" data-countchar-limit="150" maxlength="150"></textarea>
+							<div class="scoreboard-count"><span id="countchar-output"></span>/150</div>
 						</div>
 						<div class="scoreboard-buttons">
 							<div class="btn-wrap scoreboard-random-btn-wrap">
@@ -339,7 +340,7 @@
 							</div>
 							<div class="tm-slide-info">
 								<div class="tm-slide-title">Сыграй в футбол 5х5 <br>со Cборной России!</div>
-								<div class="tm-slide-desc">Регистрируй Выручай-Карту «Пятерочка» в личном кабинете и получай фут-коины!</div>
+								<div class="tm-slide-desc">Регистрируй Выручай-Карту «Пятерочка» в личном кабинете и получай фан-коины!</div>
 								<div class="btn-wrap tm-btn-wrap">
 									<a href="#!" class="btn tm-btn">Зарегистрировать</a>
 								</div>
@@ -351,7 +352,7 @@
 							</div>
 							<div class="tm-slide-info">
 								<div class="tm-slide-title">Сыграй в футбол 5х5 <br>со Cборной России!</div>
-								<div class="tm-slide-desc">Регистрируй Выручай-Карту «Пятерочка» в личном кабинете и получай фут-коины!</div>
+								<div class="tm-slide-desc">Регистрируй Выручай-Карту «Пятерочка» в личном кабинете и получай фан-коины!</div>
 								<div class="btn-wrap tm-btn-wrap">
 									<a href="#!" class="btn tm-btn">Зарегистрировать</a>
 								</div>
@@ -387,10 +388,10 @@
                     <div class="popup__error"></div>
                     <form class="popup-form">
                     	<div class="input-field">
-                    		<input type="text" name="phone" class="phone-mask" placeholder="Ваш телефон" required>
+                    		<input type="text" name="phone" class="phone-mask" placeholder="Телефон" required>
                     	</div>
                     	<div class="input-field">
-                    		<input type="password" name="password" placeholder="Ваш пароль" required>
+                    		<input type="password" name="password" placeholder="Пароль" required>
                     		<a href="#!" class="invert-link restore-link pop-op" data-popup="restore-password">Забыли пароль?</a>
                     	</div>
                     	<div class="btn-wrap">
@@ -417,13 +418,13 @@
                     <div class="popup__error"></div>
                     <form class="popup-form">
                     	<div class="input-field">
-                    		<input type="text" name="name" placeholder="Ваше имя" required>
+                    		<input type="text" name="name" placeholder="Имя" required>
                     	</div>
                     	<div class="input-field">
-                    		<input type="text" name="phone" class="phone-mask" placeholder="Ваш телефон" required>
+                    		<input type="text" name="phone" class="phone-mask" placeholder="Телефон" required>
                     	</div>
                     	<div class="input-field">
-                    		<input type="text" name="email" placeholder="Ваш e-mail" required>
+                    		<input type="text" name="email" placeholder="E-mail" required>
                     	</div>
                     	<div class="checkbox-wrapper">
 							<div class="input-field checkbox-field">
@@ -482,7 +483,7 @@
                     	<div class="popup__desc before-send">Укажите телефон, на который<br>производилась регистрация</div>
                     	<div class="popup__desc after-send" style="display: none;">Пароль был отправлен<br>на ваш номер телефона</div>
                     	<div class="input-field">
-                    		<input type="text" name="phone" class="phone-mask" placeholder="Ваш телефон" required>
+                    		<input type="text" name="phone" class="phone-mask" placeholder="Телефон" required>
                     	</div>
                     	<div class="input-field">
 							<span class="clock-text" style="display: none;">Можно отправить повторно через <span class="clock"></span></span>
@@ -544,8 +545,8 @@
                 	<div class="popup__img-code oreo-img"></div> <!-- ag-img, oreo-img, halls-img, tuc-img, dirol-img -->
                 	<div class="popup__title-code">Ваш код принят!</div>
                     <div class="popup__desc popup__desc-code">Вам зачислено</div>
-                    <div class="popup-coin-text"><span class="coin-count">3</span> Фут-коина</div>
-                    <div class="popup__text-code">Трать свои фут-коины и открывай новые стадионы, чтобы выиграть встречу <br>со сборной и другие призы.</div>
+                    <div class="popup-coin-text"><span class="coin-count">3</span> Фан-коина</div>
+                    <div class="popup__text-code">Трать свои фан-коины и открывай новые стадионы, чтобы выиграть встречу <br>со сборной и другие призы.</div>
                     <div class="btn-wrap popup-btn-code">
                 		<a href="lk.html" class="btn blue-btn">Перейти в личный кабинет</a>
                 	</div>
@@ -564,7 +565,7 @@
                 	<div class="popup__img-code halls-img"></div> <!-- ag-img, oreo-img, halls-img, tuc-img, dirol-img -->
                 	<div class="popup__title-code">Ваш код принят!</div>
                     <div class="popup__desc popup__desc-code">Вам зачислено</div>
-                    <div class="popup-coin-text"><span class="coin-count">1</span> Фут-коин</div>
+                    <div class="popup-coin-text"><span class="coin-count">1</span> Фан-коин</div>
                     <div class="popup__text-code">Коды с упаковок Halls, Dirol и TUC требуют подтверждения покупки, загрузкой чека.</div>
                     <div class="btn-wrap popup-btn-code">
                 		<a href="#!" class="btn blue-btn">Загрузить чек</a>
@@ -580,6 +581,7 @@
 	<script src="js/jquery.countdown.min.js"></script>
 	<script src="js/select2.min.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.countchar.min.js"></script>
 	<script src="js/jscroller-0.4.js"></script>
 	<!-- fix outdated libs jquery -->
 	<script type="text/javascript">
