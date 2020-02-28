@@ -4558,6 +4558,260 @@ table td {
 	text-shadow: none;
 }
 
+.how-to-win-bg {
+	background: url(../img/how-to/bg.png) center 0 no-repeat, linear-gradient(360deg, #EBF7FF 0%, #E2F1FF 100%);
+    background-size: cover;
+}
+
+.how-to-win-content {
+	margin: 130px 0;
+}
+
+.how-to-win-container {
+	max-width: 1380px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.win-step1 {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 920px;
+	width: 100%;
+	margin: 0 auto 100px;
+}
+
+.win-num1 {
+	max-width: 404px;
+    width: 100%;
+}
+
+.win-text {
+	font-family: Montserrat;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 32px;
+}
+
+.win-text b,
+.win-text .link,
+.win-step-remark .link {
+	color: #0878CA;
+}
+
+.win-text p {
+	margin-bottom: 30px;
+}
+
+.win-step2 {
+	margin: 0 auto 150px;
+}
+
+.win-step2-info {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1000px;
+	width: 100%;
+	margin: 0 auto 20px;
+}
+
+.win-text2 {
+	margin-left: 130px;
+}
+
+.win-num2 {
+	max-width: 322px;
+    width: 100%;
+}
+
+.win-step2-buy {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+
+.buy {
+	position: relative;
+	margin: 0 30px;
+}
+
+.buy1::after,
+.buy2::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -30px;
+	bottom: 0;
+	width: 1px;
+	height: 86px;
+	margin: auto;
+	background: rgba(0, 0, 0, .1);
+}
+
+.win-step-remark {
+	font-family: Montserrat;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: center;
+}
+
+.win-step3 {
+	margin: 0 auto 130px;
+}
+
+.win-step3-info {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 880px;
+	width: 100%;
+	margin: 0 auto 70px;
+}
+
+.win-num3 {
+	max-width: 353px;
+	width: 100%;
+}
+
+.win-text3 {
+	max-width: 480px;
+}
+
+.win-step3-remark {
+	margin-bottom: 50px;
+}
+
+.win-stadiums {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.win-stadium {
+	position: relative;
+	margin: 0 30px;
+}
+
+.win-stadium1::after,
+.win-stadium2::after,
+.win-stadium3::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: -60px;
+	bottom: 0;
+	width: 1px;
+	height: 350px;
+	margin: auto;
+	background: rgba(0, 0, 0, .1);
+}
+
+.win-stadium-img {
+	width: 100%;
+	margin: 0 auto 20px;
+}
+
+.win-stadium1 .win-stadium-img {
+	max-width: 194px;
+}
+
+.win-stadium2 .win-stadium-img {
+	max-width: 188px;
+}
+
+.win-stadium3 .win-stadium-img {
+	max-width: 213px;
+}
+
+.win-stadium4 .win-stadium-img {
+	max-width: 207px;
+}
+
+.win-stadium-open {
+	font-family: Montserrat;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	color: #373737;
+}
+
+.win-stadium-open:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.win-stadium-open .coin-count {
+	font-size: 42px;
+	line-height: 1;
+	color: #0878CA;
+}
+
+.win-stadium-open .coin-count::before {
+	top: 0;
+	bottom: 0;
+    width: 32px;
+    height: 33px;
+    margin: auto;
+    background: url(../img/coin.png) center no-repeat;
+    background-size: contain;
+}
+
+.win-step4 {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 890px;
+	width: 100%;
+	margin: 0 auto 140px;
+}
+
+.win-text4 p {
+	margin-left: 40px;
+}
+
+.win-text4 .link {
+	color: #272727;
+}
+
+.win-num4 {
+	max-width: 323px;
+	width: 100%;
+}
+
+.win-step5 {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 890px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.win-num5 {
+	max-width: 329px;
+	width: 100%;
+}
+
+.win-text5 p {
+	margin-bottom: 20px;
+}
+
+.win-btn-wrap {
+	max-width: 212px;
+	width: 100%;
+}
+
 @media (max-width: 1600px) {
 	.main-products .slick-dots {
 		left: 40px;
@@ -5115,6 +5369,24 @@ table td {
 		height: 45px;
 		font-size: 26px;
 		line-height: 45px;
+	}
+
+	.how-to-win-container {
+		max-width: 1000px;
+	}
+
+	.win-text {
+		font-size: 22px;
+	}
+
+	.win-stadium1::after, 
+	.win-stadium2::after, 
+	.win-stadium3::after {
+		right: -30px;
+	}
+
+	.win-stadium-open {
+		font-size: 12px;
 	}
 }
 
@@ -6333,6 +6605,180 @@ table td {
 		font-size: 20px;
 		line-height: 26px;
 	}
+
+	.how-to-win-content {
+		margin-bottom: 60px;
+	}
+
+	.win-step1 {
+		flex-direction: column;
+		margin-bottom: 60px;
+	}
+
+	.win-num1 {
+	    max-width: 192px;
+	    margin-bottom: 10px;
+	}
+
+	.win-text {
+	    font-size: 18px;
+	    line-height: 24px;
+	    text-align: center;
+	}
+
+	.win-text .register-code-field {
+		margin: auto;
+	}
+
+	.win-step2 {
+		margin-bottom: 60px;
+	}
+
+	.win-step2-info {
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+
+	.win-num2 {
+		max-width: 152px;
+		order: -1;
+		margin-bottom: 30px;
+	}
+
+	.win-text2 {
+		margin-left: 0;
+	}
+
+	.win-step2-buy {
+		flex-direction: column;
+	}
+
+	.buy {
+		max-width: 230px;
+		margin: 0;
+	}
+
+	.buy1::after, .buy2::after {
+		display: none;
+	}
+
+	.win-step-remark {
+		max-width: 300px;
+		width: 100%;
+		margin: auto;
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	.win-step3 {
+		margin-bottom: 60px;
+	}
+	
+	.win-step3-info {
+		flex-direction: column;
+		margin-bottom: 0;
+	}
+
+	.win-num3 {
+		max-width: 168px;
+		margin-bottom: 30px;
+	}
+
+	.win-step3-remark {
+		margin-bottom: 30px;
+	}
+
+	.win-stadiums {
+		flex-wrap: wrap;
+		max-width: 340px;
+		width: 100%;
+		margin: auto;
+	}
+
+	.win-stadium {
+		margin: 0 10px;
+		max-width: 150px;
+	}
+
+	.win-stadium .win-stadium-img {
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+		max-width: 150px;
+		height: 155px;
+	}
+
+	.win-stadium1,
+	.win-stadium2 {
+		margin-bottom: 25px;
+	}
+
+	.win-stadium3,
+	.win-stadium4 {
+		margin-top: 25px;
+	}
+
+	.win-stadium1::after, 
+	.win-stadium2::after {
+		top: auto;
+	    bottom: -25px;
+	    left: -14%;
+	    right: -14%;
+	    height: 1px;
+	    width: 114%;
+	}
+
+	.win-stadium3::after {
+		display: none;
+	}
+
+	.win-stadium-open {
+		max-width: 100px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.win-stadium-open:not(:last-child) {
+	    margin-bottom: 10px;
+	}
+
+	.win-step4 {
+		flex-direction: column;
+		margin-bottom: 60px;
+	}
+
+	.win-num4 {
+	    order: -1;
+	    max-width: 154px;
+	    margin-bottom: 30px;
+	}
+
+	.win-text4 p {
+		margin-left: 0;
+	}
+
+	.win-step5 {
+		flex-direction: column;
+	}
+
+	.win-num5 {
+	    order: -1;
+	    max-width: 156px;
+	    margin-bottom: 30px;
+	}
+
+	.win-btn-wrap {
+		margin: auto;
+	}
+
+	.win-text1 br,
+	.win-text2 br,
+	.win-text3 br,
+	.win-step-remark br,
+	.win-text4 br {
+		display: none;
+	}
 }
 
 @media (max-width: 375px) {
@@ -6379,5 +6825,10 @@ table td {
 
 	.map {
 	    transform: scale(.9);
+	}
+
+	.win-stadium,
+	.win-stadium .win-stadium-img {
+		max-width: 125px
 	}
 }
