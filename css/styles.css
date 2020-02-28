@@ -3675,7 +3675,22 @@ table td {
 
 .map-bg.ingame {
 	background: url(../img/game/ingame-bg.png) center no-repeat;
-	background-size: cover;
+	background-size: 1920px 1080px;
+	min-height: 940px;
+    max-width: 1920px;
+    margin: auto;
+}
+
+.map-bg.ingame::before {
+	content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/waves-bg.png) center no-repeat #3FA9F5;
+    background-size: cover;
+    z-index: -1;
 }
 
 .close-game {
@@ -3760,7 +3775,8 @@ table td {
 	margin: auto;
 	width: 53px;
 	height: 58px;
-	background: url(../img/game/lock-icon.png);
+	background: url(../img/game/lock-icon.png) center no-repeat;
+	background-size: contain;
 }
 
 .stadium1.disabled::after {
@@ -3962,7 +3978,8 @@ table td {
 .hidden-title2 {
 	position: absolute;
 	top: 620px;
-    left: 370px;
+	left: 0;
+    right: 750px;
 }
 
 .hidden-line {
@@ -3979,7 +3996,9 @@ table td {
 .hidden-line2 {
 	position: absolute;
 	top: 500px;
-    left: 515px;
+	left: 0;
+    right: 770px;
+    margin: auto;
 }
 
 .hidden-title.overlay,
@@ -5671,6 +5690,42 @@ table td {
 	    width: 350px;
 	    height: 21px;
 	}
+
+	.stadium.disabled::after {
+		top: 30px;
+		width: 42px;
+    	height: 46px;
+	}
+
+	.disabled .progress-bar-wrapper {
+		width: 152px;
+    	height: 38px;
+	}
+
+	.disabled .progress-bar-wrapper::before {
+	    bottom: 6px;
+        width: 152px;
+    	height: 14px;
+	}
+
+	.disabled .progress-bar-wrapper span {
+	    bottom: 5px;
+	}
+
+	.progress-bar {
+	    bottom: 1px;
+    	height: 23px;
+	}
+
+	.hidden-line2 {
+		top: 410px;
+	    right: 630px;
+	}
+
+	.hidden-title2 {
+		top: 530px;
+	    right: 660px;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -6467,7 +6522,11 @@ table td {
 	}
 
 	.winners {
-		padding: 0 0 35px;
+		padding: 0 0 30px;
+	}
+
+	.winners-table {
+		margin-bottom: 30px;
 	}
 
 	table tbody,
@@ -7176,6 +7235,311 @@ table td {
 		bottom: 75px;
 		z-index: 0;
 	}
+
+	body .scroll-element.scroll-y {
+	    height: 95%;
+	    right: 15px;
+	    top: 10px;
+	}
+
+	.map-bg {
+		overflow-x: hidden;
+	}
+
+	.hidden-line {
+		max-width: 50px;
+	}
+
+	.hidden-line1 {
+	    top: 70px;
+	    right: 50px;
+	    transform: scale(-1, 1) rotate(-90deg);
+	}
+
+	.hidden-line2 {
+		top: 200px;
+	    right: 300px;
+	    transform: scale(1, -1);
+	}
+
+	.hidden-title {
+		font-size: 10px;
+		line-height: 12px;
+	}
+
+	.hidden-title1 {
+		top: 125px;
+    	right: 50px;
+	}
+
+	.hidden-title2 {
+		top: 175px;
+    	right: 240px;
+	}
+
+	.stadium.disabled::after {
+	    top: 20px;
+	    width: 29px;
+	    height: 32px;
+	}
+
+	.disabled .progress-bar-wrapper {
+	    width: 106px;
+	    height: 27px;
+	}
+
+	.disabled .progress-bar-wrapper::before {
+	    bottom: 4px;
+	    width: 106px;
+	    height: 10px;
+	}
+
+	.disabled .progress-bar-wrapper span {
+		bottom: 0;
+    	font-size: 10px
+	}
+
+	.progress-bar {
+	    bottom: 1px;
+	    height: 16px;
+	}
+
+	.progress-bar::after {
+	    top: -2px;
+	    right: -5px;
+	    width: 15px;
+	    height: 20px;
+	    background-size: contain;
+	}
+
+	.ingame-stadium {
+		top: 100px;
+		width: 320px;
+	}
+
+	.ingame-stadium-name {
+		height: 38px;
+		font-size: 24px;
+	}
+
+	.ingame-stadium-name::before,
+	.ingame-stadium-name::after {
+	    bottom: -20px;
+		width: 20px;
+		height: 20px;
+	}
+
+	.ingame-stadium-name::before {
+	    border-width: 20px 0px 0px 20px;
+	}
+
+	.ingame-stadium-name::after {
+	    border-width: 20px 20px 0px 0px;
+	}
+
+	.ingame-text {
+		top: -5px;
+    	width: 280px;
+	    padding: 20px 25px 18px;
+	    font-size: 14px;
+    	line-height: 17px;
+	}
+
+	.map-bg.ingame {
+	    background: url(../img/game/ingame-bg-mob.png) center 0 no-repeat;
+	    background-size: 375px 668px;
+	    min-height: 668px;
+	    max-width: 375px;
+	    margin: auto;
+	}
+
+	.goal {
+	    top: 300px;
+	    width: 310px;
+	    height: 140px;
+	}
+
+	.goalkeeper {
+		top: 15px;
+		width: 128px;
+    	height: 190px;
+	}
+
+	.goalkeeper.active {
+		width: 200px;
+		height: 160px;
+	}
+
+	.goalkeeper.target1, 
+	.goalkeeper.target2, 
+	.goalkeeper.target4 {
+		right: 50px;
+	}
+
+	.target {
+	    width: 41px;
+    	height: 41px;
+    	border: 2px dashed #D01319;
+	}
+
+	.ingame-ball {
+	    top: 490px;
+        width: 50px;
+    	height: 48px;
+	}
+
+	.ingame-ball.target1 {
+	    top: 300px;
+    	right: 250px;
+    	transform: scale(.8);
+	}
+
+	.ingame-ball.target2 {
+		top: 300px;
+		right: 0px;
+		transform: scale(.8);
+	}
+
+	.ingame-ball.target3 {
+		top: 300px;
+		left: 250px;
+		transform: scale(.8);
+	}
+
+	.ingame-ball.target4 {
+		top: 390px;
+	    right: 250px;
+	    bottom: auto;
+	    transform: scale(.8);
+	}
+
+	.ingame-ball.target5 {
+		top: 390px;
+		left: 250px;
+		bottom: auto;
+		transform: scale(.8);
+	}
+
+	.ellipse {
+	    top: 525px;
+	    width: 50px;
+    	height: 11px;
+	}
+
+	.goal-popup {
+	    padding-top: 50%;
+	}
+
+	.goal-popup .popup__wrap {
+	    max-width: 300px;
+    	height: 120px;
+	    padding: 30px 10px;
+	}
+
+	.g-o-a-l {
+		height: 46px;
+		margin: 0 2px;
+	}
+
+	@keyframes goal {
+		0%,
+		100% {
+			top: 0;
+		}
+
+		25% {
+			top: -6px;
+		}
+
+		50% {
+			top: 0;
+		}
+
+		75% {
+			top: 10px;
+		}
+	}
+
+	.ef {
+		max-width: 200px;
+	}
+
+	.ef1 {
+		top: -190px;
+		right: -90px;
+	}
+
+	.ef2 {
+		top: -160px;
+    	left: 110px;
+	}
+
+	.ef3 {
+		top: -100px;
+    	left: -100px;
+	}
+
+	.ef4 {
+	    top: -200px;
+	    left: -10px;
+	}
+
+	.ef5 {
+		top: -150px;
+    	left: -80px;
+	}
+
+	.ef6 {
+		bottom: -130px;
+    	left: -60px;
+	}
+
+	.ef7 {
+	    bottom: -170px;
+    	left: 50px;
+	}
+
+	.ef8 {
+		bottom: -210px;
+    	left: 130px;
+	}
+
+	.ef9 {
+	    bottom: -140px;
+	    right: -130px;
+	}
+
+	.ef10 {
+		bottom: -90px;
+    	right: -160px;
+	}
+
+	#prize .popup__wrap {
+		padding: 40px 10px 30px;
+	}
+
+	#prize .popup__inner {
+		max-width: 280px;
+	}
+
+	.popup-ingame-prize {
+		width: 120px;
+		height: 120px;
+	}
+
+	.popup-ingame-prize img {
+		max-width: 80px;
+	}
+
+	.popup-ingame-title {
+		font-size: 30px;
+		line-height: 37px;
+	}
+
+	#prize .popup__desc-big {
+		font-size: 18px;
+		line-height: 22px;
+	}
 }
 
 @media (max-width: 375px) {
@@ -7227,5 +7591,10 @@ table td {
 	.win-stadium,
 	.win-stadium .win-stadium-img {
 		max-width: 125px
+	}
+
+	.hidden-title2 {
+		right: auto;
+    	left: 0;
 	}
 }

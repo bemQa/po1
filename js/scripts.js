@@ -316,6 +316,7 @@ $(document).ready(function () {
         e.preventDefault();
         var stadium_text = $(this).data('stadium');
         $('.ingame-stadium-name').text(stadium_text);
+        $('body').removeClass('no-scrolling');
         $('.map-bg, .map, .game').addClass('ingame');
     });
 
