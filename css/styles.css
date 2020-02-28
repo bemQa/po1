@@ -4559,6 +4559,7 @@ table td {
 }
 
 .how-to-win-bg {
+	position: relative;
 	background: url(../img/how-to/bg.png) center 0 no-repeat, linear-gradient(360deg, #EBF7FF 0%, #E2F1FF 100%);
     background-size: cover;
 }
@@ -4810,6 +4811,64 @@ table td {
 .win-btn-wrap {
 	max-width: 212px;
 	width: 100%;
+}
+
+.win-ball {
+	position: absolute;
+}
+
+.win-ball1 {
+	top: 130px;
+	right: 100px;
+	width: 151px;
+	height: 152px;
+	background: url(../img/how-to/ball1.png) center no-repeat;
+	background-size: contain;
+}
+
+.win-ball2 {
+	top: 350px;
+	left: 0;
+	width: 181px;
+	height: 333px;
+	background: url(../img/how-to/ball2.png) center no-repeat;
+	background-size: contain;
+}
+
+.win-ball3 {
+	top: 900px;
+	right: 0;
+	width: 405px;
+	height: 763px;
+	background: url(../img/how-to/ball3.png) center no-repeat;
+	background-size: contain;
+}
+
+.win-ball4 {
+	top: 1400px;
+	left: 0;
+	width: 332px;
+	height: 355px;
+	background: url(../img/how-to/ball4.png) center no-repeat;
+	background-size: contain;
+}
+
+.win-ball5 {
+	bottom: 900px;
+	right: 100px;
+	width: 180px;
+	height: 179px;
+	background: url(../img/how-to/ball5.png) center no-repeat;
+	background-size: contain;
+}
+
+.win-ball6 {
+	bottom: 200px;
+	left: 0;
+	width: 452px;
+	height: 763px;
+	background: url(../img/how-to/ball6.png) center no-repeat;
+	background-size: contain;
 }
 
 @media (max-width: 1600px) {
@@ -6778,6 +6837,51 @@ table td {
 	.win-step-remark br,
 	.win-text4 br {
 		display: none;
+	}
+
+	.win-ball1 {
+		top: 300px;
+	    right: 0;
+	    width: 92px;
+	    height: 152px;
+	    background: url(../img/how-to/ball1-mob.png) center no-repeat;
+	    background-size: contain;
+	}
+
+	.win-ball2 {
+		top: 100px;
+	    width: 100px;
+	    height: 180px;
+	}
+
+	.win-ball3 {
+	    top: 1050px;
+	    width: 135px;
+	    height: 250px;
+	}
+
+	.win-ball4 {
+	    top: 800px;
+	    left: 0;
+	    width: 111px;
+	    height: 175px;
+	    background: url(../img/how-to/ball4-mob.png) center no-repeat;
+	    background-size: contain;
+	}
+
+	.win-ball5 {
+		bottom: 900px;
+    	right: 0;
+	    width: 78px;
+	    height: 127px;
+	    background: url(../img/how-to/ball5-mob.png) center no-repeat;
+	    background-size: contain;
+	}
+
+	.win-ball6 {
+	    bottom: 500px;
+	    width: 100px;
+	    height: 165px;
 	}
 }
 
