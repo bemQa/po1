@@ -341,6 +341,14 @@ $(document).ready(function () {
     if($('[data-countchar]').length) {
         $('[data-countchar]').countChar();
     }
+
+    $(window).on('scroll',function () {
+        var top = $(window).scrollTop();
+        var destination = $('.main-prizes-section').offset().top-250;
+        if(top >= destination) {
+            $('.cup').addClass('active');
+        }
+    });
 });
 
 $(window).on('load', function() {

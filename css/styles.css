@@ -1508,7 +1508,7 @@ span.error {
 	font-style: normal;
 	font-weight: bold;
 	font-size: 56px;
-	line-height: 84px;
+	line-height: 86px;
 	text-align: center;
 	color: #fff;
 	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.13);
@@ -1862,6 +1862,15 @@ span.error {
 	background-size: cover;
 }
 
+.cup {
+	transition: all .3s linear;
+	transform: scale(0);
+}
+
+.cup.active {
+	transform: scale(1);
+}
+
 .scoreboard-section {
 	position: relative;
 	min-height: 1180px;
@@ -2161,23 +2170,31 @@ span.error {
 }
 
 .coin-count {
+    display: inline-block;
     vertical-align: middle;
 	position: relative;
 	font-family: Rex;
 	font-weight: bold;
 	font-size: 30px;
 	line-height: 1;
+    height: 30px;
 	padding-left: 40px;
 }
 
 .coin-count::before {
 	content: '';
 	position: absolute;
-	top: -2px;
+	top: -5px;
 	left: 0;
 	width: 34px;
 	height: 33px;
 	background: url(../img/popup-coin.png);
+}
+
+@supports (-webkit-touch-callout: none) {
+	.coin-count::before {
+		top: -10px;
+	}
 }
 
 .popup__text-code {
@@ -3068,6 +3085,10 @@ table td {
 }
 
 .coins-count {
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
 	position: relative;
 	padding-left: 100px;
 	font-family: Rex;
@@ -3075,17 +3096,24 @@ table td {
 	font-size: 88px;
 	line-height: 1;
 	color: #0878CA;
+	height: 88px;
 }
 
 .coins-count::before {
 	content: '';
 	position: absolute;
-	bottom: 10px;
+	top: -5px;
 	left: 0;
 	width: 85px;
 	height: 84px;
 	background: url(../img/lk-coin.png) center no-repeat;
 	background-size: contain;
+}
+
+@supports (-webkit-touch-callout: none) {
+	.coins-count::before {
+		top: -10px;
+	}
 }
 
 .coins-text {
@@ -3385,6 +3413,7 @@ table td {
 	font-size: 44px;
 	line-height: 1;
 	color: #0878CA;
+	height: 44px;
 }
 
 .lk-card-coins::before {
@@ -3398,6 +3427,12 @@ table td {
 	height: 43px;
 	background: url(../img/coin.png) center no-repeat;
 	background-size: contain;
+}
+
+@supports (-webkit-touch-callout: none) {
+	.lk-card-coins::before {
+		top: -8px;
+	}
 }
 
 .lk-info {
@@ -5342,7 +5377,7 @@ table td {
 	    width: 100px;
     	height: 64px;
     	font-size: 46px;
-    	line-height: 64px;
+    	line-height: 66px;
 	}
 
 	.step-info {
@@ -5560,6 +5595,7 @@ table td {
 	.lk-card-coins {
 	    padding-left: 35px;
 		font-size: 30px;
+		height: 30px;
 	}
 
 	.lk-card-coins::before {
@@ -6815,12 +6851,19 @@ table td {
 	    padding-left: 75px;
         font-size: 50px;
         margin-bottom: 5px;
+        height: 50px;
 	}
 
 	.coins-count::before {
-		bottom: 0;
-	    width: 61px;
-    	height: 60px;
+		top: -10px;
+	    width: 58px;
+    	height: 57px;
+	}
+
+	@supports (-webkit-touch-callout: none) {
+		.coins-count::before {
+			top: -15px;
+		}
 	}
 
 	.coins-text {
@@ -6880,7 +6923,7 @@ table td {
 	    width: 100%;
 	    height: 50px;
 	    font-size: 18px;
-	    padding: 16px 0;
+	    padding: 16px 0 16px 30px;
 	    margin: auto;
 	}
 
