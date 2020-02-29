@@ -352,12 +352,18 @@ $(document).ready(function () {
 
     if($(".scoreboard-section").length) {
         $(".scoreboard-section").mousemove(function(e) {
-            parallaxIt(e, ".lightning", -50);
+            var $this = $(this);
+            parallaxIt(e, ".lightning", -50, $this);
+        });
+
+        $(".main-products").mousemove(function(e) {
+            var $this = $(this);
+            parallaxIt(e, ".product-slide-img", -30, $this);
         });
     }
 
-    function parallaxIt(e, target, movement) {
-        var $this = $(".scoreboard-section");
+    function parallaxIt(e, target, movement, container) {
+        var $this = container;
         var relX = e.pageX - $this.offset().left;
         var relY = e.pageY - $this.offset().top;
 
