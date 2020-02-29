@@ -1879,8 +1879,7 @@ span.error {
 	background-size: cover;
 }
 
-.scoreboard-section::before {
-	content: '';
+.lightning1 {
 	position: absolute;
 	top: 80px;
 	left: 0;
@@ -1893,8 +1892,7 @@ span.error {
 	z-index: 0;
 }
 
-.scoreboard-section::after {
-	content: '';
+.lightning2 {
 	position: absolute;
 	top: 80px;
 	left: 70%;
@@ -5192,12 +5190,12 @@ table td {
 		min-height: 72px;
 	}
 
-	.scoreboard-section::before {
+	.lightning1 {
 		right: 80%;
 		margin: 0;
 	}
 
-	.scoreboard-section::after {
+	.lightning2 {
 		left: 80%;
 		margin: 0;
 	}
@@ -5460,13 +5458,13 @@ table td {
 		max-width: 600px;
 	}
 
-	.scoreboard-section::before {
+	.lightning1 {
 		left: -6%;
 		width: 276px;
     	height: 756px;
 	}
 
-	.scoreboard-section::after {
+	.lightning2 {
 		width: 300px;
     	height: 808px;
 	}
@@ -6338,7 +6336,7 @@ table td {
 		padding: 50px 0 0;
 	}
 
-	.scoreboard-section::before {
+	.lightning1 {
 		top: -50px;
 		left: 0;
 		right: auto;
@@ -6349,7 +6347,7 @@ table td {
 		background-size: cover;
 	}
 
-	.scoreboard-section::after {
+	.lightning2 {
 		top: -20px;
 		left: auto;
 		right: 0;

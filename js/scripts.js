@@ -349,6 +349,23 @@ $(document).ready(function () {
             $('.cup').addClass('active');
         }
     });
+
+    if($(".scoreboard-section").length) {
+        $(".scoreboard-section").mousemove(function(e) {
+            parallaxIt(e, ".lightning", -50);
+        });
+    }
+
+    function parallaxIt(e, target, movement) {
+        var $this = $(".scoreboard-section");
+        var relX = e.pageX - $this.offset().left;
+        var relY = e.pageY - $this.offset().top;
+
+        TweenMax.to(target, 1, {
+            x: (relX - $this.width() / 2) / $this.width() * movement,
+            y: (relY - $this.height() / 2) / $this.height() * movement
+        });
+    }
 });
 
 $(window).on('load', function() {
