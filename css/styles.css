@@ -1414,6 +1414,11 @@ span.error {
 	width: 66%;
 }
 
+.shop.disabled {
+	opacity: .5;
+	pointer-events: none;
+}
+
 .steps-section {
 	position: relative;
 	width: 100%;
