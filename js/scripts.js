@@ -342,3 +342,10 @@ $(document).ready(function () {
         $('[data-countchar]').countChar();
     }
 });
+
+$(window).on('load', function() {
+    $('.wrapper').addClass('load');
+    setTimeout(function(){
+        $('#preloader').removeClass('js-popup-show');
+    },500);
+});

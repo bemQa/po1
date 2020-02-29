@@ -459,10 +459,15 @@ body {
 }
 
 .wrapper {
+	opacity: 0;
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
 	background: linear-gradient(360deg, #EBF7FF 0%, #E2F1FF 100%);
+}
+
+.wrapper.load {
+	opacity: 1;
 }
 
 .content {
@@ -5035,6 +5040,57 @@ table td {
 	font-size: 21px;
 	line-height: 26px;
 	color: #0878CA;
+}
+
+.preloader-popup {
+    background: url(../img/game/popup-preload-bg.png) center no-repeat;
+    background-size: cover;
+}
+
+.preloader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 140px;
+	height: 140px;
+}
+
+.preloader-line {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 148px;
+	height: 148px;
+	animation: 1.2s preloader infinite linear;
+}
+
+.preloader-ball {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+@keyframes preloader {
+	0% {
+		transform: rotate(0);
+	}
+
+	50% {
+		transform: rotate(180deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 @media (max-width: 1600px) {
