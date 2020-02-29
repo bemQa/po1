@@ -647,6 +647,12 @@ header {
     z-index: 0;
 }
 
+@supports (-webkit-touch-callout: none) {
+	.btn {
+		padding-top: 22px;
+	}
+}
+
 .btn::before {
     content: '';
     position: absolute;
@@ -971,6 +977,13 @@ span.error {
     transition: all .2s linear;
 }
 
+@supports (-webkit-touch-callout: none) {
+	.input-field input:not([type="checkbox"]),
+	.input-field textarea {
+		padding-top: 10px;
+	}
+}
+
 .input-field input:not([type="checkbox"])::placeholder,
 .input-field textarea::placeholder {
 	color: rgba(8, 120, 202, .6);
@@ -1061,6 +1074,12 @@ span.error {
 	height: 56px;
 	padding: 17px 0;
 	background: #2FAD3A;
+}
+
+@supports (-webkit-touch-callout: none) {
+	.tm-btn {
+		padding-top: 26px;
+	}
 }
 
 .tm-btn::before {
@@ -1286,7 +1305,7 @@ span.error {
     align-items: center;
 	width: 100%;
 	height: 68px;
-	padding: 23px 60px 23px 20px;
+	padding: 0 60px 0 20px;
 	font-family: Rex;
 	font-weight: bold;
 	font-size: 21px;
@@ -1295,6 +1314,12 @@ span.error {
 	background: #FFFFFF;
 	box-shadow: 0px 13px 17px rgba(0, 0, 0, 0.24);
 	border-radius: 10px;
+}
+
+@supports (-webkit-touch-callout: none) {
+	.register-code-field input {
+		padding-top: 8px;
+	}
 }
 
 .register-code-field input::placeholder {
@@ -1396,11 +1421,11 @@ span.error {
     width: 364px;
     height: 100px;
     z-index: -1;
-    top: -50px;
+    top: -10px;
     left: -50px;
     right: -50px;
-    bottom: -50px;
-    opacity: -50px;
+    bottom: 0;
+    opacity: 0;
     margin: auto;
     border-radius: 50px;
     background-color: #FEBD2C!important;
@@ -1626,6 +1651,13 @@ span.error {
 	padding: 0;
 	background: linear-gradient(109.44deg, #0094FF 0%, #037AD0 100%);
 	box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.19);
+}
+
+@supports (-webkit-touch-callout: none) {
+	.step-btn,
+	.blue-btn {
+		padding-top: 4px;
+	}
 }
 
 .step-btn::before,
@@ -2057,6 +2089,20 @@ span.error {
     font-size: 16px;
     padding: 12px 0;
     padding-left: 22px;
+}
+
+button.scoreboard-btn {
+	-webkit-appearance: none;
+}
+
+@supports (-webkit-touch-callout: none) {
+	.scoreboard-btn {
+		padding-top: 16px;
+	}
+
+	button.scoreboard-btn {
+		padding-top: 14px;
+	}
 }
 
 .generate-random::after {
@@ -3278,6 +3324,12 @@ table td {
     margin: 0 22px;
 }
 
+@supports (-webkit-touch-callout: none) {
+	.big-btn {
+		padding-top: 58px;
+	}
+}
+
 .big-btn-blue {
 	color: #0280DB;
 	border: 3px solid #0280DB;
@@ -3319,6 +3371,12 @@ table td {
 	height: 214px;
 	padding: 93px 0;
 	margin: 0;
+}
+
+@supports (-webkit-touch-callout: none) {
+	.lk-code.big-btn {
+		padding-top: 98px;
+	}
 }
 
 .lk-cards {
@@ -4247,6 +4305,12 @@ table td {
 	padding: 12px 0;
 	background: linear-gradient(109.44deg, #0094FF 0%, #037AD0 100%);
 	box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.19);
+}
+
+@supports (-webkit-touch-callout: none) {
+	.popup-prize-btn {
+		padding-top: 16px;
+	}
 }
 
 .popup-prize-btn::before {
@@ -5627,6 +5691,12 @@ table td {
 		margin: 0 auto 24px;
 	}
 
+	@supports (-webkit-touch-callout: none) {
+		.lk-code.big-btn {
+			padding-top: 78px;
+		}
+	}
+
 	.lk-card:nth-child(3n) {
 		margin-right: auto;
 	}
@@ -6582,6 +6652,12 @@ table td {
 	    padding: 14px 0;
 	}
 
+	@supports (-webkit-touch-callout: none) {
+		.tm-btn {
+			padding-top: 20px;
+		}
+	}
+
 	.slick-prev {
 		left: 0;
 	}
@@ -7001,6 +7077,13 @@ table td {
 		height: 100px;
 		margin: 0 0 24px;
 		padding: 38px 0;
+	}
+
+	@supports (-webkit-touch-callout: none) {
+		.big-btn,
+		.lk-code.big-b {
+			padding-top: 42px;
+		}
 	}
 
 	.lk-cards {

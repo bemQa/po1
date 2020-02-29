@@ -355,7 +355,9 @@ $(document).ready(function () {
             var $this = $(this);
             parallaxIt(e, ".lightning", -50, $this);
         });
+    }
 
+    if($(".main-products").length) {
         $(".main-products").mousemove(function(e) {
             var $this = $(this);
             parallaxIt(e, ".product-slide-img", -30, $this);
