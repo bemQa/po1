@@ -2339,8 +2339,9 @@ button.scoreboard-btn {
 }
 
 .stadium-bg {
-	background: url(../img/stadium-bg.png) center 0 no-repeat, linear-gradient(360deg, #EBF7FF 0%, #E2F1FF 100%);
-	background-size: cover;
+    /*background: url(../img/stadium-bg.png) center 0 no-repeat, linear-gradient(360deg, #EBF7FF 0%, #E2F1FF 100%);
+    background-size: 100%;*/
+    background: linear-gradient(360deg, #EBF7FF 0%, #E2F1FF 100%);
 }
 
 .page-title {
@@ -2619,7 +2620,7 @@ button.scoreboard-btn {
 
 .football-bg {
 	background: url(../img/football-bg.png) center 0 no-repeat, linear-gradient(360deg, #EBF7FF 0%, #E2F1FF 100%);
-	background-size: cover;
+	background-size: 100%;
 }
 
 .winners-content {
@@ -3131,7 +3132,7 @@ table td {
 
 .form-bg {
 	background: url(../img/form-bg.png) center 0 no-repeat, linear-gradient(360deg, #EBF7FF 0%, #E2F1FF 100%);
-	background-size: cover;
+	background-size: 100%;
 }
 
 .lk-content {
