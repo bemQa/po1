@@ -5197,8 +5197,9 @@ table td {
 }
 
 .preloader-popup {
-    background: url(../img/game/popup-preload-bg.png) center no-repeat;
-    background-size: cover;
+    /*background: url(../img/game/popup-preload-bg.png) center no-repeat;
+    background-size: cover;*/
+    background: #0878CA;
 }
 
 .preloader {
@@ -5656,13 +5657,13 @@ table td {
 		margin: 0 auto 24px;
 	}
 
-	/*.lk-card-fields:nth-child(1) {
+	.lk-prize .lk-card-fields:nth-child(1) {
 		padding-bottom: 17px;
 	}
 
-	.lk-card-fields:nth-child(2) {
+	.lk-prize .lk-card-fields:nth-child(2) {
 		padding-top: 17px;
-	}*/
+	}
 
 	.lk-card-img {
 		width: 48px;
