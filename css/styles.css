@@ -3193,8 +3193,13 @@ table td {
 }
 
 .changed-profile {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
     line-height: 1;
-    width: 260px;
+    width: 240px;
     border-radius: 5px;
     box-shadow: 7px 7px 23px rgba(0, 0, 0, 0.07);
 }
