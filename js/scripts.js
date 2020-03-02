@@ -361,10 +361,10 @@ $(document).ready(function () {
         });
     }
 
-    if($(".main-products").length && window.innerWidth > 1000) {
-        $(".main-products").mousemove(function(e) {
+    if($(".products-slider").length && window.innerWidth > 1000) {
+        $(".products-slider").mousemove(function(e) {
             var $this = $(this);
-            parallaxIt(e, ".product-slide-img", -30, $this);
+            parallaxIt(e, ".bg-slide", -15, $this);
         });
     }
 
