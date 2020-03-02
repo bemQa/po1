@@ -455,7 +455,7 @@ body {
 body {
     margin: 0;
     color: #272727;
-    font: normal 16px/19px 'DINPro', sans-serif;
+    font: normal 16px/19px 'Montserrat', sans-serif;
 }
 
 .wrapper {
@@ -502,9 +502,7 @@ footer {
 	margin: 0 auto 35px;
 	display: flex;
 	justify-content: space-between;
-	font-family: "DINPro";
-	font-style: normal;
-	font-weight: 500;
+	font-family: "OfficinaSansC";
 	font-size: 14px;
 	line-height: 17px;
 	text-align: center;
@@ -519,7 +517,7 @@ footer {
 }
 
 .copyright {
-	font-family: "DINPro";
+	font-family: "OfficinaSansC";
 	font-size: 11px;
 	line-height: 14px;
 	text-align: center;

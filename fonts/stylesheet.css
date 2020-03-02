@@ -141,3 +141,15 @@
     font-weight: 300;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'OfficinaSansC';
+    src: url('OfficinaSansC-Bold.eot');
+    src: url('OfficinaSansC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('OfficinaSansC-Bold.woff2') format('woff2'),
+        url('OfficinaSansC-Bold.woff') format('woff'),
+        url('OfficinaSansC-Bold.ttf') format('truetype'),
+        url('OfficinaSansC-Bold.svg#OfficinaSansC-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
