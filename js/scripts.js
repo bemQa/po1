@@ -378,6 +378,19 @@ $(document).ready(function () {
             y: (relY - $this.height() / 2) / $this.height() * movement
         });
     }
+
+    $('.changed-profile-btn').click(function(e){
+        e.preventDefault();
+        var form = $(this).parents('.profile-contacts');
+        if(form.find('.changed-profile').hasClass('disabled')) {
+            $(this).text('сохранить');
+            form.find('.changed-profile').removeClass('disabled');
+        } else if (form.valid() && !form.find('.changed-profile').hasClass('disabled')) {
+            //ajax
+            $(this).text('редактировать');
+            form.find('.changed-profile').addClass('disabled');
+        }
+    });
 });
 
 $(window).on('load', function() {

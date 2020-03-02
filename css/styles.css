@@ -926,7 +926,8 @@ span.error {
     width: 23px;
     height: 20px;
     margin: auto;
-    background: url(../img/error-icon.svg);
+    background: url(../img/error-icon.svg) center no-repeat;
+    background-size: contain;
 }
 
 .input-field input.error:not([type="checkbox"]),
@@ -3178,6 +3179,7 @@ table td {
 }
 
 .profile-contacts {
+    position: relative;
 	display: flex;
 	margin-right: 30px;
 	font-family: Montserrat;
@@ -3188,6 +3190,40 @@ table td {
 
 .profile-contacts img {
 	margin-right: 10px;
+}
+
+.changed-profile {
+    line-height: 1;
+    width: 260px;
+    border-radius: 5px;
+    box-shadow: 7px 7px 23px rgba(0, 0, 0, 0.07);
+}
+
+.changed-profile.disabled {
+    pointer-events: none;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.profile-contacts span.error {
+    width: 16px;
+    height: 14px;
+    right: 5px;
+}
+
+.changed-profile-btn {
+    font-size: 10px;
+    text-decoration: underline;
+    position: absolute;
+    left: 32px;
+    bottom: -15px;
+    padding: 0;
+    background: transparent;
+}
+
+.changed-profile-btn:hover {
+    text-decoration: none;
 }
 
 .coins-wrapper {
