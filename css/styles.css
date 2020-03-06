@@ -1621,6 +1621,15 @@ span.error {
 	margin-bottom: 20px;
 }
 
+.step-title-blue {
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 31px;
+    line-height: 1;
+    color: #3160F4;
+    margin-bottom: 15px;
+}
+
 .step-title {
 	font-family: Rex;
 	font-weight: bold;
@@ -1629,6 +1638,10 @@ span.error {
 	text-align: center;
 	color: #E30613;
 	margin-bottom: 20px;
+}
+
+.step-title-blue + .step-title {
+    margin-bottom: 0;
 }
 
 .step-desc {
@@ -5940,6 +5953,12 @@ table td {
 	.tm-step .step-img3 {
 		max-width: 120px;
 	}
+
+    .step-title-blue {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
 
 	.tm-step .step-title {
 		font-size: 30px;
