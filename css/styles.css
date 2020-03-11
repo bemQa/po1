@@ -5230,6 +5230,10 @@ table td {
 	text-align: left;
 }
 
+.tm-step .step-title-min {
+    font-size: 44px;
+}
+
 .tm-step .step-desc {
 	max-width: 238px;
 	font-size: 21px;
@@ -5450,6 +5454,10 @@ table td {
 	.tm-step .step-title {
 		font-size: 40px;
 	}
+
+    .tm-step .step-title-min {
+        font-size: 36px;
+    }
 
 	.tm-step .step-desc {
 		font-size: 18px;
@@ -5965,6 +5973,15 @@ table td {
 		text-align: center;
 		margin-bottom: 15px;
 	}
+
+    .tm-step .step-title-min {
+        font-size: 30px;
+        max-width: 260px;
+    }
+
+    .tm-step .step-title-min br {
+        display: none;
+    }
 
 	.tm-step .step-desc {
 		max-width: 100%;
