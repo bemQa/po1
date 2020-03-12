@@ -5395,6 +5395,10 @@ table td {
 	.lk-code.big-btn {
 	    max-width: 425px;
 	}
+
+    .header-dixi .tm-logos {
+        right: 100px;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -6037,6 +6041,13 @@ table td {
 		top: 530px;
 	    right: 660px;
 	}
+
+    .header-dixi .tm-logos {
+        right: auto;
+        left: 170px;
+        background: none;
+        width: 300px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -7871,6 +7882,10 @@ table td {
 		font-size: 18px;
 		line-height: 22px;
 	}
+
+    .header-dixi .tm-logos {
+        left: 15px;
+    }
 }
 
 @media (max-width: 375px) {
