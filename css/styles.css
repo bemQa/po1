@@ -5363,6 +5363,12 @@ table td {
     background: url(../img/tm/dixi/back-blue.svg);
 }
 
+@media (max-width: 1800px) {
+    .header-dixi .tm-logos {
+        right: 200px;
+    }
+}
+
 @media (max-width: 1600px) {
 	.main-products .slick-dots {
 		left: 40px;
@@ -5443,7 +5449,15 @@ table td {
 	}
 
     .header-dixi .tm-logos {
-        right: 100px;
+        right: auto;
+        left: 180px;
+        background: none;
+        width: 300px;
+        padding: 0 20px;
+    }
+
+    .header-dixi .logo {
+        margin-right: 5px;
     }
 }
 

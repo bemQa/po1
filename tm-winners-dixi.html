@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" href="css/jquery.scrollbar.css">
 	<link rel="stylesheet" href="css/select2.min.css">
+	<link rel="stylesheet" href="css/datepicker.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<!--[if lte IE 9]>
     <script src="http://phpbbex.com/oldies/oldies.js" charset="utf-8"></script>
@@ -26,7 +27,7 @@
 			<img src="img/preloader/ball.svg" class="preloader-ball" alt="">
 		</div>
 	</div>
-	<div class="wrapper">
+	<div class="wrapper football-bg">
 		<div class="content">
 			<div class="full-container">
 				<header class="header-dixi">
@@ -51,77 +52,121 @@
 						<a href="#!" class="burger"></a>
 						<nav class="menu-links">
 							<a href="index.html" class="back-to-main"><img src="img/back.svg" class="back-svg" alt=""> Вернуться на главную</a>
-							<a href="tm-winners-dixi.html">Победители</a>
+							<a href="tm-winners-dixi.html" class="active">Победители</a>
 							<a href="#!">Правила акции</a>
 							<a href="tm-faq-dixi.html">Вопрос-ответ</a>
 							<a href="lk.html" class="lk-link pop-op" data-popup="auth">Личный кабинет</a>
 						</nav>
 					</div>
 				</header>
-				<section class="tm-action">
-					<div class="tm-action-title-wrapper">
-						<div class="tm-action-title">Специальная акция в</div>
-						<img src="img/tm/dixi/dixi.svg" alt="">
+				<div class="page-title">
+					<div class="page-title-img">
+						<img src="img/winners-icon.svg" alt="">
 					</div>
-					<div class="tm-action-text">Покупай в «Дикси» <b>с 16 марта по 12 апреля</b> и выигрывай еще больше призов!</div>
-				</section>
-				<section class="steps-section tm-steps-section">
-					<div class="ball ball1"></div>
-					<div class="ball ball2"></div>
-					<div class="ball ball3"></div>
-					<div class="steps tm-steps">
-						<div class="step">
-							<div class="step-num">01</div>
-							<div class="step-info">
-								<div class="step-img">
-									<img src="img/step1.svg" alt="">
-								</div>
-								<div class="step-title">покупай</div>
-								<div class="step-desc">любые продукты Alpen <br>Gold, TUC, Halls, Dirol <br>и Oreo от 100 рублей</div>
+					<div class="page-title-text">победители</div>
+				</div>
+				<section class="inner-content winners-content">
+					<div class="winners-container">
+						<div class="filters">
+							<div class="date-filter">
+								<input type="text" class="datepicker-here" readonly>
 							</div>
-							<div class="ball-mini ball-mini1"></div>
+							<form class="input-field phone-filter">
+	                    		<input type="text" name="phone" class="phone-mask" placeholder="Поиск по номеру телефона">
+	                    		<button class="search"></button>
+	                    	</form>
 						</div>
-						<div class="step">
-							<div class="ball-mini ball-mini2"></div>
-							<div class="step-num">02</div>
-							<div class="step-info">
-								<div class="step-img">
-									<img src="img/tm/dixi/step2.svg" alt="">
-								</div>
-								<div class="step-title">загрузи</div>
-								<div class="step-desc">чек от покупки <br>на промо-сайте</div>
-								<div class="btn-wrap step-btn-wrap">
-									<a href="#!" class="btn step-btn pop-op" data-popup="reg-code">Загрузить чек</a>
-								</div>
+						<div class="winners">
+							<div class="table-wrapper winners-table">
+								<table>
+									<tbody>
+										<tr>
+											<td>Александр Р.</td>
+											<td>+7(***)***-00-00</td>
+											<td class="prize-td">
+												<div class="winners-prize">
+													<img src="img/prizes/dixi-100.png" alt="Сертификат на 100₽" title="Сертификат на 100₽">
+												</div>
+												<span>Сертификат на 100₽</span>
+											</td>
+										</tr>
+										<tr>
+											<td>Александр Р.</td>
+											<td>+7(***)***-00-00</td>
+											<td class="prize-td">
+												<div class="winners-prize">
+													<img src="img/prizes/master-klass.png" alt="Мастер-класс" title="Мастер-класс">
+												</div>
+												<span>Мастер-класс</span>
+											</td>
+										</tr>
+										<tr>
+											<td>Александр Р.</td>
+											<td>+7(***)***-00-00</td>
+											<td class="prize-td">
+												<div class="winners-prize">
+													<img src="img/prizes/25.png" alt="25₽ на телефон" title="25₽ на телефон">
+												</div>
+												<span>Бутылка для фитнеса</span>
+											</td>
+										</tr>
+										<tr>
+											<td>Александр Р.</td>
+											<td>+7(***)***-00-00</td>
+											<td class="prize-td">
+												<div class="winners-prize">
+													<img src="img/prizes/25.png" alt="25₽ на телефон" title="25₽ на телефон">
+												</div>
+												<span>Футболка сборной России</span>
+											</td>
+										</tr>
+										<tr>
+											<td>Александр Р.</td>
+											<td>+7(***)***-00-00</td>
+											<td class="prize-td">
+												<div class="winners-prize">
+													<img src="img/prizes/25.png" alt="25₽ на телефон" title="25₽ на телефон">
+												</div>
+												<span>Сертификат на подписку на «Матч Премьер»</span>
+											</td>
+										</tr>
+										<tr>
+											<td>Александр Р.</td>
+											<td>+7(***)***-00-00</td>
+											<td class="prize-td">
+												<div class="winners-prize">
+													<img src="img/prizes/25.png" alt="25₽ на телефон" title="25₽ на телефон">
+												</div>
+												<span>25₽ на телефон</span>
+											</td>
+										</tr>
+										<tr>
+											<td>Александр Р.</td>
+											<td>+7(***)***-00-00</td>
+											<td class="prize-td">
+												<div class="winners-prize">
+													<img src="img/prizes/25.png" alt="25₽ на телефон" title="25₽ на телефон">
+												</div>
+												<span>25₽ на телефон</span>
+											</td>
+										</tr>
+										<tr>
+											<td>Александр Р.</td>
+											<td>+7(***)***-00-00</td>
+											<td class="prize-td">
+												<div class="winners-prize">
+													<img src="img/prizes/25.png" alt="25₽ на телефон" title="25₽ на телефон">
+												</div>
+												<span>25₽ на телефон</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
 							</div>
-							<div class="ball-mini ball-mini3"></div>
-						</div>
-						<div class="step">
-							<div class="ball-mini ball-mini4"></div>
-							<div class="step-num">03</div>
-							<div class="step-info">
-								<div class="step-img">
-									<img src="img/tm/dixi/step3.svg" alt="">
-								</div>
-								<div class="step-title">выиграй</div>
-								<div class="step-desc">сертификат в «Дикси» <br>на 100 рублей ежедневно</div>
-							</div>
-							<div class="ball-mini ball-mini5"></div>
-						</div>
-						<div class="step">
-							<div class="ball-mini ball-mini6"></div>
-							<div class="step-num">04</div>
-							<div class="step-info">
-								<div class="step-img">
-									<img src="img/tm/dixi/step4.svg" alt="">
-								</div>
-								<div class="step-title">выигрывай</div>
-								<div class="step-desc">мастер-класс для детей <br>от капитана и игроков сборной <br>России по футболу</div>
+							<div class="btn-wrap winners-btn-wrap">
+								<a href="#!" class="btn">+ Показать еще</a>
 							</div>
 						</div>
-					</div>
-					<div class="tm-link-wrapper">
-						<a href="#!" class="link tm-link">Смотреть полные правила акции в «Дикси»</a>
 					</div>
 				</section>
 			</div>
@@ -345,7 +390,6 @@
 	<script src="js/jquery.countdown.min.js"></script>
 	<script src="js/select2.min.js"></script>
 	<script src="js/slick.min.js"></script>
-	<script src="js/jquery.countchar.min.js"></script>
 	<script src="js/jscroller-0.4.js"></script>
 	<!-- fix outdated libs jquery -->
 	<script type="text/javascript">
@@ -359,6 +403,7 @@
 	        }
 	    })();
 	</script>
+	<script src="js/datepicker.min.js"></script>
 	<script src="js/scripts.js"></script>
 </body>
 </html>
