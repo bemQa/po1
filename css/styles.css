@@ -1039,8 +1039,18 @@ span.error {
 }
 
 .tm-slide-img {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
 	max-width: 330px;
 	width: 100%;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .tm-slide-img {
+        display: block;
+    }
 }
 
 .tm-slide-title {
