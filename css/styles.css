@@ -2221,7 +2221,7 @@ button.scoreboard-btn {
 }
 
 .sender-info {
-    max-width: 255px;
+    max-width: 320px;
 }
 
 .sender-name {
@@ -2236,10 +2236,10 @@ button.scoreboard-btn {
 .sender-text {
 	font-family: Rex;
 	font-weight: bold;
-	font-size: 26px;
-	line-height: 1;
+	font-size: 18px;
+	line-height: 21px;
 	color: #fff;
-	max-height: 78px;
+	max-height: 100px;
     overflow: hidden;
 }
 
@@ -7990,6 +7990,10 @@ table td {
     .lk-dixi .lk-code.big-btn {
         height: 96px;
         padding: 36px 0;
+    }
+
+    .sender-info {
+        text-align: center;
     }
 }
 
