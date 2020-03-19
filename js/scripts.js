@@ -257,6 +257,14 @@ $(document).ready(function () {
             slidesToShow: 1,
             slidesToScroll: 1
         });
+        $('.tm-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
+            $('.main-tm').removeClass('dixi-bg lenta-bg');
+            if($('.slick-active').hasClass('dixi-slide')) {
+                $('.main-tm').addClass('dixi-bg');
+            } else if($('.slick-active').hasClass('lenta-slide')) {
+                $('.main-tm').addClass('lenta-bg');
+            }
+        });
     }
 
     if($('.scoreboard-messages').length && window.innerWidth > 1000) {

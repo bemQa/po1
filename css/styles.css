@@ -1006,6 +1006,14 @@ span.error {
 	color: #fff;
 }
 
+.dixi-bg {
+    background: #EF6800;
+}
+
+.lenta-bg {
+    background: #1D3A8E;
+}
+
 .main-tm-title {
 	max-width: 616px;
 	width: 100%;
@@ -6810,8 +6818,13 @@ table td {
 
 	.tm-slide-img {
 		max-width: 200px;
+        min-height: 155px;
 		margin-bottom: 30px;
 	}
+
+    .tm-slide-title br {
+        display: none;
+    }
 
 	.tm-slide-desc {
 		max-width: 280px;
