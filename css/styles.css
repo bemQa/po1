@@ -1526,8 +1526,12 @@ span.error {
 	align-items: center;
 }
 
+.shop {
+    text-align: center;
+}
+
 .shop img {
-	width: 66%;
+	width: 50%;
 }
 
 .shop.disabled {
@@ -6384,6 +6388,10 @@ table td {
 		max-width: 50%;
 		margin-bottom: 40px;
 	}
+
+    .shop img {
+        width: 66%;
+    }
 
 	.steps-section {
 		padding: 0 0 50px;
