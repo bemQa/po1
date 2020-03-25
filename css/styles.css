@@ -5390,6 +5390,24 @@ table td {
     background: url(../img/tm/dixi/back-blue.svg);
 }
 
+.edadil-steps .step-img2 {
+    height: 222px;
+    margin-right: 60px;
+}
+
+.edadil-steps .step-img2 img {
+    height: 100%;
+}
+
+.edadil-steps .step-title-min {
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.tm-monetka-logo {
+    margin-bottom: 20px;
+}
+
 @media (max-width: 1800px) {
     .header-dixi .tm-logos {
         right: 200px;
@@ -5485,6 +5503,10 @@ table td {
 
     .header-dixi .logo {
         margin-right: 5px;
+    }
+
+    .edadil-steps .step-img2 {
+        margin-right: 30px;
     }
 }
 
@@ -6134,6 +6156,23 @@ table td {
         left: 170px;
         background: none;
         width: 300px;
+    }
+
+    .edadil-steps .step-img2 {
+        max-width: 60px;
+        height: 120px;
+    }
+
+    .edadil-steps .step-img2 img {
+        height: auto;
+    }
+
+    .edadil-steps .step-btn-wrap {
+        margin: 10px auto 0;
+    }
+
+    .edadil-steps .step-title-min br {
+        display: block;
     }
 }
 
@@ -8016,6 +8055,10 @@ table td {
     .sender-info {
         text-align: center;
         margin: auto;
+    }
+
+    .tm-monetka-logo {
+        margin-bottom: 0;
     }
 }
 
