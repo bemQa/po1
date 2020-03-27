@@ -1014,6 +1014,26 @@ span.error {
     background: #1D3A8E;
 }
 
+.perekrestok-bg {
+    background: #069944;
+}
+
+.maria-bg {
+    background: #FF8A00;
+}
+
+.spar-bg {
+    background: #159755;
+}
+
+.monetka-bg {
+    background: #C3D94B;
+}
+
+.verniy-bg {
+    background: #D5181F;
+}
+
 .main-tm-title {
 	max-width: 616px;
 	width: 100%;
@@ -1038,7 +1058,7 @@ span.error {
     width: 100%;
     margin: auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	outline: none;
 }
 
@@ -1504,26 +1524,33 @@ span.error {
 	max-width: 1550px;
 	width: 100%;
 	margin: 0 auto;
-	display: flex;
+	/*display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: center;*/
 }
 
 .special-action-title {
 	font-family: Rex;
 	font-weight: bold;
-	font-size: 21px;
+	font-size: 40px;
 	line-height: 1;
 	text-align: center;
 	color: #037CD3;
+    margin-bottom: 48px;
 }
 
 .shops {
-	max-width: 1180px;
+	/*max-width: 1180px;*/
 	width: 100%;
+    margin: auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+}
+
+.shops:nth-child(3) {
+    max-width: 1100px;
+    margin: 48px auto 0;
 }
 
 .shop {
@@ -5408,6 +5435,10 @@ table td {
     margin-bottom: 20px;
 }
 
+.select-shops {
+    display: none;
+}
+
 @media (max-width: 1800px) {
     .header-dixi .tm-logos {
         right: 200px;
@@ -5436,6 +5467,11 @@ table td {
 	.shops {
 		max-width: 1000px;
 	}
+
+    .shops:nth-child(3) {
+        max-width: 800px;
+        margin: 24px auto 0;
+    }
 
 	.ball-mini2 {
 		top: 5px;
@@ -6419,18 +6455,13 @@ table td {
     	max-width: 540px;
 	}
 
-	.shops {
-	    flex-wrap: wrap;
-	}
-
-	.shop {
-		max-width: 50%;
-		margin-bottom: 40px;
-	}
-
-    .shop img {
-        width: 66%;
+    .special-action-title {
+        font-size: 21px;
     }
+
+	.shops {
+	    display: none;
+	}
 
 	.steps-section {
 		padding: 0 0 50px;
@@ -8059,6 +8090,133 @@ table td {
 
     .tm-monetka-logo {
         margin-bottom: 0;
+    }
+
+    .select-shops {
+        display: block;
+        position: relative;
+        max-width: 408px;
+        width: 100%;
+        margin: 0 auto 60px;
+    }
+
+    .current-shop {
+        position: relative;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+        border-radius: 10px;
+        width: 100%;
+        height: 54px;
+        padding: 12px 40px 12px 25px;
+        border: 2px solid transparent;
+        background: #fff;
+        color: #0878CA;
+        font-family: Rex;
+        font-size: 16px;
+        line-height: 1;
+        font-weight: bold;
+        box-shadow: 7px 7px 23px rgba(0, 0, 0, 0.07);
+        z-index: 4;
+    }
+
+    .current-shop::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 20px;
+        width: 19px;
+        height: 11px;
+        margin: auto;
+        background: url(../img/arrow-down.svg) center no-repeat;
+        transition: all .2s linear;
+    }
+
+    .current-shop.active::after  {
+        transform: rotate(-180deg);
+    }
+
+    .dropdown-shops {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 694px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 7px 7px 23px rgba(0, 0, 0, 0.07);
+        transition: all .2s linear;
+        z-index: 3;
+    }
+
+    .dropdown-shops.active {
+        opacity: 1;
+        pointer-events: all;
+        top: 40px;
+        padding-top: 10px;
+    }
+
+    .select-shop {
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
+        width: 100%;
+        height: 76px;
+        padding: 12px 40px 12px 25px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .select-shop:last-child {
+        border-bottom: none;
+    }
+
+    .select-shop a {
+        display: inherit;
+    }
+
+    .select-shop.disabled a {
+        pointer-events: none;
+        opacity: .5;
+    }
+
+    .magnit img {
+        width: 98px;
+    }
+
+    .pka img {
+        width: 124px;
+    }
+
+    .dixi img {
+        width: 98px;
+    }
+
+    .lenta img {
+        width: 98px;
+    }
+
+    .perekrestok img {
+        width: 145px;
+    }
+
+    .verniy img {
+        width: 88px;
+    }
+
+    .maria img {
+        width: 152px;
+    }
+
+    .spar img {
+        width: 127px;
+    }
+
+    .monetka img {
+        width: 112px;
     }
 }
 

@@ -258,11 +258,21 @@ $(document).ready(function () {
             slidesToScroll: 1
         });
         $('.tm-slider').on('afterChange', function(event, slick, currentSlide, nextSlide){
-            $('.main-tm').removeClass('dixi-bg lenta-bg');
+            $('.main-tm').removeClass('dixi-bg lenta-bg perekrestok-bg maria-bg spar-bg monetka-bg verniy-bg');
             if($('.slick-active').hasClass('dixi-slide')) {
                 $('.main-tm').addClass('dixi-bg');
             } else if($('.slick-active').hasClass('lenta-slide')) {
                 $('.main-tm').addClass('lenta-bg');
+            } else if($('.slick-active').hasClass('perekrestok-slide')) {
+                $('.main-tm').addClass('perekrestok-bg');
+            } else if($('.slick-active').hasClass('maria-slide')) {
+                $('.main-tm').addClass('maria-bg');
+            } else if($('.slick-active').hasClass('spar-slide')) {
+                $('.main-tm').addClass('spar-bg');
+            } else if($('.slick-active').hasClass('monetka-slide')) {
+                $('.main-tm').addClass('monetka-bg');
+            } else if($('.slick-active').hasClass('verniy-slide')) {
+                $('.main-tm').addClass('verniy-bg');
             }
         });
     }
@@ -399,6 +409,11 @@ $(document).ready(function () {
             form.find('.changed-profile').addClass('disabled');
         }
     });
+
+    $('.current-shop').click(function() {
+        $(this).toggleClass('active');
+        $('.dropdown-shops').toggleClass('active');
+    })
 });
 
 $(window).on('load', function() {
