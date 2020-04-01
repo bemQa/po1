@@ -5439,6 +5439,28 @@ table td {
     display: none;
 }
 
+#prize-info .popup__wrap {
+    max-width: 980px;
+    padding: 80px 30px 60px;
+}
+
+.players-popup {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 500px; 
+}
+
+#prize-info .popup__inner {
+    margin-right: 0;
+}
+
+#prize-info .popup__title {
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+}
+
 @media (max-width: 1800px) {
     .header-dixi .tm-logos {
         right: 200px;
@@ -8217,6 +8239,33 @@ table td {
 
     .monetka img {
         width: 112px;
+    }
+
+    #prize-info {
+        padding-top: 200px;
+    }
+
+    #prize-info .popup__wrap {
+        max-width: 320px;
+        padding: 30px 16px 20px;
+    }
+
+    .players-popup {
+        bottom: auto;
+        top: -196px;
+        width: 270px;
+    }
+
+    #prize-info .popup__inner {
+        margin-right: auto;
+    }
+
+    #prize-info .popup__title {
+        text-align: center;
+        max-width: 320px;
+        width: 100%;
+        font-size: 28px;
+        line-height: 32px;
     }
 }
 
