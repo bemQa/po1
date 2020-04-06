@@ -1430,9 +1430,9 @@ span.error {
 }
 
 .main-kv {
-    max-width: 383px;
+    max-width: 540px;
     width: 100%;
-    margin: 30px auto 0;
+    margin: 40px auto 0;
 }
 
 .main-players {
@@ -5486,6 +5486,10 @@ table td {
 		max-width: 500px;
 	}
 
+	.main-kv {
+		max-width: 400px;
+	}
+
 	.shops {
 		max-width: 1000px;
 	}
@@ -6468,7 +6472,8 @@ table td {
 	}
 
 	.main-kv {
-	    max-width: 260px;
+        max-width: 300px;
+    	margin-top: 30px;
 	}
 
 	.main-players {
@@ -6782,9 +6787,9 @@ table td {
 	    margin: 0 auto 30px;
 	}
 
-	.scoreboard-text br {
+	/*.scoreboard-text br {
 		display: none;
-	}
+	}*/
 
 	.scoreboard {
 		position: relative;
