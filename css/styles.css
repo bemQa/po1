@@ -8345,7 +8345,9 @@ table td {
     }
 
     .select-shop a {
-        display: inherit;
+        display: flex;
+        -ms-align-items: center;
+        align-items: center;
     }
 
     .select-shop.disabled a {
