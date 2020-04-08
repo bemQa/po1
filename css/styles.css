@@ -5461,6 +5461,75 @@ table td {
     width: 100%;
 }
 
+.fb-bg {
+    background: url(../img/fb-bg.png) center 0 no-repeat;
+    background-size: 100%;
+}
+
+.football-content {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.football-container {
+    max-width: 1540px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.football-info-left {
+    max-width: 690px;
+    width: 100%;
+    margin-right: 40px;
+}
+
+.football-info-right {
+    max-width: 668px;
+    width: 100%;
+}
+
+.football-info {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.football-info-block {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.football-info-block:first-child {
+    margin-bottom: 20px;
+}
+
+.football-info-img {
+    max-width: 253px;
+    width: 100%;
+    margin: auto;
+    margin-right: 30px;
+    text-align: center;
+}
+
+.football-info-block:first-child .football-info-img img {
+    max-width: 189px;
+    width: 100%;
+    margin: auto;
+}
+
+.football-info-text {
+    max-width: 383px;
+    width: 100%;
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 40px;
+    color: #0878CA;
+}
+
 @media (max-width: 1800px) {
     .header-dixi .tm-logos {
         right: 200px;
@@ -5570,6 +5639,32 @@ table td {
     .edadil-steps .step-img2 {
         margin-right: 30px;
     }
+
+    .menu-links a {
+        padding: 31px 12px;
+    }
+
+    .menu-links .lk-link {
+        padding: 31px 16px;
+    }
+
+    .lk-link-wrapper .profile-link {
+        padding: 0;
+        padding-right: 30px;
+    }
+
+    .lk-link-wrapper .logout-link {
+        padding: 0;
+        right: 20px;
+    }
+
+    .logos {
+        max-width: 320px;
+    }
+
+    .logo {
+        margin-right: 10px;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -5638,48 +5733,64 @@ table td {
 		font-size: 18px;
     	line-height: 26px;
 	}
+
+    .football-container {
+        max-width: 1180px;
+    }
+
+    .football-info-left {
+        max-width: 500px;
+    }
+
+    .football-info-right {
+        max-width: 570px;
+    }
+
+    .football-info-img {
+        max-width: 220px;
+    }
+
+    .football-info-block:first-child .football-info-img img {
+        max-width: 150px;
+    }
+
+    .football-info-text {
+        max-width: 320px;
+        font-size: 28px;
+        line-height: 34px;
+    }
 }
 
 @media (max-width: 1366px) {
-	.menu-links a {
-	    padding: 31px 12px;
-	}
+	header,
+    .menu-links a,
+    .lk-link-wrapper {
+        height: 60px;
+    }
 
-	.menu-links .lk-link {
-	    padding: 31px 16px;
-	}
+    .menu-links a {
+        font-size: 16px;
+        padding: 22px 12px;
+    }
 
-	.lk-link-wrapper .profile-link {
-		padding: 0;
-		padding-right: 30px;
-	}
+    .lk-link-wrapper a {
+        padding: 0;
+    }
 
-	.lk-link-wrapper .logout-link {
-		padding: 0;
-		right: 20px;
-	}
+    .menu-links .lk-link {
+        padding: 22px 18px;
+    }
+
+    .logos {
+        max-width: 180px;
+    }
+
+    .logo {
+        margin-right: 5px;
+    }
 }
 
 @media (max-width: 1280px) {
-	header,
-	.menu-links a,
-	.lk-link-wrapper {
-		height: 60px;
-	}
-
-	.menu-links a {
-		font-size: 16px;
-		padding: 22px 12px;
-	}
-
-	.lk-link-wrapper a {
-		padding: 0;
-	}
-
-	.menu-links .lk-link {
-	    padding: 22px 18px;
-	}
-
 	.main-action {
 	    top: -6px;
 	    left: 20px;
@@ -5882,14 +5993,6 @@ table td {
 
 	.feedback-form {
 		max-width: 362px;
-	}
-
-	.logos {
-		max-width: 180px;
-	}
-
-	.logo {
-	    margin-right: 5px;
 	}
 
 	.lk-cards {
@@ -6235,6 +6338,45 @@ table td {
 
     .edadil-steps .step-title-min br {
         display: block;
+    }
+
+    .football-content {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    .football-container {
+        max-width: 730px;
+    }
+
+    .football-info {
+        margin-bottom: 40px;
+    }
+
+    .football-info-left,
+    .football-info-right {
+        max-width: 320px;
+    }
+
+    .football-info-img {
+        max-width: 138px;
+        margin-right: 10px;
+    }
+
+    .football-info-block:first-child .football-info-img img {
+        max-width: 102px;
+    }
+
+    .football-info-text {
+        max-width: 174px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .logos {
+        display: none;
     }
 }
 
@@ -6966,6 +7108,7 @@ table td {
 	}
 
 	.logos {
+        display: flex;
 		max-width: 240px;
     	left: 15px;
     	height: 60px;
@@ -8271,6 +8414,23 @@ table td {
         width: 100%;
         font-size: 28px;
         line-height: 32px;
+    }
+
+    .fb-bg {
+        background-size: cover;
+    }
+
+    .football-content {
+        margin-top: 140px;
+    }
+
+    .football-info {
+        flex-direction: column;
+    }
+
+    .football-info-left {
+        margin-right: 0;
+        margin-bottom: 40px;
     }
 }
 
