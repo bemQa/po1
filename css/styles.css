@@ -5478,7 +5478,7 @@ table td {
 }
 
 .football-info-left {
-    max-width: 690px;
+    max-width: 556px;
     width: 100%;
     margin-right: 40px;
 }
@@ -5492,7 +5492,7 @@ table td {
     display: flex;
     -ms-align-items: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 60px;
 }
 
