@@ -5530,6 +5530,93 @@ table td {
     color: #0878CA;
 }
 
+.ps-winners-wrapper {
+    margin: 80px auto 55px;
+    border-bottom: 1px solid rgba(8, 120, 202, 0.3);
+}
+
+.ps-winners-title {
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #D01319;
+    text-shadow: 4px 3px 0px #FFFFFF;
+}
+
+.ps-winners-wrapper .ps-winners-title {
+    margin-bottom: 15px;
+}
+
+.winners-content .ps-winners-title {
+    margin-bottom: 35px;
+}
+
+.ps-winners-desc {
+    font-family: Montserrat;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #000;
+}
+
+.ps-winners {
+    display: flex;
+    justify-content: space-between;
+    max-width: 770px;
+    width: 100%;
+    margin: 60px auto 64px;
+}
+
+.ps-winner {
+    position: relative;
+    width: 224px;
+    height: 132px;
+    padding: 50px 10px 25px;
+    border-radius: 10px;
+    border: 3px dashed #fff;
+}
+
+.ps-winner::after {
+    content: '';
+    position: absolute;
+    top: -37px;
+    left: 0;
+    right: 0;
+    width: 74px;
+    height: 74px;
+    margin: auto;
+    background: url(../img/prizes/playstation.png) center no-repeat, #FEBD2C;
+    background-size: 48px;
+    border-radius: 50px;
+}
+
+.ps-winner.win {
+    border: 3px transparent;
+    background: url(../img/ps-bg.png) center no-repeat;
+    background-size: contain;
+    box-shadow: 7px 7px 23px rgba(0, 0, 0, 0.07);
+}
+
+.ps-winner-blue {
+    font-family: Montserrat;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    color: #0878CA;
+    margin: 5px 0;
+}
+
+.ps-winner-dark {
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #272727;
+    margin: 5px 0;
+}
+
 @media (max-width: 1800px) {
     .header-dixi .tm-logos {
         right: 200px;
@@ -8433,6 +8520,33 @@ table td {
     .football-info-left {
         margin-right: 0;
         margin-bottom: 40px;
+    }
+
+    .ps-winners-wrapper {
+        margin-top: 125px;
+    }
+
+    .ps-winners {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ps-winner {
+        margin-bottom: 50px;
+    }
+
+    .ps-winner:last-child {
+        margin-bottom: 0;
+    }
+
+    .ps-winners-title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .ps-winners-desc {
+        font-size: 16px;
+        line-height: 22px;
     }
 }
 
