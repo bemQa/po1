@@ -5440,18 +5440,19 @@ table td {
 }
 
 #prize-info .popup__wrap {
-    max-width: 980px;
-    padding: 80px 30px 60px;
+    max-width: 860px;
+    padding: 44px 30px 30px;
 }
 
 .players-popup {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 500px; 
+    width: 460px; 
 }
 
 #prize-info .popup__inner {
+    max-width: 320px;
     margin-right: 0;
 }
 
@@ -5459,6 +5460,53 @@ table td {
     text-align: left;
     max-width: 400px;
     width: 100%;
+    font-size: 42px;
+    line-height: 45px;
+    margin-bottom: 5px;
+}
+
+#prize-info .popup__desc {
+    font-family: Geometria;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: left;
+    margin: 10px auto 30px;
+}
+
+.ps-popup-info {
+    position: relative;
+    padding-left: 90px;
+    text-align: left;
+}
+
+.ps-popup-info::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 74px;
+    background: url(../img/prizes/playstation.png) center no-repeat, #FEBD2C;
+    background-size: 48px;
+    border-radius: 50px;
+}
+
+.ps-popup-info-title {
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    color: #D20102;
+    margin-bottom: 5px;
+}
+
+.ps-popup-info-desc {
+    font-family: Geometria;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 20px;
+    color: #272727;
 }
 
 .fb-bg {
@@ -8484,7 +8532,7 @@ table td {
 
     #prize-info .popup__wrap {
         max-width: 320px;
-        padding: 30px 16px 20px;
+        padding: 30px 25px 20px;
     }
 
     .players-popup {
@@ -8501,8 +8549,32 @@ table td {
         text-align: center;
         max-width: 320px;
         width: 100%;
-        font-size: 28px;
-        line-height: 32px;
+        font-size: 32px;
+        line-height: 39px;
+    }
+
+    #prize-info .popup__desc {
+        text-align: center;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    .ps-popup-info {
+        padding-top: 20px;
+        padding-left: 80px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .ps-popup-info::before {
+        top: 20px;
+        width: 64px;
+        height: 64px;
+        background-size: 42px;
+    }
+
+    .ps-popup-info-title,
+    .ps-popup-info-desc {
+        font-size: 16px;
     }
 
     .fb-bg {
