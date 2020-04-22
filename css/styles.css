@@ -5797,6 +5797,10 @@ table td {
         max-width: 320px;
     }
 
+    .tm-logos {
+        max-width: 604px;
+    }
+
     .logo {
         margin-right: 10px;
     }
@@ -5918,6 +5922,14 @@ table td {
 
     .logos {
         max-width: 180px;
+    }
+
+    .tm-logos {
+        top: -11px;
+        max-width: 100%;
+        width: 450px;
+        height: 82px;
+        padding: 0 20px;
     }
 
     .logo {
@@ -6331,14 +6343,6 @@ table td {
 		font-size: 12px;
 	}
 
-	.tm-logos {
-	    top: -11px;
-		max-width: 100%;
-	    width: 450px;
-	    height: 82px;
-	    padding: 0 20px;
-	}
-
 	.tm-steps-section {
 		min-height: 580px;
 	}
@@ -6512,6 +6516,10 @@ table td {
 @media (max-width: 1160px) {
     .logos {
         display: none;
+    }
+
+    .tm-logos {
+        display: flex;
     }
 }
 
