@@ -5935,25 +5935,26 @@ table td {
     .logo {
         margin-right: 5px;
     }
+
+    .main-action {
+        top: -6px;
+        left: 20px;
+        width: 119px;
+        height: 72px;
+        background: url(../img/main-action-mob.svg);
+        background-size: contain;
+    }
+
+    .main-ball {
+        width: 160px;
+        height: 100px;
+        background-size: contain;
+        top: -25px;
+        left: 70px;
+    }
 }
 
 @media (max-width: 1280px) {
-	.main-action {
-	    top: -6px;
-	    left: 20px;
-	    width: 119px;
-	    height: 72px;
-	    background: url(../img/main-action-mob.svg);
-    	background-size: contain;
-	}
-
-	.main-ball {
-		width: 160px;
-	    height: 100px;
-	    background-size: contain;
-	    top: -25px;
-	    left: 70px;
-	}
 
 	.special-action {
 		flex-direction: column;
@@ -6524,6 +6525,11 @@ table td {
 }
 
 @media (max-width: 1024px) {
+    .main-ball {
+        width: 130px;
+        height: 80px;
+    }
+
 	.ball-mini1 {
         width: 70px;
 	    height: 70px;
@@ -6562,6 +6568,11 @@ table td {
 }
 
 @media (max-width: 1000px) {
+    .main-ball {
+        width: 160px;
+        height: 100px;
+    }
+
 	.full-container {
 		padding: 0 15px;
 	}
