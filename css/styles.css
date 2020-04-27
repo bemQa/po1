@@ -5510,7 +5510,7 @@ table td {
 }
 
 .fb-bg {
-    background: url(../img/fb-bg.png) center 0 no-repeat;
+    background: url(../img/fb-bg.png) center 0 no-repeat, linear-gradient(360deg, #EBF7FF 0%, #E2F1FF 100%);
     background-size: 100%;
 }
 
@@ -5663,6 +5663,136 @@ table td {
     text-align: center;
     color: #272727;
     margin: 5px 0;
+}
+
+.ps-winners-nav {
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1;
+    text-align: center;
+    color: #0878CA;
+    margin-top: 35px;
+}
+
+.ps-winners-nav img {
+    margin-top: 6px;
+}
+
+.ps-winners-fb-wrapper {
+    position: relative;
+    max-width: 1270px;
+    width: 100%;
+    margin: auto;
+}
+
+.ps-winners-fb-title {
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+    color: #D01319;
+    margin: 76px auto;
+}
+
+.ps-winners-fb-dates {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.ps-winners-fb-date {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 124px;
+    height: 29px;
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
+    text-align: center;
+    color: #0878CA;
+}
+
+.ps-winners-fb-date.active {
+    background: url(../img/ps-winners-date.png) center no-repeat;
+    background-size: contain;
+    color: #fff;
+}
+
+.ps-winners-fb {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ps-winner-fb {
+    max-width: 375px;
+    width: 100%;
+    margin: 0 10px;
+}
+
+.ps-winner-img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.ps-winner-name {
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
+    text-align: center;
+    color: #0878CA;
+}
+
+.ps-winners-fb-dates-mob {
+    display: none;
+}
+
+.fb-bg .full-container {
+    position: relative;
+}
+
+.fb-ball {
+    position: absolute;
+    z-index: 0;
+}
+
+.fb-ball1 {
+    bottom: 500px;
+    left: 0;
+}
+
+.fb-ball2 {
+    bottom: 600px;
+    right: 200px;
+}
+
+.fb-ball3 {
+    bottom: 100px;
+    right: 0;
+}
+
+.fb-ball4 {
+    bottom: 330px;
+    left: 0;
+    right: 300px;
+    margin: auto;
+}
+
+.fb-ball5 {
+    bottom: 100px;
+    left: 100px;
+}
+
+.fb-ball6 {
+    bottom: -150px;
+    left: 400px;
+    right: 0;
+    margin: auto;
 }
 
 @media (max-width: 1800px) {
@@ -6511,6 +6641,14 @@ table td {
         max-width: 174px;
         font-size: 18px;
         line-height: 24px;
+    }
+
+    .ps-winners-fb-date {
+        height: 56px;
+    }
+    
+    .ps-winners-fb-date.active {
+        background-size: 100% 56px;
     }
 }
 
@@ -8638,6 +8776,78 @@ table td {
     .ps-winners-desc {
         font-size: 16px;
         line-height: 22px;
+    }
+
+    .ps-winners-nav {
+        display: none;
+    }
+
+    .ps-winners-fb-title {
+        font-size: 35px;
+        margin: 76px auto 30px;
+    }
+
+    .ps-winners-fb-dates {
+        display: none;
+    }
+
+    .ps-winners-fb-dates-mob {
+        display: block;
+        max-width: 310px;
+        width: 100%;
+        margin: 0 auto 24px;
+    }
+
+    .ps-winners-fb {
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+    }
+
+    .ps-winner-fb {
+        max-width: 275px;
+        margin: 24px auto;
+    }
+
+    .ps-winner-img {
+        margin-bottom: 24px;
+    }
+
+    .ps-winner-name {
+        font-size: 18px;
+    }
+
+    .fb-ball1 {
+        bottom: 1200px;
+        left: auto;
+        right: 0;
+        transform: rotate(180deg);
+        width: 100px;
+    }
+
+    .fb-ball2 {
+        bottom: 800px;
+        right: auto;
+        left: -50px;
+    }
+
+    .fb-ball3 {
+        bottom: 550px;
+        right: 0;
+        width: 150px;
+    }
+
+    .fb-ball4 {
+        bottom: 300px;
+        left: -50px;
+        right: auto;
+        margin: auto;
+        width: 140px;
+    }
+
+    .fb-ball5,
+    .fb-ball6 {
+        display: none;
     }
 }
 
