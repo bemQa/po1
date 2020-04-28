@@ -284,6 +284,7 @@ $(document).ready(function () {
     }
 
     $('.tab-trigger').click(function(){
+        $('.tab-trigger').removeClass('active');
         var tab = $(this).data('tab');
         $('.tab').removeClass('active');
         $(this).addClass('active');
@@ -294,6 +295,12 @@ $(document).ready(function () {
         } else {
             $('.lk-info').removeClass('active');
         }
+    });
+
+    $('.ps-winners-fb-dates-select').on('change', function() {
+        var tab = $(this).val();
+        $('.tab-item').removeClass('active');
+        $('.tab-item.' + tab).addClass('active');
     });
 
     if($('.dropify').length) {

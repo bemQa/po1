@@ -5724,8 +5724,13 @@ table td {
 }
 
 .ps-winners-fb {
-    display: flex;
+    /*display: flex;*/
+    display: none;
     justify-content: space-between;
+}
+
+.ps-winners-fb.active {
+    display: flex;
 }
 
 .ps-winner-fb {
