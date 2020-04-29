@@ -5737,6 +5737,7 @@ table td {
     max-width: 375px;
     width: 100%;
     margin: 0 10px;
+    text-align: center;
 }
 
 .ps-winner-img {
