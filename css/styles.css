@@ -545,6 +545,12 @@ header {
 	background: url(../img/main-action.svg);
 }
 
+.main-action-new {
+    width: 351px;
+    height: 110px;
+    background: url(../img/main-action-new.svg);
+}
+
 .main-ball {
 	position: absolute;
 	top: -35px;
@@ -1838,7 +1844,7 @@ span.error {
 
 .main-prizes-section {
 	position: relative;
-	min-height: 976px;
+	min-height: 524px;
 	background: linear-gradient(116.95deg, #0194FE 0%, #047BD1 100%);
 }
 
@@ -1855,17 +1861,26 @@ span.error {
 
 .main-prizes-line:first-child {
 	position: relative;
-	margin-bottom: 76px;
+	/*margin-bottom: 76px;*/
+}
+
+.main-prizes-title-wrapper {
+    position: relative;
+    min-width: 285px;
+    width: 100%;
+    max-width: 380px;
+    margin-right: 20px;
+    z-index: 1;
 }
 
 .main-prizes-title {
-	position: absolute;
-	left: 5%;
+	/*position: absolute;
+	left: 5%;*/
 	font-family: Rex;
 	font-weight: bold;
-	font-size: 211px;
+	font-size: 131px;
 	line-height: 1;
-	text-align: center;
+	/*text-align: center;*/
 	letter-spacing: 0.05em;
 	color: #FCD45E;
     margin: auto;
@@ -1883,8 +1898,9 @@ span.error {
 	-ms-align-items: center;
 	align-items: center;
 	justify-content: center;
-	margin-right: 56px;
+	margin-right: 20px;
 	transition: all .3s linear;
+    z-index: 1;
 }
 
 .main-prize.fake {
@@ -1907,16 +1923,16 @@ span.error {
 .main-prizes-link {
 	max-width: 400px;
 	width: 100%;
-	display: flex;
-    justify-content: center;
+	/*display: flex;
+    justify-content: center;*/
     z-index: 1;
 }
 
 .main-prizes-link a {
 	font-family: Rex;
 	font-weight: bold;
-	font-size: 50px;
-	line-height: 64px;
+	font-size: 28px;
+	line-height: 40px;
 	color: #fff;
 }
 
@@ -1970,27 +1986,29 @@ span.error {
 
 .cup3 {
 	position: absolute;
-    top: 0;
+    top: auto;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: -70px;
     margin: auto;
-	width: 258px;
-	height: 261px;
-	background: url(../img/cup3.svg) center no-repeat;
-	background-size: cover;
+    width: 258px;
+    height: 261px;
+    background: url(../img/cup3.svg) center no-repeat;
+    background-size: cover;
+    z-index: 1;
 }
 
 .cup4 {
 	position: absolute;
-    top: 0;
+    top: auto;
     left: -150px;
-    bottom: 100px;
+    bottom: -100px;
     margin: auto;
-	width: 339px;
-	height: 379px;
-	background: url(../img/cup4.svg) center no-repeat;
-	background-size: cover;
+    width: 339px;
+    height: 379px;
+    background: url(../img/cup4.svg) center no-repeat;
+    background-size: cover;
+    z-index: 1;
 }
 
 .cup5 {
@@ -2016,12 +2034,12 @@ span.error {
 
 .cup7 {
 	position: absolute;
-    top: 50px;
+    top: 15px;
     left: 500px;
-	width: 67px;
-	height: 67px;
-	background: url(../img/cup7.svg) center no-repeat;
-	background-size: cover;
+    width: 67px;
+    height: 67px;
+    background: url(../img/cup7.svg) center no-repeat;
+    background-size: cover;
 }
 
 .cup {
@@ -5861,9 +5879,17 @@ table td {
 		left: 0;
 	}
 
+    .main-prizes-title-wrapper {
+        max-width: 285px;
+    }
+
 	.main-prizes-title {
-		left: 3%;
+		font-size: 100px;
 	}
+
+    .main-prizes-link a {
+        font-size: 25px;
+    }
 
 	.main-prize-info {
 		padding: 0 20px;
@@ -5958,9 +5984,18 @@ table td {
     	margin: 40px 0 10px auto;
 	}
 
+    .main-prizes-title-wrapper {
+        min-width: 260px;
+        max-width: 260px;
+    }
+
 	.main-prizes-title {
-	    font-size: 180px;
+	    font-size: 90px;
 	}
+
+    .main-prizes-link a {
+        font-size: 22px;
+    }
 
 	.scoreboard-title {
 		max-width: 900px;
@@ -6081,6 +6116,12 @@ table td {
         background-size: contain;
     }
 
+    .main-action-new {
+        width: 202px;
+        height: 72px;
+        background: url(../img/main-action-new-mob.svg);
+    }
+
     .main-ball {
         width: 160px;
         height: 100px;
@@ -6190,9 +6231,18 @@ table td {
 	    top: 10px;
 	}
 
+    .main-prizes-title-wrapper {
+        min-width: 230px;
+        max-width: 230px;
+    }
+
 	.main-prizes-title {
-		font-size: 160px;
+		font-size: 80px;
 	}
+
+    .main-prizes-link a {
+        font-size: 20px;
+    }
 
 	.main-prize {
 		margin-right: 36px;
@@ -6666,6 +6716,10 @@ table td {
     .tm-logos {
         display: flex;
     }
+
+    .menu-links a {
+        font-size: 14px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -7071,12 +7125,19 @@ table td {
 	}
 
 	.main-prizes-line:first-child {
-		margin-bottom: 0;
+		margin-bottom: 76px;
 	}
+
+    .main-prizes-title-wrapper {
+        position: initial;
+        min-width: auto;
+        max-width: none;
+    }
 
 	.main-prizes-title {
 	    position: relative;
     	font-size: 60px;
+        text-align: center;
 	}
 
 	.main-prize.fake {
@@ -7116,7 +7177,13 @@ table td {
 	}
 
 	.main-prizes-link {
+        position: absolute;
+        bottom: -76px;
+        left: 0;
+        right: 0;
 		max-width: 225px;
+        margin: auto;
+        text-align: center;
 	}
 
 	.main-prizes-link a {
@@ -8744,8 +8811,13 @@ table td {
         background-size: cover;
     }
 
+    .fb-bg .full-container {
+        position: initial;
+    }
+
     .football-content {
         margin-top: 140px;
+        position: relative;
     }
 
     .football-info {
@@ -8826,7 +8898,7 @@ table td {
     .fb-ball1 {
         bottom: 1200px;
         left: auto;
-        right: 0;
+        right: -15px;
         transform: rotate(180deg);
         width: 100px;
     }
@@ -8834,18 +8906,18 @@ table td {
     .fb-ball2 {
         bottom: 800px;
         right: auto;
-        left: -50px;
+        left: -65px;
     }
 
     .fb-ball3 {
         bottom: 550px;
-        right: 0;
+        right: -15px;
         width: 150px;
     }
 
     .fb-ball4 {
         bottom: 300px;
-        left: -50px;
+        left: -65px;
         right: auto;
         margin: auto;
         width: 140px;
