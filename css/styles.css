@@ -640,7 +640,7 @@ header {
     line-height: 1;
     padding: 16px 0;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: lowercase;
     color: #fff;
     background: linear-gradient(106.03deg, #E30613 0%, #D00000 100%);
     box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.19);
@@ -3539,6 +3539,10 @@ table td {
 	justify-content: space-between;
 }
 
+.lk-prize .lk-card-fields {
+    justify-content: flex-start;
+}
+
 .lk-card-fields:nth-child(1) {
 	position: relative;
 	padding-bottom: 24px;
@@ -5819,6 +5823,382 @@ table td {
     margin: auto;
 }
 
+.promo-5ka {
+    background: url(../img/promo-5ka/bg.jpg) center 0 repeat-y, #000005;
+    background-size: 100%;
+}
+
+.promo-5ka header {
+    background: transparent;
+}
+
+.promo-5ka .menu-links a {
+    height: 22px;
+    padding: 0;
+    margin: 31px 24px;
+    border-bottom: 2px solid transparent;
+}
+
+.promo-5ka .menu-links .lk-link {
+    background: transparent;
+    padding: 0;
+    margin: 31px 24px;
+    border-radius: 0;
+}
+
+.promo-5ka .menu-links .active,
+.promo-5ka .menu-links a:hover:not(.logout-link),
+.promo-5ka .lk-link-wrapper .profile-link.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.main-promo-5ka {
+    position: relative;
+    max-width: 1628px;
+    width: 100%;
+    margin: auto;
+}
+
+.promo-logos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 94px;
+}
+
+.promo-logos .logo {
+    width: 94px;
+    height: 94px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    margin: 28px;
+}
+
+.promo-logos .logo-ag {
+    background: url(../img/ag.png) center no-repeat;
+    background-size: 58px;
+}
+
+.promo-logos .logo-oreo {
+    background: url(../img/oreo.png) center no-repeat;
+    background-size: 61px;
+}
+
+.promo-logos .logo-tuc {
+    background: url(../img/tuc.png) center no-repeat;
+    background-size: 81px;
+}
+
+.promo-logos .logo-halls {
+    background: url(../img/halls.png) center no-repeat;
+    background-size: 69px;
+}
+
+.promo-logos .logo-dirol {
+    background: url(../img/dirol.png) center no-repeat;
+    background-size: 54px;
+}
+
+.main-promo-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.promo-5ka-slogan {
+    max-width: 645px;
+    width: 100%;
+    margin-top: 28px;
+    margin-left: 15%;
+}
+
+.promo-5ka-logo {
+    max-width: 240px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.promo-5ka-slogan-text {
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 133px;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.promo-5ka-slogan-text span {
+    color: #88BB58;
+}
+
+.promo-5ka-btn {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 298px;
+    height: 80px;
+    background: linear-gradient(180deg, #0878CA 0%, #0C63A3 100%);
+    box-shadow: 0px 0px 39px rgba(6, 189, 247, 0.45);
+    border-radius: 5px;
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1;
+    color: #fff;
+}
+
+.promo-5ka-players {
+    position: relative;
+    max-width: 632px;
+    width: 100%;
+}
+
+.promo-5ka-players img {
+    position: absolute;
+    top: -30px;
+}
+
+.players-lights {
+    left: -15%;
+    mix-blend-mode: color-dodge;
+}
+
+.promo-5ka-steps {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 240px;
+    margin-bottom: 55px;
+    padding: 36px 0;
+}
+
+.promo-5ka-steps::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 10, 53, 0.63);
+    mix-blend-mode: multiply;
+    z-index: 0;
+}
+
+.promo-5ka-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 3%;
+}
+
+.promo-5ka-step1 {
+    flex-direction: row;
+}
+
+.promo-5ka-step:nth-child(2) .promo-5ka-step-title::before,
+.promo-5ka-step:nth-child(3) .promo-5ka-step-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: -116px;
+    width: 124px;
+    height: 2px;
+    margin: auto;
+    background: url(../img/promo-5ka/line.svg) center repeat-x;
+    z-index: 0;
+}
+
+.promo-5ka-step-img {
+    max-width: 201px;
+    width: 100%;
+    margin-right: 25px;
+}
+
+.promo-5ka-step-title {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 297px;
+    height: 60px;
+    background: url(../img/promo-5ka/step-bg.svg) center no-repeat;
+    background-size: contain;
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.promo-5ka-step-text {
+    max-width: 282px;
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.promo-5ka-step-text span {
+    color: #88BB58;
+}
+
+.promo-5ka-step-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 188px;
+    height: 48px;
+    background: rgba(48, 85, 160, 0.3);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
+    color: #fff;
+    margin: auto;
+}
+
+.promo-5ka-step-btn:hover {
+    color: #fff;
+    background: rgba(48, 85, 160, 0.6);
+}
+
+.promo-5ka .page-title {
+    color: #fff;
+    text-shadow: none;
+}
+
+.promo-5ka .datepicker-here {
+    color: #fff;
+    border-bottom: 2px #fff dashed;
+}
+
+.promo-5ka .date-filter::before {
+    background: url(../img/promo-5ka/calendar-icon.svg);
+}
+
+.promo-5ka .phone-filter input:not([type="checkbox"]),
+.promo-5ka table tbody,
+.promo-5ka .feedback-title,
+.promo-5ka .select2-container--default .select2-selection--single .select2-selection__placeholder,
+.promo-5ka .select2-dropdown {
+    color: #3A55A5;
+}
+
+.promo-5ka .input-field input:not([type="checkbox"])::placeholder,
+.promo-5ka .input-field textarea::placeholder {
+    color: rgba(58, 85, 165, .6);
+}
+
+.promo-5ka .winners-prize,
+.promo-5ka .lk-prize .lk-card-img {
+    background: rgba(105, 178, 41, .4);
+}
+
+.promo-5ka .faq-title {
+    background: linear-gradient(180deg, #0878CA 0%, #0C63A3 100%);
+}
+
+.promo-5ka .faq-title.active {
+    color: #3A55A5;
+    background: #fff;
+}
+
+.promo-5ka .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    background: url(../img/promo-5ka/arrow-down.svg) center no-repeat;
+}
+
+.promo-5ka .select2-container--default .select2-results__option[aria-selected=true], 
+.promo-5ka .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    color: #3A55A5;
+    background: rgba(58, 85, 165, .1);
+}
+
+.promo-5ka .lk-link-wrapper.lk-link {
+    height: auto;
+    margin: auto;
+}
+
+.promo-5ka .lk-link-wrapper .profile-link {
+    height: 22px;
+    padding: 0;
+    margin-right: 30px;
+}
+
+.promo-5ka .lk-link-wrapper .logout-link {
+    height: 20px;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+.promo-5ka .lk-link-wrapper .logout-link:hover svg path {
+    stroke: #88BB58;
+}
+
+.promo-5ka .tm-action-title {
+    color: #fff;
+}
+
+.promo-5ka .tm-action-title-wrapper img {
+    width: 205px;
+}
+
+.promo-5ka .profile,
+.promo-5ka .profile-contacts,
+.promo-5ka .changed-profile.disabled,
+.promo-5ka .changed-profile-btn {
+    color: #fff;
+}
+
+.promo-5ka .back-to-main-lk {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.promo-5ka .back-to-main-lk::after {
+    background: url(../img/promo-5ka/back.svg);
+}
+
+.promo-5ka .tab {
+    background: rgba(48, 85, 160, 0.3);
+    border: 1px solid #FFFFFF;
+    color: #fff;
+}
+
+.promo-5ka .tab.active {
+    border: 1px solid #88BB58;
+    background: linear-gradient(180deg, #88BB58 0%, #76AF40 100%);
+}
+
+.promo-5ka .big-btn-red-dashed {
+    color: #88BB58;
+    border-color: #88BB58;
+    opacity: .6;
+}
+
+.promo-5ka .big-btn-red-dashed:hover {
+    opacity: 1;
+}
+
+.promo-5ka .blue-btn {
+    background: linear-gradient(180deg, #0878CA 0%, #0C63A3 100%);
+}
+
+.promo-5ka .blue-btn::before,
+.promo-5ka-btn::before {
+    background: linear-gradient(109.44deg, #0C63A3 0%, #0878CA 100%);
+}
+
 @media (max-width: 1800px) {
     .header-dixi .tm-logos {
         right: 200px;
@@ -5965,6 +6345,41 @@ table td {
 
     .logo {
         margin-right: 10px;
+    }
+
+    .main-promo-5ka {
+        max-width: 1300px;
+    }
+
+    .promo-logos {
+        width: 88px;
+    }
+
+    .promo-logos .logo {
+        width: 88px;
+        height: 88px;
+        margin: 14px;
+    }
+
+    .promo-5ka-slogan-text {
+        font-size: 100px;
+    }
+
+    .promo-5ka-slogan {
+        max-width: 500px;
+    }
+
+    .promo-5ka-players {
+        max-width: 540px;
+    }
+
+    .promo-5ka-step {
+        margin: 0 2%;
+    }
+
+    .promo-5ka-step:nth-child(2) .promo-5ka-step-title::before, 
+    .promo-5ka-step:nth-child(3) .promo-5ka-step-title::before {
+        left: -70px;
     }
 }
 
@@ -6128,6 +6543,10 @@ table td {
         background-size: contain;
         top: -25px;
         left: 70px;
+    }
+
+    .promo-5ka header {
+        height: 80px;
     }
 }
 
@@ -6706,6 +7125,60 @@ table td {
     .ps-winners-fb-date.active {
         background-size: 100% 56px;
     }
+
+    .main-promo-5ka {
+        max-width: 1000px;
+    }
+
+    .promo-logos {
+        width: 57px;
+    }
+
+    .promo-logos .logo {
+        width: 57px;
+        height: 57px;
+    }
+
+    .promo-5ka-logo {
+        max-width: 160px;
+    }
+
+    .promo-logos .logo-ag {
+        background-size: 35px;
+    }
+
+    .promo-logos .logo-oreo {
+        background-size: 37px;
+    }
+
+    .promo-logos .logo-tuc {
+        background-size: 49px;
+    }
+
+    .promo-logos .logo-halls {
+        background-size: 42px;
+    }
+
+    .promo-logos .logo-dirol {
+        background-size: 33px;
+    }
+
+    .promo-5ka-slogan-text {
+        font-size: 62px;
+    }
+
+    .promo-5ka-step {
+        margin: 0 1%;
+    }
+
+    .promo-5ka-btn {
+        height: 54px;
+        font-size: 25px;
+    }
+
+    .promo-5ka-step-img {
+        display: none;
+    }
 }
 
 @media (max-width: 1160px) {
@@ -6861,10 +7334,9 @@ table td {
 		content: '';
 		position: absolute;
 		top: -12px;
-		left: 0;
-		right: 0;
-		max-width: 208px;
-	    width: 100%;
+		left: -50px;
+		right: -50px;
+	    width: 208px;
 	    height: 1px;
 	    margin: auto;
 		background: rgba(255, 255, 255, .3);
@@ -8927,6 +9399,148 @@ table td {
     .fb-ball6 {
         display: none;
     }
+
+    .promo-5ka {
+        background-size: 1920px;
+    }
+
+    .promo-5ka header {
+        width: 100%;
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    .main-promo-5ka {
+        margin-top: 70px;
+    }
+
+    .promo-5ka header::before {
+        display: none;
+    }
+
+    .promo-5ka .menu-links {
+        top: -10px;
+        background: #3055A0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .promo-5ka .menu-links a {
+        margin: 12px 0;
+    }
+
+    .promo-5ka .menu-links .back-to-main {
+        margin-top: 36px;
+    }
+
+    .promo-5ka .menu-links .lk-link {
+        margin-top: 24px;
+    }
+
+    .promo-5ka .menu-links .lk-link.pop-op {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 46px;
+        margin-bottom: 0;
+    }
+
+    .promo-5ka .menu-links .lk-link::before {
+        top: -12px;
+    }
+
+    .promo-5ka .menu-links .active, 
+    .promo-5ka .menu-links a:hover:not(.logout-link), 
+    .promo-5ka .lk-link-wrapper .profile-link.active {
+        border: 0;
+        text-decoration: underline;
+    }
+
+    .promo-logos {
+        right: 0;
+        max-width: 345px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .promo-logos .logo {
+        margin: 2px;
+    }
+
+    .main-promo-wrapper {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .promo-5ka-players {
+        order: -1;
+        max-width: 280px;
+        margin: 80px auto 20px;
+    }
+
+    .promo-5ka-players img {
+        position: relative;
+        top: auto;
+        left: 25px;
+    }
+
+    .promo-5ka-players .players-lights {
+        position: absolute;
+        left: -3%;
+    }
+
+    .promo-5ka-slogan {
+        max-width: 306px;
+        margin: auto;
+    }
+
+    .promo-5ka-logo {
+        margin: 0 auto 20px;
+    }
+
+    .promo-5ka-slogan-text {
+        text-align: center;
+    }
+
+    .promo-5ka-btn {
+        width: 290px;
+        margin: auto;
+    }
+
+    .promo-5ka-steps {
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+    }
+
+    .promo-5ka-step {
+        margin: 16px;
+    }
+
+    .promo-5ka-step1 {
+        flex-direction: column;
+    }
+
+    .promo-5ka-step-img {
+        display: block;
+        margin: 0 auto 30px;
+    }
+
+    .promo-5ka-step:nth-child(2) .promo-5ka-step-title::before, 
+    .promo-5ka-step:nth-child(3) .promo-5ka-step-title::before {
+        display: none;
+    }
+
+    .promo-5ka-step-btn {
+        margin-top: 10px;
+    }
+
+    .promo-5ka .lk-content,
+    .promo-5ka .page-title {
+        margin-top: 90px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -8984,4 +9598,15 @@ table td {
 		right: auto;
     	left: 0;
 	}
+
+    .promo-5ka-step-title {
+        width: 274px;
+    }
+}
+
+@media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) {
+    .logos .logo {
+        max-width: 80px;
+        width: 100%;
+    }
 }
