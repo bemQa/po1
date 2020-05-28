@@ -5461,7 +5461,8 @@ table td {
     display: none;
 }
 
-#prize-info .popup__wrap {
+#prize-info .popup__wrap,
+#prize-info-5ka .popup__wrap {
     max-width: 860px;
     padding: 44px 30px 30px;
 }
@@ -5473,12 +5474,14 @@ table td {
     width: 460px; 
 }
 
-#prize-info .popup__inner {
+#prize-info .popup__inner,
+#prize-info-5ka .popup__inner {
     max-width: 320px;
     margin-right: 0;
 }
 
-#prize-info .popup__title {
+#prize-info .popup__title,
+#prize-info-5ka .popup__title {
     text-align: left;
     max-width: 400px;
     width: 100%;
@@ -5514,6 +5517,31 @@ table td {
     border-radius: 50px;
 }
 
+.promo-5ka-popup-info {
+    position: relative;
+    padding-left: 65px;
+    text-align: left;
+    margin: 20px auto;
+}
+
+.promo-5ka-popup-info-img {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background: #FEBD2C;
+    border-radius: 50px;
+}
+
+.promo-5ka-popup-info-img img {
+    max-width: 32px;
+}
+
 .ps-popup-info-title {
     font-family: Rex;
     font-weight: bold;
@@ -5521,6 +5549,11 @@ table td {
     line-height: 20px;
     color: #D20102;
     margin-bottom: 5px;
+}
+
+#prize-info-5ka .ps-popup-info-title {
+    font-size: 28px;
+    line-height: 1;
 }
 
 .ps-popup-info-desc {
@@ -5853,6 +5886,26 @@ table td {
     border-bottom: 2px solid #fff;
 }
 
+.promo-5ka-logo {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 19%;
+    bottom: 0;
+    width: 207px;
+    height: 60px;
+    margin: auto;
+    background: url(../img/promo-5ka/5ka-logo-bg.svg) center no-repeat;
+    background-size: contain;
+}
+
+.promo-5ka-logo img {
+    max-width: 135px;
+}
+
 .main-promo-5ka {
     position: relative;
     max-width: 1628px;
@@ -5913,7 +5966,12 @@ table td {
     margin-left: 15%;
 }
 
-.promo-5ka-logo {
+.promo-5ka-date {
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 50px;
+    color: #fff;
     max-width: 240px;
     width: 100%;
     margin-bottom: 20px;
@@ -6197,6 +6255,21 @@ table td {
 .promo-5ka .blue-btn::before,
 .promo-5ka-btn::before {
     background: linear-gradient(109.44deg, #0C63A3 0%, #0878CA 100%);
+}
+
+.disclaimer {
+    position: absolute;
+    bottom: -55px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    opacity: 0.5;
 }
 
 @media (max-width: 1800px) {
@@ -7140,7 +7213,14 @@ table td {
     }
 
     .promo-5ka-logo {
-        max-width: 160px;
+        width: 134px;
+        height: 30px;
+        background: url(../img/promo-5ka/5ka-logo-bg-mob.svg) center no-repeat;
+        background-size: contain;
+    }
+
+    .promo-5ka-logo img {
+        max-width: 100px;
     }
 
     .promo-logos .logo-ag {
@@ -7309,6 +7389,10 @@ table td {
 		display: flex;
 		z-index: -1;
 	}
+
+    .promo-5ka .menu-links.active {
+        z-index: 10;
+    }
 
 	.menu-links a {
 	    font-size: 21px;
@@ -9228,11 +9312,13 @@ table td {
         width: 112px;
     }
 
-    #prize-info {
+    #prize-info,
+    #prize-info-5ka {
         padding-top: 200px;
     }
 
-    #prize-info .popup__wrap {
+    #prize-info .popup__wrap,
+    #prize-info-5ka .popup__wrap {
         max-width: 320px;
         padding: 30px 25px 20px;
     }
@@ -9243,11 +9329,19 @@ table td {
         width: 270px;
     }
 
-    #prize-info .popup__inner {
+    #prize-info-5ka .players-popup {
+        top: -178px;
+        right: 0;
+        margin: auto;
+    }
+
+    #prize-info .popup__inner,
+    #prize-info-5ka .popup__inner {
         margin-right: auto;
     }
 
-    #prize-info .popup__title {
+    #prize-info .popup__title,
+    #prize-info-5ka .popup__title {
         text-align: center;
         max-width: 320px;
         width: 100%;
@@ -9277,6 +9371,10 @@ table td {
     .ps-popup-info-title,
     .ps-popup-info-desc {
         font-size: 16px;
+    }
+
+    #prize-info-5ka .ps-popup-info-title {
+        font-size: 25px;
     }
 
     .fb-bg {
@@ -9497,7 +9595,15 @@ table td {
     }
 
     .promo-5ka-logo {
-        margin: 0 auto 20px;
+        left: 0;
+        right: 0;
+    }
+
+    .promo-5ka-date {
+        max-width: 100%;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
     }
 
     .promo-5ka-slogan-text {
@@ -9513,6 +9619,7 @@ table td {
         flex-direction: column;
         -ms-align-items: center;
         align-items: center;
+        margin-bottom: 75px;
     }
 
     .promo-5ka-step {
@@ -9540,6 +9647,12 @@ table td {
     .promo-5ka .lk-content,
     .promo-5ka .page-title {
         margin-top: 90px;
+    }
+
+    .disclaimer {
+        bottom: -60px;
+        font-size: 16px;
+        line-height: 18px;
     }
 }
 
