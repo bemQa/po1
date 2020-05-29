@@ -1268,11 +1268,13 @@ span.error {
 .main-products .slick-dots li:nth-child(1) {
 	background: url(../img/ag.png) center no-repeat, linear-gradient(0deg, rgba(243, 213, 78, 0.8), rgba(243, 213, 78, 0.8)), #FFFFFF;
     background-size: 76px;
+    opacity: .6;
 }
 
 .main-products .slick-dots li:nth-child(2) {
 	background: url(../img/oreo.png) center no-repeat, #2D4291;
 	background-size: 84px;
+    opacity: .6;
 }
 
 .main-products .slick-dots li:nth-child(3) {
@@ -4957,11 +4959,13 @@ table td {
 }
 
 .buy {
+    max-width: 391px;
+    width: 100%;
 	position: relative;
-	margin: 0 30px;
+	margin: auto;
 }
 
-.buy1::after,
+/*.buy1::after,
 .buy2::after {
 	content: '';
 	position: absolute;
@@ -4972,7 +4976,7 @@ table td {
 	height: 86px;
 	margin: auto;
 	background: rgba(0, 0, 0, .1);
-}
+}*/
 
 .win-step-remark {
 	font-family: Montserrat;
