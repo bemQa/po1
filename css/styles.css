@@ -2423,6 +2423,10 @@ button.scoreboard-btn {
 	align-items: center;
 }
 
+.new-logos {
+    max-width: 240px;
+}
+
 .logo {
 	margin-right: 20px;
 }
@@ -6416,6 +6420,10 @@ table td {
         max-width: 320px;
     }
 
+    .new-logos {
+        max-width: 240px;
+    }
+
     .tm-logos {
         max-width: 604px;
     }
@@ -6584,6 +6592,10 @@ table td {
     }
 
     .logos {
+        max-width: 180px;
+    }
+
+    .new-logos {
         max-width: 180px;
     }
 
@@ -7268,6 +7280,11 @@ table td {
 @media (max-width: 1160px) {
     .logos {
         display: none;
+    }
+
+    .new-logos {
+        max-width: 180px;
+        display: flex;
     }
 
     .tm-logos {
@@ -8038,6 +8055,10 @@ table td {
     	left: 15px;
     	height: 60px;
 	}
+
+    .new-logos {
+        max-width: 180px;
+    }
 
 	.logo {
 		margin-right: 10px;
@@ -9684,6 +9705,10 @@ table td {
 	.logos {
 		max-width: 220px;
 	}
+
+    .new-logos {
+        max-width: 180px;
+    }
 
 	.garant-prize-title {
 	    position: relative;
