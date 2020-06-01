@@ -1250,8 +1250,11 @@ span.error {
 
 .main-products .slick-dots {
 	position: absolute;
-	top: 80px;
-	left: 60px;
+	top: 0;
+    left: 60px;
+    bottom: 0;
+    height: 320px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1265,7 +1268,7 @@ span.error {
 	transition: all .3s linear;
 }
 
-.main-products .slick-dots li:nth-child(1) {
+/*.main-products .slick-dots li:nth-child(1) {
 	background: url(../img/ag.png) center no-repeat, linear-gradient(0deg, rgba(243, 213, 78, 0.8), rgba(243, 213, 78, 0.8)), #FFFFFF;
     background-size: 76px;
     opacity: .6;
@@ -1275,19 +1278,19 @@ span.error {
 	background: url(../img/oreo.png) center no-repeat, #2D4291;
 	background-size: 84px;
     opacity: .6;
-}
+}*/
 
-.main-products .slick-dots li:nth-child(3) {
+.main-products .slick-dots li:nth-child(1) {
 	background: url(../img/halls.png) center no-repeat, #00AFEF;
 	background-size: 87px;
 }
 
-.main-products .slick-dots li:nth-child(4) {
+.main-products .slick-dots li:nth-child(2) {
 	background: url(../img/tuc.png) center no-repeat, #FFEF13;
 	background-size: 94px;
 }
 
-.main-products .slick-dots li:nth-child(5) {
+.main-products .slick-dots li:nth-child(3) {
 	background: url(../img/dirol.png) center no-repeat, #003BAC;
 	background-size: 68px;
 }
@@ -6289,6 +6292,7 @@ table td {
 @media (max-width: 1600px) {
 	.main-products .slick-dots {
 		left: 40px;
+        bottom: 100px;
 	}
 
 	.register-code {
@@ -7475,11 +7479,13 @@ table td {
 	}
 
 	.main-products .slick-dots {
-		max-width: 300px;
+		max-width: 185px;
 		width: 100%;
+        height: auto;
 	    top: 130px;
 	    left: 0;
 	    right: 0;
+        bottom: auto;
 	    margin: auto;
     	flex-direction: row;
 	}
@@ -7503,7 +7509,7 @@ table td {
 	    border-bottom-right-radius: 10px;
 	}
 
-	.main-products .slick-dots li:nth-child(1) {
+	/*.main-products .slick-dots li:nth-child(1) {
 		background: url(../img/ag.png) center no-repeat, linear-gradient(0deg, rgba(243, 213, 78, 0.8), rgba(243, 213, 78, 0.8)), #FFFFFF;
 	    background-size: 46px;
 	}
@@ -7511,19 +7517,19 @@ table td {
 	.main-products .slick-dots li:nth-child(2) {
 		background: url(../img/oreo.png) center no-repeat, #2D4291;
 		background-size: 48px;
-	}
+	}*/
 
-	.main-products .slick-dots li:nth-child(3) {
+	.main-products .slick-dots li:nth-child(1) {
 		background: url(../img/halls.png) center no-repeat, #00AFEF;
 		background-size: 54px;
 	}
 
-	.main-products .slick-dots li:nth-child(4) {
+	.main-products .slick-dots li:nth-child(2) {
 		background: url(../img/tuc.png) center no-repeat, #FFEF13;
 		background-size: 58px;
 	}
 
-	.main-products .slick-dots li:nth-child(5) {
+	.main-products .slick-dots li:nth-child(3) {
 		background: url(../img/dirol.png) center no-repeat, #003BAC;
 		background-size: 42px;
 	}
