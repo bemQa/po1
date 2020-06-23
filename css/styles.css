@@ -6283,6 +6283,384 @@ table td {
     opacity: 0.5;
 }
 
+.promo-magnit {
+    background: url(../img/promo-magnit/bg.jpg) center 0 repeat-y, #fabd03;
+    background-size: 100%;
+}
+
+.promo-magnit header {
+    background: transparent;
+}
+
+.promo-magnit .menu-links a {
+    height: 22px;
+    padding: 0;
+    margin: 31px 24px;
+    border-bottom: 2px solid transparent;
+}
+
+.promo-magnit .menu-links .lk-link {
+    background: transparent;
+    padding: 0;
+    margin: 31px 24px;
+    border-radius: 0;
+}
+
+.promo-magnit .menu-links .active,
+.promo-magnit .menu-links a:hover:not(.logout-link),
+.promo-magnit .lk-link-wrapper .profile-link.active {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+.promo-magnit-logo {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 19%;
+    bottom: 0;
+    width: 207px;
+    height: 60px;
+    margin: auto;
+}
+
+.promo-magnit-logo img {
+    max-width: 135px;
+}
+
+.main-promo-magnit {
+    position: relative;
+    max-width: 1628px;
+    width: 100%;
+    margin: auto;
+}
+
+.main-promo-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 70px;
+}
+
+.promo-magnit-slogan {
+    max-width: 645px;
+    width: 100%;
+    margin-left: 2%;
+}
+
+.promo-magnit-ag {
+    max-width: 214px;
+    width: 100%;
+}
+
+.promo-magnit-date {
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 50px;
+    color: #E30813;
+    max-width: 240px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.promo-magnit-slogan-text {
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 125px;
+    line-height: 1;
+    color: #E30813;
+}
+
+.promo-magnit-slogan-text span {
+    position: relative;
+    color: #fff;
+}
+
+.promo-magnit-slogan-text span img {
+    position: absolute;
+    right: -151px;
+    width: 151px;
+}
+
+.promo-magnit-btn {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 298px;
+    height: 80px;
+    background: linear-gradient(180deg, #3074EE 0%, #0C63A3 100%);
+    box-shadow: 0px 0px 39px #FFF04A;
+    border-radius: 5px;
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1;
+    color: #fff;
+}
+
+.promo-magnit-players {
+    position: relative;
+    max-width: 929px;
+    width: 100%;
+}
+
+.promo-magnit-players img {
+    position: absolute;
+}
+
+.players2 {
+    mix-blend-mode: overlay;
+}
+
+.promo-magnit-steps {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 240px;
+    margin-bottom: 55px;
+    padding: 36px 0 10px;
+}
+
+.promo-magnit-steps::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffd74f;
+    opacity: .87;
+    mix-blend-mode: normal;
+    z-index: 0;
+}
+
+.promo-magnit-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 3%;
+}
+
+.promo-magnit-step1,
+.promo-magnit-step3 {
+    flex-direction: row;
+}
+
+.promo-magnit-step1 {
+    margin-left: 10px;
+}
+
+.promo-magnit-step3 {
+    margin-right: 10px;
+}
+
+.promo-magnit-step:nth-child(2) .promo-magnit-step-title::before,
+.promo-magnit-step:nth-child(3) .promo-magnit-step-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: -116px;
+    width: 124px;
+    height: 2px;
+    margin: auto;
+    background: url(../img/promo-magnit/line.svg) center repeat-x;
+    z-index: 0;
+}
+
+.promo-magnit-step-img {
+    max-width: 254px;
+    width: 100%;
+}
+
+.promo-magnit-step3 .promo-magnit-step-img {
+    max-width: 238px;
+    margin-top: 45px;
+}
+
+.promo-magnit-step-title {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    width: 297px;
+    height: 60px;
+    background: url(../img/promo-magnit/step-bg.svg) center no-repeat;
+    background-size: contain;
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.promo-magnit-step-text {
+    max-width: 282px;
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    text-align: center;
+    color: #2B2F7C;
+}
+
+.promo-magnit-step-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 188px;
+    height: 48px;
+    background: #FFAE00;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    font-family: Rex;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 1;
+    color: #fff;
+    margin: auto;
+}
+
+.promo-magnit-step-btn:hover {
+    color: #fff;
+    background: rgba(255, 174, 0, .7);
+}
+
+.promo-magnit .page-title {
+    color: #fff;
+    text-shadow: none;
+}
+
+.promo-magnit .datepicker-here {
+    color: #fff;
+    border-bottom: 2px #fff dashed;
+}
+
+.promo-magnit .date-filter::before {
+    background: url(../img/promo-magnit/calendar-icon.svg);
+}
+
+.promo-magnit .phone-filter input:not([type="checkbox"]),
+.promo-magnit table tbody,
+.promo-magnit .feedback-title,
+.promo-magnit .select2-container--default .select2-selection--single .select2-selection__placeholder,
+.promo-magnit .select2-dropdown {
+    color: #3A55A5;
+}
+
+.promo-magnit .input-field input:not([type="checkbox"])::placeholder,
+.promo-magnit .input-field textarea::placeholder {
+    color: rgba(58, 85, 165, .6);
+}
+
+.promo-magnit .winners-prize,
+.promo-magnit .lk-prize .lk-card-img {
+    background: rgba(105, 178, 41, .4);
+}
+
+.promo-magnit .faq-title {
+    background: linear-gradient(180deg, #FF9900 0%, #EA7000 100%);
+}
+
+.promo-magnit .faq-title.active {
+    color: #3A55A5;
+    background: #fff;
+}
+
+.promo-magnit .select2-container--default .select2-selection--single .select2-selection__arrow b {
+    background: url(../img/promo-magnit/arrow-down.svg) center no-repeat;
+}
+
+.promo-magnit .select2-container--default .select2-results__option[aria-selected=true], 
+.promo-magnit .select2-container--default .select2-results__option--highlighted[aria-selected] {
+    color: #3A55A5;
+    background: rgba(58, 85, 165, .1);
+}
+
+.promo-magnit .lk-link-wrapper.lk-link {
+    height: auto;
+    margin: auto;
+}
+
+.promo-magnit .lk-link-wrapper .profile-link {
+    height: 22px;
+    padding: 0;
+    margin-right: 30px;
+}
+
+.promo-magnit .lk-link-wrapper .logout-link {
+    height: 20px;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+.promo-magnit .lk-link-wrapper .logout-link:hover svg path {
+    stroke: #88BB58;
+}
+
+.promo-magnit .tm-action-title {
+    color: #fff;
+}
+
+.promo-magnit .tm-action-title-wrapper img {
+    width: 205px;
+}
+
+.promo-magnit .profile,
+.promo-magnit .profile-contacts,
+.promo-magnit .changed-profile.disabled,
+.promo-magnit .changed-profile-btn {
+    color: #fff;
+}
+
+.promo-magnit .back-to-main-lk {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.promo-magnit .back-to-main-lk::after {
+    background: url(../img/promo-magnit/back.svg);
+}
+
+.promo-magnit .tab {
+    background: rgba(215, 139, 0, 0.4);
+    border: 1px solid #FFFFFF;
+    color: #fff;
+}
+
+.promo-magnit .tab.active {
+    border: 1px solid transparent;
+    background: linear-gradient(180deg, #E30613 0%, #D01319 100%);
+    box-shadow: 4px 4px 20px rgba(53, 53, 53, 0.35);
+}
+
+.promo-magnit .big-btn-red-dashed {
+    color: #fff;
+    border-color: #fff;
+    opacity: .6;
+}
+
+.promo-magnit .big-btn-red-dashed:hover {
+    opacity: 1;
+}
+
+.promo-magnit .blue-btn {
+    background: linear-gradient(180deg, #0878CA 0%, #0C63A3 100%);
+}
+
+.promo-magnit .blue-btn::before,
+.promo-magnit-btn::before {
+    background: linear-gradient(109.44deg, #0C63A3 0%, #0878CA 100%);
+}
+
 @media (max-width: 1800px) {
     .header-dixi .tm-logos {
         right: 200px;
@@ -6470,6 +6848,32 @@ table td {
     .promo-5ka-step:nth-child(3) .promo-5ka-step-title::before {
         left: -70px;
     }
+
+    .main-promo-magnit {
+        max-width: 1300px;
+    }
+
+    .promo-magnit-slogan-text {
+        font-size: 100px;
+    }
+
+    .promo-magnit-slogan-text span img {
+        right: -101px;
+        width: 101px;
+    }
+
+    .promo-magnit-slogan {
+        max-width: 500px;
+    }
+
+    .promo-magnit-step {
+        margin: 0 2%;
+    }
+
+    .promo-magnit-step:nth-child(2) .promo-magnit-step-title::before, 
+    .promo-magnit-step:nth-child(3) .promo-magnit-step-title::before {
+        left: -70px;
+    }
 }
 
 @media (max-width: 1440px) {
@@ -6638,8 +7042,13 @@ table td {
         left: 70px;
     }
 
-    .promo-5ka header {
+    .promo-5ka header,
+    .promo-magnit header {
         height: 80px;
+    }
+
+    .promo-magnit-ag {
+        max-width: 150px;
     }
 }
 
@@ -7277,6 +7686,50 @@ table td {
     }
 
     .promo-5ka-step-img {
+        display: none;
+    }
+
+    .main-promo-magnit {
+        max-width: 1000px;
+    }
+
+    .promo-magnit-logo {
+        width: 134px;
+        height: 30px;
+    }
+
+    .promo-magnit-logo img {
+        max-width: 100px;
+    }
+
+    .promo-magnit-slogan {
+        max-width: 400px;
+    }
+
+    .promo-magnit-ag {
+        max-width: 90px;
+    }
+
+    .promo-magnit-slogan-text {
+        font-size: 62px;
+    }
+
+    .promo-magnit-slogan-text span img {
+        position: absolute;
+        right: -61px;
+        width: 61px;
+    }
+
+    .promo-magnit-step {
+        margin: 0 1%;
+    }
+
+    .promo-magnit-btn {
+        height: 54px;
+        font-size: 25px;
+    }
+
+    .promo-magnit-step-img {
         display: none;
     }
 }
@@ -9685,6 +10138,153 @@ table td {
         font-size: 16px;
         line-height: 18px;
     }
+
+    .promo-magnit {
+        background-size: 1920px;
+    }
+
+    .promo-magnit header {
+        width: 100%;
+        height: 60px;
+        margin-top: 10px;
+    }
+
+    .main-promo-magnit {
+        margin-top: 70px;
+    }
+
+    .promo-magnit header::before {
+        display: none;
+    }
+
+    .promo-magnit .menu-links {
+        top: -10px;
+        background: linear-gradient(180deg, #FF9900 0%, #EA7000 100%);
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .promo-magnit .menu-links a {
+        margin: 12px 0;
+    }
+
+    .promo-magnit .menu-links .back-to-main {
+        margin-top: 36px;
+    }
+
+    .promo-magnit .menu-links .lk-link {
+        margin-top: 24px;
+    }
+
+    .promo-magnit .menu-links .lk-link.pop-op {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 46px;
+        margin-bottom: 0;
+    }
+
+    .promo-magnit .menu-links .lk-link::before {
+        top: -12px;
+    }
+
+    .promo-magnit .menu-links .active, 
+    .promo-magnit .menu-links a:hover:not(.logout-link), 
+    .promo-magnit .lk-link-wrapper .profile-link.active {
+        border: 0;
+        text-decoration: underline;
+    }
+
+    .main-promo-wrapper {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .promo-magnit-players {
+        order: 1;
+        max-width: 280px;
+        height: 280px;
+        margin: 10px auto 0;
+    }
+
+    .promo-magnit-slogan {
+        max-width: 306px;
+        margin: auto;
+    }
+
+    .promo-magnit-logo {
+        left: 0;
+        right: 0;
+    }
+
+    .promo-magnit-ag {
+        margin: auto;
+    }
+
+    .promo-magnit-date {
+        max-width: 100%;
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .promo-magnit-slogan-text {
+        text-align: center;
+    }
+
+    .promo-magnit-btn {
+        width: 290px;
+        margin: auto;
+    }
+
+    .promo-magnit-steps {
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+        margin-bottom: 75px;
+        padding: 0;
+    }
+
+    .promo-magnit-steps::before {
+        opacity: 1;
+    }
+
+    .promo-magnit-step {
+        margin: 20px;
+    }
+
+    .promo-magnit-step1,
+    .promo-magnit-step3 {
+        flex-direction: column;
+    }
+
+    .promo-magnit-step-img {
+        display: block;
+        margin: 0 auto 10px;
+    }
+    
+    .promo-magnit-step1 .promo-magnit-step-img,
+    .promo-magnit-step3 .promo-magnit-step-img {
+        max-width: 210px;
+    }
+
+    .promo-magnit-step3 .promo-magnit-step-img {
+        margin: 20px auto 0;
+    }
+
+    .promo-magnit-step:nth-child(2) .promo-magnit-step-title::before, 
+    .promo-magnit-step:nth-child(3) .promo-magnit-step-title::before {
+        display: none;
+    }
+
+    .promo-magnit-step-btn {
+        margin-top: 10px;
+    }
+
+    .promo-magnit .lk-content,
+    .promo-magnit .page-title {
+        margin-top: 90px;
+    }
 }
 
 @media (max-width: 375px) {
@@ -9748,6 +10348,10 @@ table td {
 	}
 
     .promo-5ka-step-title {
+        width: 274px;
+    }
+
+    .promo-magnit-step-title {
         width: 274px;
     }
 }
