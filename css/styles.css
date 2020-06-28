@@ -1179,7 +1179,7 @@ span.error {
 }
 
 .products-slider {
-	display: flex;
+	/*display: flex;*/
 }
 
 .product-slide {
@@ -1253,7 +1253,7 @@ span.error {
 	top: 0;
     left: 60px;
     bottom: 0;
-    height: 320px;
+    height: 110px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -1280,20 +1280,20 @@ span.error {
     opacity: .6;
 }*/
 
-.main-products .slick-dots li:nth-child(1) {
+/*.main-products .slick-dots li:nth-child(1) {
 	background: url(../img/halls.png) center no-repeat, #00AFEF;
 	background-size: 87px;
-}
+}*/
 
-.main-products .slick-dots li:nth-child(2) {
+.main-products .slick-dots li:nth-child(1) {
 	background: url(../img/tuc.png) center no-repeat, #FFEF13;
 	background-size: 94px;
 }
 
-.main-products .slick-dots li:nth-child(3) {
+/*.main-products .slick-dots li:nth-child(3) {
 	background: url(../img/dirol.png) center no-repeat, #003BAC;
 	background-size: 68px;
-}
+}*/
 
 .main-products .slick-dots li button {
 	width: 100%;
@@ -2427,7 +2427,7 @@ button.scoreboard-btn {
 }
 
 .new-logos {
-    max-width: 240px;
+    max-width: 74px;
 }
 
 .logo {
@@ -6803,7 +6803,7 @@ table td {
     }
 
     .new-logos {
-        max-width: 240px;
+        max-width: 74px;
     }
 
     .tm-logos {
@@ -7004,7 +7004,7 @@ table td {
     }
 
     .new-logos {
-        max-width: 180px;
+        max-width: 64px;
     }
 
     .tm-logos {
@@ -7740,7 +7740,7 @@ table td {
     }
 
     .new-logos {
-        max-width: 180px;
+        max-width: 64px;
         display: flex;
     }
 
@@ -7932,7 +7932,7 @@ table td {
 	}
 
 	.main-products .slick-dots {
-		max-width: 185px;
+		max-width: 66px;
 		width: 100%;
         height: auto;
 	    top: 130px;
@@ -7972,20 +7972,20 @@ table td {
 		background-size: 48px;
 	}*/
 
-	.main-products .slick-dots li:nth-child(1) {
+	/*.main-products .slick-dots li:nth-child(1) {
 		background: url(../img/halls.png) center no-repeat, #00AFEF;
 		background-size: 54px;
-	}
+	}*/
 
-	.main-products .slick-dots li:nth-child(2) {
+	.main-products .slick-dots li:nth-child(1) {
 		background: url(../img/tuc.png) center no-repeat, #FFEF13;
 		background-size: 58px;
 	}
 
-	.main-products .slick-dots li:nth-child(3) {
+	/*.main-products .slick-dots li:nth-child(3) {
 		background: url(../img/dirol.png) center no-repeat, #003BAC;
 		background-size: 42px;
-	}
+	}*/
 
 	.product-slide .product-slide-img {
 		max-width: 380px;
@@ -8516,7 +8516,7 @@ table td {
 	}
 
     .new-logos {
-        max-width: 180px;
+        max-width: 64px;
     }
 
 	.logo {
@@ -10313,7 +10313,7 @@ table td {
 	}
 
     .new-logos {
-        max-width: 180px;
+        max-width: 64px;
     }
 
 	.garant-prize-title {
